@@ -40,13 +40,25 @@
   <meta content="{{ title }}" name="keywords">
   <meta content="{{ title }}" name="author">
 
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+
   <!-- Global styles START -->   
+  <%- css('metronic/assets/plugins/font-awesome/css/font-awesome.min.css') %>
+  <%- css('metronic/assets/plugins/bootstrap/css/bootstrap.min.css') %>
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
+  <%- css('metronic/assets/pages/css/animate.css') %>
+  <%- css('metronic/assets/plugins/owl.carousel/assets/owl.carousel.css') %>
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
-  <%- css('css/theme.css') %>
+  <%- css('metronic/assets/pages/css/components.css') %>
+  <%- css('metronic/assets/pages/css/slider.css') %>
+  <%- css('metronic/assets/corporate/css/style.css') %>
+  <%- css('metronic/assets/pages/css/portfolio.css') %>
+  <%- css('metronic/assets/corporate/css/style-responsive.css') %>
+  <%- css('metronic/assets/corporate/css/themes/' + theme.color_scheme + '.css') %>
+  <%- css('css/theme-styles.css') %>
   <!-- Theme styles END -->
 </head>

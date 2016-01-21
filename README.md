@@ -1,15 +1,7 @@
-# Hexo Corporate
+# Hexo Computer Lab
 
-Hexo Corporate is a full-featured Hexo theme based on the Metronic Corporate
-Frontend freebie framework.  
-
-Live example: [Link](http://hexotest.computerlab.io) | [Source](https://github.com/ptsteadman/hexo-theme-corporate-example)
-
-This theme is useful for companies interested in using Hexo to create a
-professional website with an attractive landing page, company blog, contact
-information, and portfolio.  
-
-![Hexo Corporate blog page.](https://s3.amazonaws.com/ptsteadman-images/Corporate.png)
+Hexo Computer Lab is a full-featured Hexo theme user for the Computer Lab
+website. 
 
 **Features:**
 
@@ -28,7 +20,7 @@ information, and portfolio.
 ## Install
 
 ``` bash
-git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate
+git clone https://github.com/computer-lab/hexo-theme-computer-lab.git themes/computer-lab
 ```
 
 ## Enable
@@ -44,13 +36,13 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	```
 
 2. **Enable theme.** 
-	Modify the root site `_config.yml` so that `theme` is set to `corporate`. 
+	Modify the root site `_config.yml` so that `theme` is set to `computer-lab`.
 
 	```yml
 	# Extensions
 	## Plugins: http://hexo.io/plugins/
 	## Themes: http://hexo.io/themes/
-	theme: corporate # change this
+	theme: computer-lab # change this
 
 	```
 
@@ -65,13 +57,13 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 ### Update
 
 ``` bash
-cd themes/corporate
+cd themes/computer-lab
 git pull
 ```
 
 ## Configure
 
-Edit `themes/corporate/_config.yml` for theme-specific configuration.
+Edit `themes/computer-lab/_config.yml` for theme-specific configuration.
 
 ``` yml
 # Header Menu
