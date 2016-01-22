@@ -18,6 +18,8 @@ website.
 
 
 ## Install
+ 
+
 
 ``` bash
 git clone https://github.com/computer-lab/hexo-theme-computer-lab.git themes/computer-lab
@@ -25,15 +27,15 @@ git clone https://github.com/computer-lab/hexo-theme-computer-lab.git themes/com
 
 ## Enable
 
-1. **Add example pages.** 
-
-	Copy all of the contents of `themes/corporate/_source` to `_source`.
-	This includes a sample landing page and contact, project, and
-	about pages.
+1. **Install SASS/Jade dependencies to project root.**
+  
 
 	```bash
-	cp -r themes/corporate/_source/* source
-	```
+	cd /path/to/project/
+        npm install --save hexo-renderer-sass
+        npm install --save hexo-renderer-jade
+        ```
+
 
 2. **Enable theme.** 
 	Modify the root site `_config.yml` so that `theme` is set to `computer-lab`.
@@ -48,11 +50,11 @@ git clone https://github.com/computer-lab/hexo-theme-computer-lab.git themes/com
 
 	Finally, run `npm install` and then `hexo server` to test out the site.
 
-3. **Optional: Enable custom landing page.**
+3. **Enable custom landing page.**
 
 	To use custom landing page instead of the default archive index, remove
 	the line containing hexo-generator-index from package.json in the project root.
-	Then, edit `source/index.ejs`.
+	Then, edit `source/index.jade`.
 
 ### Update
 
