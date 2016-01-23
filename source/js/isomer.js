@@ -23,6 +23,7 @@ function timeout(callback, delay, scope, args) {
 }
 
 function interval(callback, delay, scope, args) {
+        callback.apply(scope, args);
 	var timer = timeout(function() {
 		callback.apply(scope, args);
 		timer.start();
@@ -36,13 +37,16 @@ function randomInt(min, max) {
 }
 
 var canvas = document.getElementById('art');
+canvas.width = $(".canvas-container").width();
+canvas.height = $(".canvas-container").height();
 var iso = new Isomer(canvas);
 var Shape = Isomer.Shape;
 var Point = Isomer.Point;
 var Color = Isomer.Color;
 var blocks = [];
 var translate = 0;
-var bg = new Color(161,196,208);
+var lightBlue = new Color(161,196,208);
+var white = new Color(255,255,255);
 
 function randomSize() {
 	return {
@@ -54,7 +58,7 @@ function randomSize() {
 
 var i = 0;
 var blockMaker = interval(function() {
-	var point = Point(randomInt(1,4), randomInt(1,4), randomInt(1,4));
+	var point = Point(randomInt(1,4), randomInt(1,4), randomInt(3,4));
 	var size = randomSize();
 	while (size.w * size.l * size.h > 16) size = randomSize();
 	var block = Shape.Prism(point, size.w, size.l, size.h);
@@ -62,18 +66,18 @@ var blockMaker = interval(function() {
 		block: block,
 		yPos: 5
 	};
-}, 1000);
+}, 2000);
 blockMaker.start();
 
 var animator = interval(function() {
 	// Stupid bg to lay over old blocks:
-	iso.add(Shape.Prism(new Point(-8, 0, -8), 16, 8, 24), bg);
+	iso.add(Shape.Prism(new Point(-8, 0, -8), 16, 8, 24), white);
 	
 	iso.add(blocks.map(function(block) {
-		block.yPos -= 0.04;
+		block.yPos -= 0.02;
 		return block.block.translate(0, 0, block.yPos);
-	}));
-}, 1000 / 50);
+	}), lightBlue);
+}, 1000 / 60);
 
 
 animator.start();

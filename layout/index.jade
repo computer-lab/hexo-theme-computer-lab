@@ -5,13 +5,14 @@ block site_body
     .container-fluid
       .row
         .hero.col-md-6.col-xs-12.no-padding
-          canvas#art(width='600', height='600')
+          .canvas-container
+            canvas#art
           .copy
             h1= config.subtitle
             p= config.blurb
-            a(href='mailto:ideas@computerlab.io') ideas@computerlab.io
-        .col-md-6.flex.hidden-sm.hidden-xs
+            a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+        .col-md-6.flex.hidden-sm.hidden-xs.background
           .centered
-            h1 Computer Lab
+            img(src='/images/computer.png')
 
   //!= page.content
