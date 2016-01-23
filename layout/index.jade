@@ -1,4 +1,11 @@
 extends base
 
 block site_body
-  != page.content
+  .hero
+    .container
+      .copy.col-md-6.col-xs-12
+        h1= config.subtitle
+        p= config.blurb
+        a(href='mailto:ideas@computerlab.io') ideas@computerlab.io
+  canvas#art(width='600', height='600')
+  //!= page.content
