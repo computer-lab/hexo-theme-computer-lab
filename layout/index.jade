@@ -2,10 +2,16 @@ extends base
 
 block site_body
   .hero
-    .container
-      .copy.col-md-6.col-xs-12
-        h1= config.subtitle
-        p= config.blurb
-        a(href='mailto:ideas@computerlab.io') ideas@computerlab.io
-  canvas#art(width='600', height='600')
+    .container-fluid
+      .row
+        .hero.col-md-6.col-xs-12.no-padding
+          canvas#art(width='600', height='600')
+          .copy
+            h1= config.subtitle
+            p= config.blurb
+            a(href='mailto:ideas@computerlab.io') ideas@computerlab.io
+        .col-md-6.flex.hidden-sm.hidden-xs
+          .centered
+            h1 Computer Lab
+
   //!= page.content

@@ -42,7 +42,7 @@ var Point = Isomer.Point;
 var Color = Isomer.Color;
 var blocks = [];
 var translate = 0;
-var bg = new Color(95, 209, 192);
+var bg = new Color(161,196,208);
 
 function randomSize() {
 	return {
@@ -58,11 +58,11 @@ var blockMaker = interval(function() {
 	var size = randomSize();
 	while (size.w * size.l * size.h > 16) size = randomSize();
 	var block = Shape.Prism(point, size.w, size.l, size.h);
-	blocks[i = ++i % 6] = {
+	blocks[i = ++i % 20] = {
 		block: block,
 		yPos: 5
 	};
-}, 500);
+}, 1000);
 blockMaker.start();
 
 var animator = interval(function() {
@@ -70,12 +70,10 @@ var animator = interval(function() {
 	iso.add(Shape.Prism(new Point(-8, 0, -8), 16, 8, 24), bg);
 	
 	iso.add(blocks.map(function(block) {
-		block.yPos -= 0.24;
+		block.yPos -= 0.04;
 		return block.block.translate(0, 0, block.yPos);
 	}));
 }, 1000 / 50);
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
 animator.start();
