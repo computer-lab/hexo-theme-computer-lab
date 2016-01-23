@@ -5,13 +5,17 @@ html(lang="en")
     include _partial/site/head
 
   body
-    header
+    //header
       block site_header
         include _partial/site/header
 
     section
       block site_body
 
-    footer
+    //footer
       block site_footer
         include _partial/site/footer
+
+  //- JS
+  script(src="https://rawgithub.com/jdan/isomer/master/dist/isomer.min.js")
+  script(src="js/isomer.js")
