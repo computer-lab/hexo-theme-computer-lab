@@ -4,15 +4,30 @@ block site_body
   .hero
     .container-fluid
       .row
-        .hero.col-md-6.col-xs-12.no-padding
-          .canvas-container
-            canvas#art
-          .copy
-            h1= config.subtitle
-            p= config.blurb
-            a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-        .col-md-6.flex.hidden-sm.hidden-xs.background
+        .col-md-6.col-xs-12.no-padding
+          .hero
+            .canvas-container
+              canvas#art
+            .copy
+              h1= config.subtitle
+              p= config.blurb
+              a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+        .col-md-6.flex.hidden-sm.hidden-xs.background.full-height
           .centered
             img(src='/images/computer.png')
+      .row
+        .col-xs-12
+          .flex.full-height
+            .ellipse.centered.flex
+              h1.centered HELLO WORLD HELLO WORLD
+      .row
+        .col-xs-12.no-padding
+          .flex.full-height.background
+            .em-unit.centered
+      .row
+        .col-xs-12.no-padding
+          .flex.full-height
+            a(href='#').button.centered
+              div Click Me
 
   //!= page.content

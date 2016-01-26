@@ -49,7 +49,6 @@ h1 {
 .hero {
   position: absolute;
   background: none;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
 
@@ -79,6 +78,9 @@ h1 {
 
 .flex {
   display: flex;
+}
+
+.full-height {
   height: 100vh;
 }
 
@@ -93,4 +95,40 @@ h1 {
     width: 150px;
     height: auto;
   }
+}
+
+/* 
+ * Shapes
+ */
+
+.ellipse {
+  background: $cl-primary;
+  padding: 4em;
+  border-radius: 50%;
+}
+
+.em-unit {
+  width: 1em;
+  height: 1em;
+  background-color: $cl-accent;
+
+}
+
+a.button {
+  background-color: $cl-accent;
+  color: $cl-bg;
+  font-weight: bold;
+  transform: skewX(-45deg);
+  padding: 2em;
+}
+
+a.button:hover {
+  text-decoration: none;
+  color: white;
+
+
+}
+
+.button > div {
+  transform: skewX(45deg);
 }
