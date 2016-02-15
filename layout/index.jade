@@ -4,15 +4,23 @@ block site_body
   .hero
     .container-fluid
       .row
-        .hero.col-md-6.col-xs-12.no-padding
+        .col-md-6.col-xs-12.no-padding
           .canvas-container
             canvas#art
           .copy
             h1= config.subtitle
             p= config.blurb
             a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-        .col-md-6.flex.hidden-sm.hidden-xs.background
+        .col-md-6.col-xs-12.flex.background
           .centered
-            img(src='/images/computer.png')
+            h2 Our Competencies
+            p We can build your website.  
+            p We can build your app.  
+            p We can understand your data.
+            p We can make your logo.
+            p We can fix your brand.
+            p We can make people care about you.
+
+            
 
   //!= page.content
