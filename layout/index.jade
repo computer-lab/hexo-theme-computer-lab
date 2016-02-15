@@ -3,79 +3,16 @@ extends base
 block site_body
   .hero
     .container-fluid
-      .col-md-12.flex.hidden-sm.hidden-xs.no-padding
+      .row
+        .hero.col-md-6.col-xs-12.no-padding
+          .canvas-container
+            canvas#art
           .copy
-            h1.active Computer Lab
-              | 
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-              span  can build your website.
-              span  can make people care about you.
-              span  can understand your data.
-              span  can build your app.
-              span  can launch your brand.
-            //a(href='mailto:hi@computerlab.io') hi@computerlab.io
+            h1= config.subtitle
+            p= config.blurb
+            a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+        .col-md-6.flex.hidden-sm.hidden-xs.background
+          .centered
+            img(src='/images/computer.png')
+
+  //!= page.content
