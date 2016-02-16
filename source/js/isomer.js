@@ -8,7 +8,7 @@ function randomInt(min, max) {
 var canvas = document.getElementById('art');
 canvas.width = $(".canvas-container").width();
 canvas.height = $(".canvas-container").height();
-var iso = new Isomer(canvas);
+var iso = new Isomer(canvas, {'originY': 1 });
 var Shape = Isomer.Shape;
 var Point = Isomer.Point;
 var Color = Isomer.Color;
@@ -26,11 +26,9 @@ function randomSize() {
 }
 
 var i = 0;
-var start = 0;
+var start = 1;  // so that blocks start immediately
 
 function step(timestamp){
-  canvas.width = $(".canvas-container").width();
-  canvas.height = $(".canvas-container").height();
   if(!start) start = timestamp;
   var progress = timestamp - start;
   if(progress > 2000){
@@ -41,11 +39,11 @@ function step(timestamp){
     var block = Shape.Prism(point, size.w, size.l, size.h);
     blocks[i = ++i % 20] = {
       block: block,
-      yPos: 10
+      yPos: 0
     };
   }
   // add background over old blocks
-  iso.add(Shape.Prism(new Point(-8, 0, -8), 16, 8, 24), white);
+  iso.add(Shape.Prism(new Point(-8, 0, -16), 24, 36, 36), white);
 
   iso.add(blocks.map(function(block) {
     block.yPos -= 0.02;
