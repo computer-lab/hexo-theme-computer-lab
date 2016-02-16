@@ -14,7 +14,9 @@ var Point = Isomer.Point;
 var Color = Isomer.Color;
 var blocks = [];
 var translate = 0;
-var lightBlue = new Color(161,196,208);
+var color = $("#art").css("color");
+var rgb = color.match(/(\d+)/g);
+var isoColor = new Color(rgb[0], rgb[1], rgb[2]);
 var white = new Color(255,255,255);
 
 function randomSize() {
@@ -48,7 +50,7 @@ function step(timestamp){
   iso.add(blocks.map(function(block) {
     block.yPos -= 0.02;
     return block.block.translate(0, 0, block.yPos);
-  }), lightBlue);
+  }), isoColor);
   window.requestAnimationFrame(step);
 }
 

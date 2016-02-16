@@ -10,16 +10,33 @@ block site_body
           .copy
             h1= config.subtitle
             p= config.blurb
-            a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+            .row
+              .col-md-6
+                a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+                p= theme.phone
+              .col-md-6.mobile-hidden
+                p= theme.address_1
+                p= theme.address_2
+                p= theme.address_3
         .col-md-6.col-xs-12.flex.background
-          .centered
+          .centered.competencies
             h2 Our Competencies
-            p We can build your website.  
+            p We can #[a(href="#") build your website].
             p We can build your app.  
             p We can understand your data.
             p We can make your logo.
             p We can fix your brand.
             p We can make people care about you.
+      .row.mobile-footer
+        .col-xs-12
+          a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+          p= theme.phone
+          p= theme.address_1
+          p= theme.address_2
+          p= theme.address_3
+
+
+
 
             
 
