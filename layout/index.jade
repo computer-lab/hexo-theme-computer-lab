@@ -5,30 +5,27 @@ block site_body
     .container-fluid
       .row
         .col-md-6.col-xs-12.no-padding
-          .canvas-container
+          .canvas-container.full-page
             canvas#art
           .copy
             h1= config.subtitle
             p= config.blurb
-            .row
-              .col-md-6
+            .row.flex.details
+              .col-md-6.centered
                 a(href='mailto:ideas@computerlab.io') hi@computerlab.io
                 p= theme.phone
-              .col-md-6.mobile-hidden
+              .col-md-6.mobile-hidden.centered
                 p= theme.address_1
                 p= theme.address_2
                 p= theme.address_3
-        .col-md-6.col-xs-12.flex.background
+        .col-md-6.col-xs-12.flex.background.full-page
           .centered.competencies
             h2 Our Competencies
             p We can #[a(href="#") build your website].
-            p We can build your app.  
-            p We can understand your data.
-            p We can make your logo.
-            p We can fix your brand.
-            p We can make people care about you.
-      .row.mobile-footer
-        .col-xs-12
+            p We can #[a(href="#") understand your data.]
+            p We can #[a(href="#") develop your brand].
+            p We can #[a(href="#") make people care about you].
+        .col-xs-12.mobile-footer.details
           a(href='mailto:ideas@computerlab.io') hi@computerlab.io
           p= theme.phone
           p= theme.address_1
