@@ -1,37 +1,41 @@
 /*
 
-  Colors
+  Variables
 **/
 
+$on-mobile: 480px;
+
+$white: white;
+
+// The last color scheme defined will be used
+
+// Colors from zach's hillary clinton wall of text
+$cl-bg: #EFD9CE;
+$cl-primary: #DEC0F1;
+$cl-secondary: #957FEF;
+$cl-accent: #7161EF;
+
+// OG computer lab colors from cute computer
 $cl-primary: #456C79;
 $cl-bg: #F2F5F7;
 $cl-secondary: #A1C4D0;
 $cl-accent: #3BD603;
 
-
-$zt-primary: #5FD1C0;
-$zt-bg: #F7F7F7;
-$zt-secondary: #A1C4D0;
-$zt-accent: #3BD603;
-$zt-white: #FFFFFF;
-
-$cl-v2-bg: #EFD9CE;
-$cl-v2-primary: #DEC0F1;
-$cl-v2-secondary: #957FEF;
-$cl-v2-tertiary: #B79CED;
-$cl-v2-accent: #7161EF;
-
+// OG computer lab colors from cute computer
+$cl-primary: #456C79;
+$cl-bg: #F2F5F7;
+$cl-secondary: lighten(#C2986B, 15%);
+$cl-accent: #C2796B;
 /*
 
   Typography
-
 
 **/
 
 h1 {
   font-family: 'Lato';
   font-size: 2.3em;
-  color: $zt-white;
+  color: $white;
 }
 
 h2 {
@@ -39,90 +43,12 @@ h2 {
 }
 
 
-.competencies a, .competencies a:hover {
-    background: linear-gradient(90deg, grey 66%, transparent 0) repeat-x;
-    background-size: .4em 1px;
-    background-position: 0 1.1em;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-.competencies a:hover {
-  background: linear-gradient(90deg, darken(rgb(232, 160, 60), 20%) 66%, transparent 0) repeat-x;
-    background-size: .4em 1px;
-    background-position: 0 1.1em;
 
-}
-/*
-
-
-  
-  Hero
-**/
-
-#art {
-  background: white;
-  width: 100%;
-  height: 100%;
-  color: darken($cl-v2-bg, 10%); // set rgb for the block color
-}
-
+/* Utility */
 
 .no-padding {
   padding-left: 0px !important;
   padding-right: 0px !important;
-}
-
-.canvas-container {
-  // TODO: don't use 100vh on mobile
-  width: 100%;
-  overflow: hidden;
-}
-
-
-.animation-container {
-  position: relative;
-
-}
-
-
-.copy, .mobile-footer {
-  background-color: rgba(darken($cl-primary, 15%), .86);
-  width: 100%;
-  padding: 2.0em 3.5em 2.3em 3.5em;
-
-  h1 {
-    color: $zt-bg;
-  }
-
-  a {
-    color: $zt-white;
-    font-weight: bold;
-  }
-
-  a:hover {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-
-  }
-
-  p {
-    color: $cl-bg;
-  }
-
-}
-
-
-.details p {
-    line-height: 1.0em;
-    margin: .5em 0;
-    letter-spacing: 1px;
-}
-
-.copy {
-  position: absolute;
-  bottom: 0px;
 }
 
 .flex {
@@ -131,39 +57,109 @@ h2 {
 
 .full-page {
   height: 100vh;
-}
 
-.background {
-  background-color: $cl-bg;
+  @media (max-width: $on-mobile){
+    height: 700px;
+  }
 }
 
 .centered {
   margin: auto;
+}
 
+.vertically-centered {
+  margin: auto 0;
+}
+
+.mobile-hidden {
+  @media (max-width: $on-mobile){
+    display: none;
+  }
+}
+
+
+/*
+Hero / Animation
+ **/
+
+#art {
+  background: white;
+  width: 100%;
+  height: 100%;
+  color: $cl-secondary; // set rgb for the block color
+}
+
+.canvas-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.copy, .mobile-footer {
+  background-color: rgba(darken($cl-primary, 15%), .88);
+  width: 100%;
+  padding: 2.0em 3.5em 2.3em 3.5em;
+
+  @media (max-width: $on-mobile){
+    padding: 1.0em 1.5em 1.4em 1.5em;
+  }
+
+  a, a:hover {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+
+  p {
+    color: white;
+  }
+
+  // qt3.14 computer
   img {
-    width: 150px;
+    width: 110px;
     height: auto;
   }
 }
 
-@media (max-width: 480px){
-  .mobile-hidden {
-    display: none;
-
-  }
-
-  .full-page {
-    height: 500px;
-  }
-
-
-  .copy {
-    padding: 1.5em 1.5em 1.8em 1.5em;
-  }
+// We are here to help you copy is positioned above the falling blocks
+.copy {
+  position: absolute;
+  bottom: 0px;
 }
 
-@media (min-width: 480px){
-  .mobile-footer {
+.details p {
+  line-height: 1.0em;
+  margin: .4em 0;
+}
+
+
+/* Competencies Section */
+
+// Create an attractive dashed underline
+
+.competencies a {
+  background: linear-gradient(90deg, grey 66%, transparent 0) repeat-x;
+  background-size: .4em 1px;
+  background-position: 0 1.1em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.competencies a:hover {
+  background: linear-gradient(90deg, $cl-accent 66%, transparent 0) repeat-x;
+  background-size: .4em 1px;
+  background-position: 0 1.1em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.competencies {
+  background-color: $cl-bg;
+}
+
+
+.mobile-footer {
+  @media (min-width: $on-mobile){
     display: none;
   }
 

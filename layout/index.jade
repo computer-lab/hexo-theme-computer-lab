@@ -4,33 +4,36 @@ block site_body
   .hero
     .container-fluid
       .row
-        .col-md-6.col-xs-12.no-padding
-          .canvas-container.full-page
-            canvas#art
+        .col-md-6.col-xs-12.canvas-container.full-page.no-padding
+          canvas#art
           .copy
             h1= config.subtitle
             p= config.blurb
             .row.flex.details
-              .col-md-6.centered
+              .col-md-6.vertically-centered
                 a(href='mailto:ideas@computerlab.io') hi@computerlab.io
                 p= theme.phone
-              .col-md-6.mobile-hidden.centered
+              .col-md-6.mobile-hidden.vertically-centered
                 p= theme.address_1
                 p= theme.address_2
                 p= theme.address_3
-        .col-md-6.col-xs-12.flex.background.full-page
-          .centered.competencies
+        .col-md-6.col-xs-12.competencies.full-page.flex.no-padding
+          .centered
             h2 Our Competencies
             p We can #[a(href="#") build your website].
             p We can #[a(href="#") understand your data.]
             p We can #[a(href="#") develop your brand].
             p We can #[a(href="#") make people care about you].
         .col-xs-12.mobile-footer.details
-          a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-          p= theme.phone
-          p= theme.address_1
-          p= theme.address_2
-          p= theme.address_3
+          .row 
+            .col-xs-4.centered
+              img(src='/images/computer.png')
+            .col-xs-8
+              a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+              p= theme.phone
+              p= theme.address_1
+              p= theme.address_2
+              p= theme.address_3
 
 
 
