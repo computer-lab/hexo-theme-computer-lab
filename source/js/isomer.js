@@ -30,6 +30,18 @@ function randomSize() {
 var i = 0;
 var start = 1;  // so that blocks start immediately
 
+// initialize blocks filling the whole page
+while(i < 10){
+  var point = Point(randomInt(1,5), randomInt(1,5), randomInt(-16, -2));
+  var size = randomSize();
+  while (size.w * size.l * size.h > 16) size = randomSize();
+  var block = Shape.Prism(point, size.w, size.l, size.h);
+  blocks[i = ++i % 20] = {
+    block: block,
+    yPos: 0
+  };
+}
+
 function step(timestamp){
   if(!start) start = timestamp;
   var progress = timestamp - start;
