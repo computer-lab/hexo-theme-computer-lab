@@ -48,6 +48,10 @@ h2 {
 
 /* Utility */
 
+.float-left {
+  float: left;
+
+}
 .no-padding {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -117,10 +121,6 @@ Hero / Animation
   }
 
   // qt3.14 computer
-  img {
-    width: 110px;
-    height: auto;
-  }
 }
 
 // We are here to help you copy is positioned above the falling blocks
@@ -129,11 +129,17 @@ Hero / Animation
   bottom: 0px;
 }
 
-.details p {
+.details p, .details a {
   line-height: 1.0em;
+  font-size: 0.9em;
   margin: .4em 0;
 }
 
+.details img {
+  width: 26px;
+  height: auto;
+  margin-right: 13px;
+}
 
 /* Competencies Section */
 

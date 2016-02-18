@@ -10,13 +10,19 @@ block site_body
             h1= config.subtitle
             p= config.blurb
             .row.flex.details
-              .col-md-6.vertically-centered
-                a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-                p= theme.phone
-              .col-md-6.mobile-hidden.vertically-centered
-                p= theme.address_1
-                p= theme.address_2
-                p= theme.address_3
+              .col-md-6.vertically-centered.flex
+                .float-left.vertically-centered
+                  img(src="/images/office-phone.svg")
+                .float-left
+                  a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+                  p= theme.phone
+              .col-md-6.mobile-hidden.vertically-centered.flex
+                .float-left.vertically-centered
+                  img(src="/images/building.svg")
+                .float-left
+                  p= theme.address_1
+                  p= theme.address_2
+                  p= theme.address_3
         .col-md-6.col-xs-12.competencies.full-page.flex.no-padding
           .centered
             h2 Our Competencies
@@ -26,9 +32,7 @@ block site_body
             p We can #[a(href="#") make people care about you].
         .col-xs-12.mobile-footer.details
           .row 
-            .col-xs-4.centered
-              img(src='/images/computer.png')
-            .col-xs-8
+            .col-xs-12
               a(href='mailto:ideas@computerlab.io') hi@computerlab.io
               p= theme.phone
               p= theme.address_1
