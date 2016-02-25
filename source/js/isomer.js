@@ -21,9 +21,9 @@ var white = new Color(255,255,255);
 
 function randomSize() {
   return {
-    w: randomInt(1,4),
-    l: randomInt(1,4),
-    h: randomInt(1,3)
+    w: randomInt(1,3),
+    l: randomInt(1,3),
+    h: randomInt(1,4)
   };
 }
 
@@ -31,12 +31,12 @@ var i = 0;
 var start = 1;  // so that blocks start immediately
 
 // initialize blocks filling the whole page
-while(i < 10){
-  var point = Point(randomInt(1,5), randomInt(1,5), randomInt(-16, -1));
+while(i < 20){
+  var point = Point(randomInt(0,15), randomInt(0,15), randomInt(-16, -1));
   var size = randomSize();
   while (size.w * size.l * size.h > 16) size = randomSize();
   var block = Shape.Prism(point, size.w, size.l, size.h);
-  blocks[i = ++i % 20] = {
+  blocks[i = ++i % 40] = {
     block: block,
     yPos: 0
   };
@@ -45,19 +45,19 @@ while(i < 10){
 function step(timestamp){
   if(!start) start = timestamp;
   var progress = timestamp - start;
-  if(progress > 2000){
+  if(progress > 1000){
     start = null;
-    var point = Point(randomInt(1,5), randomInt(1,5), 0);
+    var point = Point(randomInt(0,15), randomInt(0,15), 0);
     var size = randomSize();
     while (size.w * size.l * size.h > 16) size = randomSize();
     var block = Shape.Prism(point, size.w, size.l, size.h);
-    blocks[i = ++i % 20] = {
+    blocks[i = ++i % 40] = {
       block: block,
       yPos: 0
     };
   }
   // add background over old blocks
-  iso.add(Shape.Prism(new Point(-8, 0, -16), 24, 36, 36), white);
+  iso.add(Shape.Prism(new Point(0, 0, -24), 36, 36, 1), white);
 
   iso.add(blocks.map(function(block) {
     block.yPos -= 0.02;

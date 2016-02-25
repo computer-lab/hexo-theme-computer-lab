@@ -136,10 +136,24 @@ Hero / Animation
 }
 
 .details img {
-  width: 26px;
+  width: 28px;
   height: auto;
   margin-right: 13px;
 }
+
+/* Big image section */
+.computer {
+  background-color: $cl-bg;
+
+
+}
+
+.computer img {
+  height: 180px;
+  width: auto;
+
+}
+
 
 /* Competencies Section */
 
@@ -165,9 +179,10 @@ Hero / Animation
   background-color: $cl-bg;
 }
 
-.popover {
+.popover  {
   box-shadow: none !important;
   border: 1px dashed #eee !important;
+  background: rgba(255,255,255,.6);
 
 }
 
