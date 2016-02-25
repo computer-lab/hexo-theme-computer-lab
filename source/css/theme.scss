@@ -91,13 +91,12 @@ Hero / Animation
 #art {
   background: white;
   width: 100%;
-  height: 100%;
   color: $cl-secondary; // set rgb for the block color
 }
 
 .canvas-container {
   width: 100%;
-  overflow: hidden;
+  background-color: white;
 }
 
 .copy, .mobile-footer {
@@ -177,8 +176,33 @@ Hero / Animation
 
 .competencies {
   background-color: $cl-bg;
+  p {
+    max-width: 30em;
+
+  }
 }
 
+.web {
+  background-color: lighten($cl-secondary, 20%);
+  p {
+    max-width: 30em;
+  }
+
+  img {
+    height: 300px;
+
+  }
+  z-index: 100;
+
+  div {
+    
+  z-index: 100;
+  }
+}
+
+.section {
+  height: 500px;
+}
 .popover  {
   box-shadow: none !important;
   border: 1px dashed #eee !important;
@@ -186,68 +210,6 @@ Hero / Animation
 
 }
 
-#menu > div {
-  display: none;
-
-  p {
-    max-width: 20em;
-    color: #444;
-    font-size: 0.9em;
-
-  }
-}
-
-#web-dev {
-  display: none;
-  position: relative;
-  
-  img {
-    position: absolute;
-    right: -50px;
-    width: 45px;
-    top: 10px;
-  }
-}
-
-#data {
-  display: none;
-  position: relative;
-  
-  img {
-    position: absolute;
-    right: -50px;
-    width: 45px;
-    top: 10px;
-  }
-}
-
-#branding {
-  display: none;
-  position: relative;
-  
-  img {
-    position: absolute;
-    right: -50px;
-    width: 45px;
-    top: 10px;
-  }
-}
-
-
-#caring {
-  display: none;
-  position: relative;
-  
-  img {
-    position: absolute;
-    right: -50px;
-    width: 45px;
-    top: 10px;
-  }
-}
 .mobile-footer {
-  @media (min-width: $on-mobile){
-    display: none;
-  }
 
 }

@@ -23,10 +23,12 @@ html(lang="en")
 
   script(type='text/javascript').
     $(function(){
-      $("a[data-id]").click(function(target){
-        $("#menu > div").hide();
-        var id = $(this).data("id");
-        $("#" + id).slideDown('fast');
+      $(".competencies a").click(function(e) {
+      e.preventDefault();
+        
+        $('html, body').animate({
+          scrollTop: $($(this).attr("href")).offset().top
+            }, 1000);
       });
     });
 

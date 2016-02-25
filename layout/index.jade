@@ -27,30 +27,51 @@ block site_body
           .centered
             #menu
               h2 Our Competencies
-              p We can #[a(href="javascript:;" data-id="web-dev") build your website].
-              #web-dev
-                p
-                  | Computer Lab specializes in developing sleek landing pages,
-                  | UI-intensive applications, and data-driven APIs.  We can
-                  | work along with your team, or be your full-service
-                  | dev shop.  
-                img(src="/images/db_computer.png")
-              p We can #[a(href="javascript:;" data-id="data") understand your data.]
-              #data
-                p
-                  | To help ensure you're solving the right problems, we can
-                  | leverage our in-house data science team.  Depending on your
-                  | needs, the team can create specialized tools, deliver
-                  | actionable visualizations, or mine for insights.
-                img(src="/images/db_computer.png")
-              p We can #[a(href="javascript:;" data-id="branding") develop your brand].
-              #branding
-                p Henry can come up with a brilliant new brand for you.
-                img(src="/images/db_computer.png")
-              p We can #[a(href="javascript:;" data-id="caring") make people care about you].
-              #caring
-                p People care about us.
-                img(src="/images/db_computer.png")
+              p We can #[a(href="#web-dev" data-id="web-dev") build your website].
+              p We can #[a(href="#data" data-id="data") understand your data.]
+              p We can #[a(href="#branding" data-id="branding") develop your brand].
+              p We can #[a(href="#caring" data-id="caring") make people care about you].
+      .row#web-dev
+        .col-xs-6.section.flex.no-padding.web
+          .centered
+            h2 Web Development
+            p
+              | Computer Lab specializes in developing sleek landing pages,
+              | UI-intensive applications, and data-driven APIs.  We can
+              | work along with your team, or be your full-service
+              | dev shop.  
+        .col-xs-6.section.flex.no-padding.web
+          .centered
+            img(src="/images/money_computer.png")
+      .row#data
+        .col-md-6.col-xs-12.section.no-padding
+        .col-xs-6.section.flex.no-padding.competencies
+          .centered
+            h2 Data Science 
+            p
+              | To help ensure you're solving the right problems, we can
+              | leverage our in-house data science team.  Depending on your
+              | needs, the team can create specialized tools, deliver
+              | actionable visualizations, or mine for insights.
+      .row#branding.web
+        .col-xs-6.section.web.flex.no-padding
+          .centered
+            h2 Branding 
+            p
+              | We're young Millennials, and we can fix your brand.
+              | We read a book on CSS.
+        .col-xs-6.section.flex.no-padding
+          .centered
+            img(src="/images/db_computer.png")
+      .row#caring
+        .col-md-6.col-xs-12.section.no-padding
+        .col-xs-6.competencies.section.flex.no-padding
+          .centered
+            h2 Marketing 
+            p
+              | No one beyond your friends will ever like you or pay attention to you.  It is
+              | just what you are.  There is always some fact of reality that can wear down your
+              | desire until you consider yourself wiser, for not wanting it any more.
       .row
         .col-xs-12.mobile-footer.details
           .row 
