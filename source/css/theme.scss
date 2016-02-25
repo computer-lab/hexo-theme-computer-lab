@@ -167,7 +167,7 @@ Hero / Animation
   text-decoration: none;
 }
 
-.competencies a:hover {
+.competencies a:hover, .competencies a:focus {
   background: linear-gradient(90deg, $cl-accent 66%, transparent 0) repeat-x;
   background-size: .4em 1px;
   background-position: 0 1.1em;
@@ -186,6 +186,65 @@ Hero / Animation
 
 }
 
+#menu > div {
+  display: none;
+
+  p {
+    max-width: 20em;
+    color: #444;
+    font-size: 0.9em;
+
+  }
+}
+
+#web-dev {
+  display: none;
+  position: relative;
+  
+  img {
+    position: absolute;
+    right: -50px;
+    width: 45px;
+    top: 10px;
+  }
+}
+
+#data {
+  display: none;
+  position: relative;
+  
+  img {
+    position: absolute;
+    right: -50px;
+    width: 45px;
+    top: 10px;
+  }
+}
+
+#branding {
+  display: none;
+  position: relative;
+  
+  img {
+    position: absolute;
+    right: -50px;
+    width: 45px;
+    top: 10px;
+  }
+}
+
+
+#caring {
+  display: none;
+  position: relative;
+  
+  img {
+    position: absolute;
+    right: -50px;
+    width: 45px;
+    top: 10px;
+  }
+}
 .mobile-footer {
   @media (min-width: $on-mobile){
     display: none;

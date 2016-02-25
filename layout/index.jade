@@ -23,20 +23,35 @@ block site_body
                   p= theme.address_1
                   p= theme.address_2
                   p= theme.address_3
-        .col-md-6.col-xs-12.full-page.flex.no-padding.computer
+        .col-md-6.col-xs-12.competencies.full-page.flex.no-padding
           .centered
-            img(src="/images/db_computer.png")
-            img(src="/images/db_computer.png")
-            img(src="/images/db_computer.png")
-            img(src="/images/db_computer.png")
+            #menu
+              h2 Our Competencies
+              p We can #[a(href="javascript:;" data-id="web-dev") build your website].
+              #web-dev
+                p
+                  | Computer Lab specializes in developing sleek landing pages,
+                  | UI-intensive applications, and data-driven APIs.  We can
+                  | work along with your team, or be your full-service
+                  | dev shop.  
+                img(src="/images/db_computer.png")
+              p We can #[a(href="javascript:;" data-id="data") understand your data.]
+              #data
+                p
+                  | To help ensure you're solving the right problems, we can
+                  | leverage our in-house data science team.  Depending on your
+                  | needs, the team can create specialized tools, deliver
+                  | actionable visualizations, or mine for insights.
+                img(src="/images/db_computer.png")
+              p We can #[a(href="javascript:;" data-id="branding") develop your brand].
+              #branding
+                p Henry can come up with a brilliant new brand for you.
+                img(src="/images/db_computer.png")
+              p We can #[a(href="javascript:;" data-id="caring") make people care about you].
+              #caring
+                p People care about us.
+                img(src="/images/db_computer.png")
       .row
-        .col-xs-12.competencies.full-page.flex.no-padding
-          .centered
-            h2 Our Competencies
-            p We can #[a(href="#" data-toggle="popover" data-trigger="focus" data-placement="bottom" tabindex="0" role="button" title="Web Development" data-content="We <b>build websites</b> using .NET, Node, and Python stacks.  We can help you select the right stack for your project, or start working with an existing site.  We're domain experts with the stacks that we work with.") build your website].
-            p We can #[a(href="#") understand your data.]
-            p We can #[a(href="#") develop your brand].
-            p We can #[a(href="#") make people care about you].
         .col-xs-12.mobile-footer.details
           .row 
             .col-xs-12
@@ -45,10 +60,5 @@ block site_body
               p= theme.address_1
               p= theme.address_2
               p= theme.address_3
-
-
-
-
-            
 
   //!= page.content

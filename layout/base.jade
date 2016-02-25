@@ -25,6 +25,12 @@ html(lang="en")
 
   script(type='text/javascript').
     $(function(){
-      $("a").popover();
+
+      $("a[data-id]").click(function(target){
+        $("#menu > div").hide();
+        var id = $(this).data("id");
+        $("#" + id).slideDown('fast');
+      });
+
     });
 

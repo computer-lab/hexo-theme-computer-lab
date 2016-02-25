@@ -32,7 +32,7 @@ var start = 1;  // so that blocks start immediately
 
 // initialize blocks filling the whole page
 while(i < 20){
-  var point = Point(randomInt(0,15), randomInt(0,15), randomInt(-16, -1));
+  var point = Point(randomInt(0,10), randomInt(0,10), randomInt(-16, -1));
   var size = randomSize();
   while (size.w * size.l * size.h > 16) size = randomSize();
   var block = Shape.Prism(point, size.w, size.l, size.h);
