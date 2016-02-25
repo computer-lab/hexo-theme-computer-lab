@@ -18,19 +18,15 @@ html(lang="en")
 
   //- JS
   script(src="bower_components/jquery/dist/jquery.min.js")
-  script(src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js")
-  script(src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js")
   script(src="https://rawgithub.com/jdan/isomer/master/dist/isomer.min.js")
   script(src="js/isomer.js")
 
   script(type='text/javascript').
     $(function(){
-
       $("a[data-id]").click(function(target){
         $("#menu > div").hide();
         var id = $(this).data("id");
         $("#" + id).slideDown('fast');
       });
-
     });
 
