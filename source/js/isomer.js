@@ -45,7 +45,7 @@ while(i < 15){
 function step(timestamp){
   if(!start) start = timestamp;
   var progress = timestamp - start;
-  if(progress > 1000){
+  if(progress > 2000){
     start = null;
     var point = Point(randomInt(0,15), randomInt(0,15), 0);
     var size = randomSize();
