@@ -11,11 +11,6 @@ $white: white;
 
 // The last color scheme defined will be used
 
-// Colors from zach's hillary clinton wall of text
-$cl-bg: #EFD9CE;
-$cl-primary: #DEC0F1;
-$cl-secondary: #957FEF;
-$cl-accent: #7161EF;
 
 // OG computer lab colors from cute computer
 $cl-primary: #456C79;
@@ -23,11 +18,19 @@ $cl-bg: #F2F5F7;
 $cl-secondary: #A1C4D0;
 $cl-accent: #3BD603;
 
+
+
 // messing around with palette generator
 $cl-primary: #456C79;
 $cl-bg: #F2F5F7;
 $cl-secondary: lighten(#C2986B, 15%);
 $cl-accent: #C2796B;
+
+// Colors from zach's hillary clinton wall of text
+$cl-bg: #EFD9CE;
+$cl-primary: #DEC0F1;
+$cl-secondary: #957FEF;
+$cl-accent: #7161EF;
 /*
 
   Typography
@@ -148,7 +151,7 @@ Hero / Animation
 }
 
 .computer img {
-  height: 180px;
+  height: 150px;
   width: auto;
 
 }

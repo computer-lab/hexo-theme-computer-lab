@@ -7,7 +7,7 @@ function randomInt(min, max) {
 
 var canvas = document.getElementById('art');
 canvas.width = $(".canvas-container").width();
-canvas.height = $(window).height() + 2000;
+canvas.height = $(window).height() + 1500;
 var iso = new Isomer(canvas, {'originY': 1 });
 var Shape = Isomer.Shape;
 var Point = Isomer.Point;
