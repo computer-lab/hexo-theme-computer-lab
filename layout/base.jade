@@ -20,15 +20,3 @@ html(lang="en")
   script(src="bower_components/jquery/dist/jquery.min.js")
   script(src="https://rawgithub.com/jdan/isomer/master/dist/isomer.min.js")
   script(src="js/isomer.js")
-
-  script(type='text/javascript').
-    $(function(){
-      $(".competencies a").click(function(e) {
-      e.preventDefault();
-        
-        $('html, body').animate({
-          scrollTop: $($(this).attr("href")).offset().top
-            }, 1000);
-      });
-    });
-

@@ -4,66 +4,79 @@ block site_body
   .hero
     .container-fluid
       .row
-        .col-md-6.col-xs-12.canvas-container.full-page.no-padding
-          canvas#art
-          .copy
-            h1= config.subtitle
-            p= config.blurb
-            .row.flex.details
-              .col-md-6.vertically-centered.flex
-                .float-left.vertically-centered
-                  img(src="/images/office-phone.svg")
-                .float-left
-                  a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-                  p= theme.phone
-              .col-md-6.mobile-hidden.vertically-centered.flex
-                .float-left.vertically-centered
-                  img(src="/images/building.svg")
-                .float-left
-                  p= theme.address_1
-                  p= theme.address_2
-                  p= theme.address_3
-      .row#web-dev
-        .col-md-6.col-xs-12.section.flex.no-padding.web
-          .centered
+        .col-md-12.col-xs-12.canvas-container.full-page.no-padding
+          canvas#art(width="3360", height="1642")
+          .copy.flex
+            .centered
+              h1= config.subtitle
+              p= config.blurb
+              .row.flex.details
+                .col-md-6.vertically-centered.flex
+                  .float-left.vertically-centered
+                    img(src="/images/office-phone.svg")
+                  .float-left
+                    a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+                    p= theme.phone
+                .col-md-6.vertically-centered.flex
+                  .float-left.vertically-centered
+                    img(src="/images/building.svg")
+                  .float-left
+                    p= theme.address_1
+                    p= theme.address_2
+                    p= theme.address_3
+      .row.mobile-spacer
+      .row#data.competency
+        .col-md-4.col-xs-4.flex.cutout
+          .centered.flex
+            img(src="/images/data_servers.png").centered
+        .col-md-8.col-xs-8.flex
+          .centered.competency-copy
             h2 We can understand your data. 
             p
-              | To help ensure you're solving the right problems, we can
-              | leverage our in-house data science team.  Depending on your
+              | Our in-house data science team can make sure that you're solving the
+              | right problems.  Depending on your
               | needs, the team can create specialized tools, deliver
               | actionable visualizations, or mine for insights.
-        .col-md-6.col-xs-12.section.flex.no-padding.web
-          .centered
-            img(src="/images/vr_computer.png")
-      .row#data
-        .col-md-6.col-xs-12.section.no-padding
-        .col-md-6.col-xs-12.section.flex.no-padding.competencies
-          .centered
+            ul
+              li ETL orchestration and deployment
+              li Data visualization using d3.js and tableau
+              li Custom reporting solutions
+      .row.mobile-spacer
+      .row#app.competency
+        .col-md-4.col-xs-4.flex.cutout
+          .centered.flex
+            img(src="/images/app_servers.png").centered
+        .col-md-8.col-xs-8.flex
+          .centered.competency-copy
             h2 We can build your product.
             p
               | Computer Lab specializes in developing 
               | UI-intensive applications and data-driven APIs.  We can
               | work along with your team, or be your full-service
               | dev shop.  
-      .row#data.web
-        .col-md-6.col-xs-12.section.web.flex.no-padding
-          .centered
+            ul
+              li Our favorite stacks: Python, NodeJS, and .NET
+              li Rich web UIs using Angular or React
+              li Deployment to Amazon AWS or Azure
+      .row.mobile-spacer
+      .row#care.competency
+        .col-md-4.col-xs-4.flex.cutout
+          .centered.flex
+            img(src="/images/care_servers.png").centered
+        .col-md-8.col-xs-8.flex
+          .centered.competency-copy
             h2 We can make people care about you.
             p
-              | No one beyond your friends will ever like you or pay attention to you.  It is
-              | just what you are.  There is always some fact of reality that can wear down your
-              | desire until you consider yourself wiser, for not wanting it any more.
-        .col-md-6.col-xs-12.section.flex.no-padding
-          .centered
-            img(src="/images/data_computer.png")
-      .row
+              | We have a proven track record of making things go viral, and
+              | making the Internet pay attention.  We can leverage traditional
+              | advertising platforms, or use our Millennial magic.
+            ul
+              li Astroturfing via special-purpose static websites
+              li Bots for platforms like Twitter and Pinterest
+              li Traditional branding and advertisement management services
+      .row.mobile-spacer
+      .row#app.mobile-spacer
         .col-xs-12.mobile-footer.details
-          .row 
-            .col-xs-12
-              a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-              p= theme.phone
-              p= theme.address_1
-              p= theme.address_2
-              p= theme.address_3
+          h1 Footer
 
   //!= page.content
