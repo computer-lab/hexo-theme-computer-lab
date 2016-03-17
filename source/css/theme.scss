@@ -96,7 +96,20 @@ h2 {
   }
 }
 
-body {
+.desktop-hidden {
+  @media (min-width: $on-mobile){
+    display: none;
+  }
+  height: 200px !important;
+  div{
+
+  height: 200px !important;
+  }
+
+  img {
+    max-width: 45% !important;
+
+  }
 }
 
 /*
@@ -139,7 +152,7 @@ Hero / Animation
 .copy {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 0px;
   background: rgba(255,255,255,.6);
   transform: translateY(-50%);
 }
@@ -188,9 +201,6 @@ Hero / Animation
     max-width: 75%;
     margin: auto;
   }
-  
-
-
 }
 
 .competency > div {
@@ -200,12 +210,15 @@ Hero / Animation
 
 .competency-copy {
   max-width: 500px;
+  padding: 0px 15px;
 }
 
+ul {
+  padding-left: 1em;
+}
 
 #data > div, #care > div {
   background-color: lighten($cl-accent, 32%);
-
 }
 
 #data > div.cutout, #care > div.cutout {
@@ -223,6 +236,4 @@ Hero / Animation
 .mobile-spacer {
   height: 0px;
   height: 25px;
-
-
 }

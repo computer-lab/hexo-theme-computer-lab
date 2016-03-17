@@ -10,26 +10,22 @@ block site_body
             .centered
               h1= config.subtitle
               p= config.blurb
-              .row.flex.details
-                .col-md-6.vertically-centered.flex
-                  .float-left.vertically-centered
-                    img(src="/images/office-phone.svg")
+              .row.details.flex
+                .col-xs-12.col-md-6.vertically-centered.flex
                   .float-left
                     a(href='mailto:ideas@computerlab.io') hi@computerlab.io
                     p= theme.phone
-                .col-md-6.vertically-centered.flex
-                  .float-left.vertically-centered
-                    img(src="/images/building.svg")
+                .col-xs-12.col-md-6.vertically-centered.flex
                   .float-left
                     p= theme.address_1
                     p= theme.address_2
                     p= theme.address_3
       .row.mobile-spacer
       .row#data.competency
-        .col-md-4.col-xs-4.flex.cutout
+        .col-md-4.mobile-hidden.flex.cutout
           .centered.flex
             img(src="/images/data_servers.png").centered
-        .col-md-8.col-xs-8.flex
+        .col-md-12.col-xs-12.flex
           .centered.competency-copy
             h2 We can understand your data. 
             p
@@ -39,31 +35,37 @@ block site_body
               | actionable visualizations, or mine for insights.
             ul
               li ETL orchestration and deployment
-              li Data visualization using d3.js and tableau
-              li Custom reporting solutions
+              li Data visualization using d3.js
+              li Automated reporting solutions
+        .col-xs-12.flex.cutout.desktop-hidden
+          .centered.flex
+            img(src="/images/data_servers.png").centered
       .row.mobile-spacer
       .row#app.competency
-        .col-md-4.col-xs-4.flex.cutout
+        .col-md-4.mobile-hidden.flex.cutout
           .centered.flex
             img(src="/images/app_servers.png").centered
-        .col-md-8.col-xs-8.flex
+        .col-md-8.col-xs-12.flex
           .centered.competency-copy
             h2 We can build your product.
             p
-              | Computer Lab specializes in developing 
-              | UI-intensive applications and data-driven APIs.  We can
+              | Computer Lab specializes in developing data driven applications
+              | with intensive UI.  We can
               | work along with your team, or be your full-service
               | dev shop.  
             ul
               li Our favorite stacks: Python, NodeJS, and .NET
-              li Rich web UIs using Angular or React
+              li Flexible, user-friendly UI using Angular or React
               li Deployment to Amazon AWS or Azure
+        .col-xs-12.flex.cutout.desktop-hidden
+          .centered.flex
+            img(src="/images/app_servers.png").centered
       .row.mobile-spacer
       .row#care.competency
-        .col-md-4.col-xs-4.flex.cutout
+        .col-md-4.mobile-hidden.flex.cutout
           .centered.flex
             img(src="/images/care_servers.png").centered
-        .col-md-8.col-xs-8.flex
+        .col-md-8.col-xs-12.flex
           .centered.competency-copy
             h2 We can make people care about you.
             p
@@ -71,12 +73,23 @@ block site_body
               | making the Internet pay attention.  We can leverage traditional
               | advertising platforms, or use our Millennial magic.
             ul
-              li Astroturfing via special-purpose static websites
+              li Special-purpose marketing websites
               li Bots for platforms like Twitter and Pinterest
               li Traditional branding and advertisement management services
+        .col-xs-12.flex.cutout.desktop-hidden
+          .centered.flex
+            img(src="/images/care_servers.png").centered
       .row.mobile-spacer
       .row#app.mobile-spacer
-        .col-xs-12.mobile-footer.details
-          h1 Footer
+        .row.details.flex.mobile-footer
+          .col-xs-12.col-md-6.vertically-centered.flex
+            .float-left
+              a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+              p= theme.phone
+          .col-xs-12.col-md-6.vertically-centered.flex
+            .float-left
+              p= theme.address_1
+              p= theme.address_2
+              p= theme.address_3
 
   //!= page.content

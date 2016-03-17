@@ -44,15 +44,15 @@ $(document).ready(function(){
   }
 
   function step(timestamp){
-    canvas.width = $(".canvas-container").width();
-    canvas.height = $(window).height() + 1750;
+    //canvas.width = $(".canvas-container").width();
+    //canvas.height = $(window).height() + 1750;
     if(!start) start = timestamp;
     if(!lastTimestamp) lastTimestamp = timestamp;
     var delta = timestamp - lastTimestamp;
     lastTimestamp = timestamp;
     var progress = timestamp - start;
 
-    if(progress > 2000){
+    if(progress > 1500){
       // add new block
       start = null;
       var point = Point(randomInt(0, canvas.width < 970 ? 12 : 0), randomInt(0,12), 0);
@@ -68,9 +68,9 @@ $(document).ready(function(){
     iso.add(Shape.Prism(new Point(0, 0, -100), 120, 120, 1), white);
 
 
-
     iso.add(blocks.map(function(block) {
-      block.yPos -= 0.001 * delta;
+      if(delta < 500)
+        block.yPos -= 0.001 * delta;
       return block.block.translate(0, 0, block.yPos);
     }), isoColor);
     window.requestAnimationFrame(step);
