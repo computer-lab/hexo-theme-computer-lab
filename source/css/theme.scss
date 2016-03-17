@@ -23,25 +23,24 @@ $cl-accent: #3BD603;
 
 
 
-
-
 // Accidental black block theme
 $cl-bg: #EFD9CE;
 $cl-primary: #000;
 $cl-secondary: #000;
 $cl-accent: #7161EF;
 
-// messing around with palette generator
-$cl-primary: #456C79;
-$cl-bg: #F2F5F7;
-$cl-secondary: lighten(#C2986B, 15%);
-$cl-accent: #C2796B;
-
 // Colors from zach's hillary clinton wall of text
 $cl-bg: #E9D9CE;
 $cl-primary: #DEC0F1;
 $cl-secondary: #907FEF;
 $cl-accent: #7161EF;
+
+// messing around with palette generator
+$cl-primary: lighten(#456C79, 10%);
+$cl-bg: #F2F5F7;
+$cl-secondary: lighten(#C2986B, 15%);
+$cl-accent: #C2796B;
+
 /*
 
   Typography
@@ -51,10 +50,12 @@ $cl-accent: #7161EF;
 h1 {
   font-family: 'Lato';
   font-size: 2.3em;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Lato';
+  text-align: center;
 }
 
 
@@ -63,8 +64,8 @@ h2 {
 
 .float-left {
   float: left;
-
 }
+
 .no-padding {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -100,16 +101,6 @@ h2 {
   @media (min-width: $on-mobile){
     display: none;
   }
-  height: 200px !important;
-  div{
-
-  height: 200px !important;
-  }
-
-  img {
-    max-width: 45% !important;
-
-  }
 }
 
 /*
@@ -134,18 +125,10 @@ Hero / Animation
     padding: 1.0em 1.5em 1.4em 1.5em;
   }
 
-  a, a:hover {
+  a, a:hover, p {
     color: black;
-    font-weight: bold;
     text-decoration: none;
   }
-
-
-  p {
-    color: black;
-  }
-
-  // qt3.14 computer
 }
 
 // We are here to help you copy is positioned above the falling blocks
@@ -155,6 +138,12 @@ Hero / Animation
   right: 0px;
   background: rgba(255,255,255,.6);
   transform: translateY(-50%);
+  margin: 0px 10px;
+}
+
+.copy p {
+  text-align: center;
+
 }
 
 .details p, .details a {
@@ -168,8 +157,6 @@ Hero / Animation
   height: auto;
   margin-right: 13px;
 }
-
-/* Big image section */
 
 /* Competencies Section */
 
@@ -193,19 +180,20 @@ Hero / Animation
 }
 */
 
-
-.competency {
-  height: 550px;
-
+.row.competency {
+  margin-left: -5px;
+  margin-right: -5px;
+  
   img{
-    max-width: 75%;
+    max-width: 35%;
     margin: auto;
   }
 }
 
+
 .competency > div {
-    z-index: 100;
-    height: 100%;
+  z-index: 100;
+  height: 550px;
 }
 
 .competency-copy {
@@ -216,6 +204,9 @@ Hero / Animation
 ul {
   padding-left: 1em;
 }
+
+
+// colors for bands
 
 #data > div, #care > div {
   background-color: lighten($cl-accent, 32%);
@@ -232,6 +223,7 @@ ul {
 #app > div.cutout {
   background-color: fade-out(lighten($cl-bg, 5%), .4);
 }
+
 
 .mobile-spacer {
   height: 0px;

@@ -1,95 +1,92 @@
 extends base
 
 block site_body
-  .hero
-    .container-fluid
-      .row
-        .col-md-12.col-xs-12.canvas-container.full-page.no-padding
-          canvas#art(width="3360", height="1642")
-          .copy.flex
-            .centered
-              h1= config.subtitle
-              p= config.blurb
-              .row.details.flex
-                .col-xs-12.col-md-6.vertically-centered.flex
-                  .float-left
-                    a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-                    p= theme.phone
-                .col-xs-12.col-md-6.vertically-centered.flex
-                  .float-left
-                    p= theme.address_1
-                    p= theme.address_2
-                    p= theme.address_3
-      .row.mobile-spacer
-      .row#data.competency
-        .col-md-4.mobile-hidden.flex.cutout
-          .centered.flex
-            img(src="/images/data_servers.png").centered
-        .col-md-12.col-xs-12.flex
-          .centered.competency-copy
-            h2 We can understand your data. 
-            p
-              | Our in-house data science team can make sure that you're solving the
-              | right problems.  Depending on your
-              | needs, the team can create specialized tools, deliver
-              | actionable visualizations, or mine for insights.
-            ul
+  .container-fluid
+    .row
+      .col-md-12.col-xs-12.canvas-container.full-page.no-padding
+        canvas#art(width="3360", height="1642")
+        .copy.flex
+          .centered
+            h1= config.subtitle
+            p= config.blurb
+            .row.details.flex
+              .col-xs-12.col-md-6.centered.flex
+                .float-left.centered
+                  a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+                  p= theme.phone
+              .col-xs-12.col-md-6.centered.flex
+                .float-left.centered
+                  p= theme.address_1
+                  p= theme.address_2
+                  p= theme.address_3
+    .row.mobile-spacer
+    .row#data.competency
+      .col-md-4.mobile-hidden.cutout.flex
+        img(src="/images/data_servers.png").centered
+      .col-md-8.col-xs-12.flex
+        .centered.competency-copy
+          center
+            img(src="/images/data_servers.png").desktop-hidden
+          br
+          h2 We can understand your data. 
+          p
+            | Our in-house data science team can make sure that you're solving the 
+            | #[b right problems].  
+          .flex
+            ul.centered
               li ETL orchestration and deployment
               li Data visualization using d3.js
               li Automated reporting solutions
-        .col-xs-12.flex.cutout.desktop-hidden
-          .centered.flex
-            img(src="/images/data_servers.png").centered
-      .row.mobile-spacer
-      .row#app.competency
-        .col-md-4.mobile-hidden.flex.cutout
-          .centered.flex
-            img(src="/images/app_servers.png").centered
-        .col-md-8.col-xs-12.flex
-          .centered.competency-copy
-            h2 We can build your product.
-            p
-              | Computer Lab specializes in developing data driven applications
-              | with intensive UI.  We can
-              | work along with your team, or be your full-service
-              | dev shop.  
-            ul
+    .row.mobile-spacer
+    .row#app.competency
+      .col-md-4.mobile-hidden.cutout.flex
+        img(src="/images/app_servers.png").centered
+      .col-md-8.col-xs-12.flex
+        .centered.competency-copy
+          center
+            img(src="/images/app_servers.png").desktop-hidden
+          br
+          h2 We can build your product.
+          p
+            | Computer Lab specializes in developing #[b data driven applications] 
+            | with intensive UIs.  We can work with your team, or be your full-service
+            | dev shop.  
+          .flex
+            ul.centered
               li Our favorite stacks: Python, NodeJS, and .NET
               li Flexible, user-friendly UI using Angular or React
               li Deployment to Amazon AWS or Azure
-        .col-xs-12.flex.cutout.desktop-hidden
-          .centered.flex
-            img(src="/images/app_servers.png").centered
-      .row.mobile-spacer
-      .row#care.competency
-        .col-md-4.mobile-hidden.flex.cutout
-          .centered.flex
-            img(src="/images/care_servers.png").centered
-        .col-md-8.col-xs-12.flex
-          .centered.competency-copy
-            h2 We can make people care about you.
-            p
-              | We have a proven track record of making things go viral, and
-              | making the Internet pay attention.  We can leverage traditional
-              | advertising platforms, or use our Millennial magic.
-            ul
+    .row.mobile-spacer
+    .row#care.competency
+      .col-md-4.mobile-hidden.cutout.flex
+        img(src="/images/care_servers.png").centered
+      .col-md-8.col-xs-12.flex
+        .centered.competency-copy
+          center
+            img(src="/images/care_servers.png").desktop-hidden
+          br
+          h2 We can make people care about you.
+          p
+            | We have a #[b proven track record] of making things go viral, and
+            | know how to make the Internet pay attention. 
+          .flex
+            ul.centered
               li Special-purpose marketing websites
               li Bots for platforms like Twitter and Pinterest
               li Traditional branding and advertisement management services
-        .col-xs-12.flex.cutout.desktop-hidden
-          .centered.flex
-            img(src="/images/care_servers.png").centered
-      .row.mobile-spacer
-      .row#app.mobile-spacer
-        .row.details.flex.mobile-footer
-          .col-xs-12.col-md-6.vertically-centered.flex
-            .float-left
-              a(href='mailto:ideas@computerlab.io') hi@computerlab.io
-              p= theme.phone
-          .col-xs-12.col-md-6.vertically-centered.flex
-            .float-left
-              p= theme.address_1
-              p= theme.address_2
-              p= theme.address_3
+    .row.mobile-spacer
+    .row.details.flex.mobile-footer
+      .col-xs-12.col-md-6.vertically-centered.flex
+        .float-left
+          a(href='mailto:ideas@computerlab.io') hi@computerlab.io
+          p= theme.phone
+      .col-xs-12.col-md-6.vertically-centered.flex
+        .float-left
+          p= theme.address_1
+          p= theme.address_2
+          p= theme.address_3
 
-  //!= page.content
+  script(id="keyreply-script" src="//keyreply.com/chat/widget.js" data-align="right"
+  data-color="#456C79"
+  data-apps="JTdCJTIyc2t5cGUlMjI6JTIycHRzdGVhZG1hbiUyMiwlMjJ0d2l0dGVyJTIyOiUyMkBjb21wdXRlcmxhYl8lMjIsJTIyc21zJTIyOiUyMjcxNjQ3MjQ0ODQlMjIsJTIycGhvbmUlMjI6JTIyNzE2NDcyNDQ4NCUyMiwlMjJmYWNlYm9vayUyMjolMjJwdHN0ZWFkbWFuJTIyLCUyMmVtYWlsJTIyOiUyMmhpQGNvbXB1dGVybGFiLmlvJTIyJTdE")
+//!= page.content

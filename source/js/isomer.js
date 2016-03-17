@@ -44,8 +44,8 @@ $(document).ready(function(){
   }
 
   function step(timestamp){
-    //canvas.width = $(".canvas-container").width();
-    //canvas.height = $(window).height() + 1750;
+    canvas.width = $(".canvas-container").width();
+    canvas.height = $(window).height() + 1750;
     if(!start) start = timestamp;
     if(!lastTimestamp) lastTimestamp = timestamp;
     var delta = timestamp - lastTimestamp;
