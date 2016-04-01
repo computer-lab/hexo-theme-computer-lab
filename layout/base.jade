@@ -4,15 +4,14 @@ html(lang="en")
   head
     include _partial/site/head
 
-  body
-    //header
-      block site_header
-        include _partial/site/header
+  body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    block site_header
+      include _partial/site/header
 
     section
       block site_body
 
-    //footer
+    footer
       block site_footer
         include _partial/site/footer
 

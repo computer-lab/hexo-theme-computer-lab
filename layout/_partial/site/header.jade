@@ -1,6 +1,21 @@
-.container
-  h1
-    a(href=config.root)= config.title
-  p= config.subtitle
-  p
-    b This is the header.
+// Navigation
+nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+        i.fa.fa-bars
+      a.navbar-brand.page-scroll(href='#page-top')
+        span.light Computer 
+        |  Lab
+    .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+      ul.nav.navbar-nav
+        li.hidden
+          a(href='#page-top')
+        li
+          a.page-scroll(href='#about') Services
+        li
+          a.page-scroll(href='#download') Team
+        li
+          a.page-scroll(href='#contact') Contact
+    // /.navbar-collapse
+  // /.container
