@@ -16,93 +16,58 @@ block site_body
   section#services.content-section
     .container
       .row
-        .col-md-4
-          .title-container
-            h1.section-title Services
-            svg.squiggle(width='160', height='10')
-              defs
-                pattern#kbdit(patternunits='userSpaceOnUse', width='10', height='10')
-                  path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
-              path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
-        .col-md-8
-          .row.service.wow.fadeInUp
-            h3 
-              i.fa.fa-chevron-circle-right
-              span We can build your product.
+        .col-md-4.col-md-offset-1
+        .col-md-6
+          h1.section-title.wow.fadeIn Services
+          .row.service.wow.slideInUp
             p
+              span.primary <b>We can build your product. </b>
               | Computer Lab specializes in developing <b>data driven applications</b> with intensive UIs. We can work with your team, or be your full-service dev shop.
-          .row.service.wow.fadeInUp      
-            h3
-              i.fa.fa-chevron-circle-right
-              span We can understand your data.
+          .row.service.wow.slideInUp      
             p
+              span.primary <b>We can understand your data. </b>
               | Our in-house data science team can make sure that you're solving the <b>right problems</b>.
-          .row.service.wow.fadeInUp    
-            h3
-              i.fa.fa-chevron-circle-right
-              span We can make people care about you.
+          .row.service.wow.slideInUp    
             p
+              span.primary <b>We can make people care about you. </b>
               | We have a <b>proven track record</b> of making things go viral, we know how to make the internet pay attention.
   section#team.content-section
     .container
       .row
+        .col-md-6.col-md-offset-1 
+          h1.section-title.wow.fadeIn Our Team
+          .bio.row.service.wow.slideInUp
+            p
+              span.primary <b> Patrick Steadman </b>
+              | is ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+          .bio.row.service.wow.slideInUp      
+            p
+              span.primary <b> Zachary Taylor </b>
+              | is ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, <b>velit euismod</b> hendrerit scelerisque, turpis urna maximus tellus.
+          .bio.row.service.wow.slideInUp    
+            p
+              span.primary <b> Max Fowler </b>
+              | is ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
         .col-md-4
-          .title-container
-            h1.section-title Our Team
-            svg.squiggle(width='190', height='10')
-              defs
-                pattern#kbdit(patternunits='userSpaceOnUse', width='10', height='10')
-                  path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
-              path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
-        .col-md-8
-          .bio.row.wow.fadeInUp
-              h3 Patrick Steadman
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-              a.btn.btn-default(href='https://ptsteadman.com/', target='blank')
-                i.fa.fa-globe.fa-fw
-                span Web
-              a.btn.btn-default(href='https://github.com/ptsteadman', target='blank')
-                i.fa.fa-github-square.fa-fw
-                span Github
-          .bio.row.wow.fadeInUp
-            h3 Zachary Taylor
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-            a.btn.btn-default(href='http://zachtaylor.me', target='blank')
-              i.fa.fa-globe.fa-fw
-              span Web
-            a.btn.btn-default(href='https://github.com/zachwtaylor', target='blank')
-              i.fa.fa-github-square.fa-fw
-              span Github
-          .bio.row.wow.fadeInUp
-            h3 Max Fowler
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-            a.btn.btn-default(href='http://maxhfowler.net/', target='blank')
-              i.fa.fa-globe.fa-fw
-              span Web
-            a.btn.btn-default(href='https://github.com/mhfowler', target='blank')
-              i.fa.fa-github-square.fa-fw
-              span Github
+
+
   // Contact Section
   section#contact.content-section
     .container
       .row
-        .col-md-4
-          .title-container
-            h1.section-title Say Hello
-            svg.squiggle(width='180', height='10')
-              defs
-                pattern#kbdit(patternunits='userSpaceOnUse', width='10', height='10')
-                  path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
-              path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
-        .col-md-8
+        .col-md-4.col-md-offset-1
+
+        .col-md-6
           .row
-            h3 Lorem ipsum dolor sit amet.
-            p.contact Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-            p
+            h1.section-title.wow.fadeIn Say Hello
+            p.contact.wow.slideInUp
+              span.primary <b> Lorem ipsum dolor sit. </b>
+              |  Lorem amet, consectetur adipiscing elit. <b>Aliquam faucibus</b>, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+            p.contact.wow.slideInUp
               | 140 Metropolitan Ave.
               br
               | 5th Floor
               br
               | Brooklyn, NY 11249
-            p
+            p.contact.wow.slideInUp
               a(mailto='hi@computerlab.io') hi@computerlab.io 
