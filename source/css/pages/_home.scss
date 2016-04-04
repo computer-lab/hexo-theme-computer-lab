@@ -1,14 +1,9 @@
 .content-section {
     padding: $base-spacing * 6 0; 
 
-    .title-container {
-        margin-bottom: $base-spacing * 2;
-
-        h1.section-title {
-            margin: $base-spacing * 2 0 $base-spacing-small * 2;
-            color: $copy;
-        }
-
+    h1.section-title {
+        margin: $base-spacing * 2 0 $base-spacing * 4;
+        color: $copy;
     }
 
     p {
