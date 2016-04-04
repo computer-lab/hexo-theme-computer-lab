@@ -1,0 +1,11 @@
+footer.footer {
+  background-color: $primary;
+  height: auto;
+  color: $white;
+  padding: $base-spacing * 2 0;
+  text-align: right;
+
+  span {
+    color: $white;
+  }
+}

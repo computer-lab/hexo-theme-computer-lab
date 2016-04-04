@@ -3,142 +3,107 @@ extends base
 block site_body
 
   // Intro Hero
-  header#intro
+  section#home
     .intro-body
       .container
         .row
-          .col-md-8.col-md-offset-2
+          .col-md-8.col-md-offset-2.wow.fadeIn
             h1.brand-heading We are here to help you.
-            p.intro-text=config.blurb
+            p.intro-text Computer Lab is a digital consultancy in Brooklyn, NY that helps organizations accelerate their products and brands.
             a.btn.btn-circle.floating.page-scroll(href='#services')
               i.fa.fa-angle-double-down.animated
   // Services Section
-  section#services.container.content-section
-    .row
-      .col-lg-6.col-lg-offset-3
-        .title-container
-          h1.section-title.text-center Services
-          svg.squiggle(width='185', height='20')
-            defs
-              pattern#fqpui(patternunits='userSpaceOnUse', width='10', height='10')
-                path(d='M 0 5 c 1.25 -2.5 , 3.75 -2.5 , 5 0\
-                c 1.25 2.5 , 3.75 2.5 , 5 0 M -5 5\
-                c 1.25 2.5 , 3.75 2.5 , 5 0 M 10 5\
-                c 1.25 -2.5 , 3.75 -2.5 , 5 0', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
-            path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#fqpui);')
-        p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-    .row.service
-      .col-lg-5.col-lg-offset-1
-        .img
-
-      .col-lg-5
-        h3 We can build your product.
-        p
-          | Computer Lab specializes in developing <b>data driven applications</b> with intensive UIs. We can work with your team, or be your full-service dev shop.
-        ul
-          li Our favorite stacks: Python, NodeJS, and .NET
-          li Flexible, user-friendly UI using Angular or React
-          li Deployment to Amazon AWS or Azure
-    .row.service
-      .col-lg-5.col-lg-offset-1
-        h3 We can understand your data.
-        p
-          | Computer Lab's in-house data science team can make sure that you're solving the <b>right problems</b>.
-        ul
-          li ETL orchestration and deployment
-          li Data visualization using d3.js
-          li Automated reporting solutions
-      .col-lg-5
-        .img
-    .row.service
-      .col-lg-5.col-lg-offset-1
-        .img
-      .col-lg-5
-        h3 We can make people care about you.
-        p
-          | Computer Lab has a <b>proven track record</b> of making things go viral, and know how to make the Internet pay attention.
-        ul
-          li Our favorite stacks: Python, NodeJS, and .NET
-          li Flexible, user-friendly UI using Angular or React
-          li Deployment to Amazon AWS or Azure
-  // About Section
-  section#team.content-section.container
-    .row
-      .col-lg-6.col-lg-offset-3
-        .title-container
-          h1.section-title.text-center Our Team
-          svg.squiggle(width='185', height='20')
-            defs
-              pattern#fqpui(patternunits='userSpaceOnUse', width='10', height='10')
-                path(d='M 0 5 c 1.25 -2.5 , 3.75 -2.5 , 5 0\
-                c 1.25 2.5 , 3.75 2.5 , 5 0 M -5 5\
-                c 1.25 2.5 , 3.75 2.5 , 5 0 M 10 5\
-                c 1.25 -2.5 , 3.75 -2.5 , 5 0', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
-            path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#fqpui);')
-        p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-    .row.bio
-      .col-lg-5.col-lg-offset-1
-        h3 Patrick Steadman
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-globe.fa-fw
-          span.network-name Website
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-github.fa-fw
-          span.network-name Github
-      .col-lg-5
-        h3 Zachary Taylor
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-globe.fa-fw
-          span.network-name Website
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-github.fa-fw
-          span.network-name Github
-    .row.bio
-      .col-lg-5.col-lg-offset-1
-        h3 Max Fowler
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-globe.fa-fw
-          span.network-name Website
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-github.fa-fw
-          span.network-name Github
-      .col-lg-5
-        h3 Bill Stein
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-globe.fa-fw
-          span.network-name Website
-        a.btn.btn-default.btn-lg(href='http://startbootstrap.com/template-overviews/grayscale/')
-          i.fa.fa-github.fa-fw
-          span.network-name Github
-  // Contact Section
-  section#contact.container.content-section
-    .row
-      .col-lg-6.col-lg-offset-3
-        .title-container
-          h1.section-title.text-center Say Hello
-          svg.squiggle(width='195', height='20')
-            defs
-              pattern#fqpui(patternunits='userSpaceOnUse', width='10', height='10')
-                path(d='M 0 5 c 1.25 -2.5 , 3.75 -2.5 , 5 0\
-                c 1.25 2.5 , 3.75 2.5 , 5 0 M -5 5\
-                c 1.25 2.5 , 3.75 2.5 , 5 0 M 10 5\
-                c 1.25 -2.5 , 3.75 -2.5 , 5 0', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
-            path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#fqpui);')
-        p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+  section#services.content-section
+    .container
       .row
-        .col-lg-6.col-lg-offset-3
-          p.text-center
-            i.fa.fa-envelope.fa-fw.email
-            a(mailto='hi@computerlab.io') hi@computerlab.io 
-          p.text-center
-            | 140 Metropolitan Ave.
-            br
-            | Brooklyn, NY 11249
-          p.text-center
-            | 716.472.4484
-            br
-
+        .col-md-4
+          .title-container
+            h1.section-title Services
+            svg.squiggle(width='160', height='10')
+              defs
+                pattern#kbdit(patternunits='userSpaceOnUse', width='10', height='10')
+                  path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
+              path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
+        .col-md-8
+          .row.service.wow.slideInRight
+            h3 
+              i.fa.fa-chevron-circle-right
+              span We can build your product.
+            p
+              | Computer Lab specializes in developing <b>data driven applications</b> with intensive UIs. We can work with your team, or be your full-service dev shop.
+          .row.service.wow.slideInRight      
+            h3
+              i.fa.fa-chevron-circle-right
+              span We can understand your data.
+            p
+              | Our in-house data science team can make sure that you're solving the <b>right problems</b>.
+          .row.service.wow.slideInRight    
+            h3
+              i.fa.fa-chevron-circle-right
+              span We can understand your data.
+            p
+              | We have a <b>proven track record</b> of making things go viral, we know how to make the internet pay attention.
+  section#team.content-section
+    .container
+      .row
+        .col-md-4
+          .title-container
+            h1.section-title Our Team
+            svg.squiggle(width='190', height='10')
+              defs
+                pattern#kbdit(patternunits='userSpaceOnUse', width='10', height='10')
+                  path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
+              path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
+        .col-md-8
+          .bio.row.wow.fadeInUp
+              h3 Patrick Steadman
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+              a.btn.btn-default(href='https://ptsteadman.com/')
+                i.fa.fa-globe.fa-fw
+                span Web
+              a.btn.btn-default(href='https://github.com/ptsteadman')
+                i.fa.fa-github-square.fa-fw
+                span Github
+          .bio.row.wow.fadeInUp
+            h3 Zachary Taylor
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+            a.btn.btn-default(href='http://zachtaylor.me')
+              i.fa.fa-globe.fa-fw
+              span Web
+            a.btn.btn-default(href='https://github.com/zachwtaylor')
+              i.fa.fa-github-square.fa-fw
+              span Github
+          .bio.row.wow.fadeInUp
+            h3 Max Fowler
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+            a.btn.btn-default(href='http://maxhfowler.net/')
+              i.fa.fa-globe.fa-fw
+              span Web
+            a.btn.btn-default(href='https://github.com/mhfowler')
+              i.fa.fa-github-square.fa-fw
+              span Github
+  // Contact Section
+  section#contact.content-section
+    .container
+      .row
+        .col-md-4
+          .title-container
+            h1.section-title Say Hello
+            svg.squiggle(width='180', height='10')
+              defs
+                pattern#kbdit(patternunits='userSpaceOnUse', width='10', height='10')
+                  path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
+              path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
+        .col-md-8
+          .row
+            .no-padding
+              h3 Lorem ipsum dolor sit amet.
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+              p
+                | 140 Metropolitan Ave.
+                br
+                | 5th Floor
+                br
+                | Brooklyn, NY 11249
+              p
+                a(mailto='hi@computerlab.io') hi@computerlab.io 

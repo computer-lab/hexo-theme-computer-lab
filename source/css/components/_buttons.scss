@@ -22,6 +22,10 @@
         color: $white;
         background-color: $primary;
     }
+
+    span {
+        margin-left: $base-spacing-small;
+    }
 }
 
 ul.banner-social-buttons {
@@ -57,7 +61,7 @@ ul.banner-social-buttons {
     &:hover,
     &:focus {
         outline: none;
-        color: $secondary;
+        color: $primary;
         background: rgba(white, 0.1);
     }
     i.animated {

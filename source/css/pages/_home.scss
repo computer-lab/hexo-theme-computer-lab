@@ -1,32 +1,25 @@
-section {
-    margin: 0 0 140px 0; 
+.content-section {
+    padding: $base-spacing * 6 0; 
 
     .title-container {
 
         h1.section-title {
             margin: $base-spacing * 2 0 $base-spacing-small * 2;
         }
-        svg.squiggle {
-            display: block;
-            margin: auto;
-        }
+
     }
 
-
-
     p {
-        margin: $base-spacing * 2 0 0;
+        margin: 0 0 $base-spacing;
     }
 }
 
-#intro {
+#home {
     display: table;
     width: 100%;
     height: 100vh;
-    padding: 100px 0;
     text-align: center;
     color: white;
-    //background: url(../img/drop_city.jpg) no-repeat bottom center scroll;
     background-color: $white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,16 +31,15 @@ section {
         .brand-heading {
             font-size: 40px;
             color: $primary;
-            // text-shadow: rgba(250, 30, 100, 0.398039) -4.36px 2.17px 0px;
         }
         .intro-text {
+            margin-top: $base-spacing * 3;
             font-size: 18px;
             color: $copy;
         }
     }
     @media(min-width:768px) {
         height: 100vh;
-        padding: 0;
         .intro-body {
             .brand-heading {
                 font-size: 100px;
@@ -60,10 +52,28 @@ section {
 }
 
 #services {
+    background-color: $grey;
+
+    h1 {
+        color: $primary;
+    }
 
     .service{
-        margin: $base-spacing * 6 0;
-        height: 300px;
+        color: $copy;
+        margin: 0 0 $base-spacing * 2 0;
+
+        h3 {
+            color: $primary;
+
+            span {
+                margin-left: $base-spacing-small;
+            }
+        }
+
+        a.btn-default  {
+            color: $primary;
+            border: 1px solid $primary;
+        }
 
         ul {
             margin-top: $base-spacing;
@@ -86,13 +96,16 @@ section {
 }
 
 #team {
+    background-color: $white;
 
     .row.bio {
-        margin: $base-spacing * 6 0;
+        margin: 0 0 $base-spacing * 2 0;
+
     }
 }
 
 #contact {
+    background-color: $grey;
 
     .email {
         color: $primary;
