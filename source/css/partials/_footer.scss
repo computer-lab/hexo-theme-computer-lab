@@ -1,11 +1,12 @@
 footer.footer {
-  background-color: $primary;
+  background-color: $copy;
   height: auto;
   color: $white;
-  padding: $base-spacing * 2 0;
-  text-align: right;
+  padding: $base-spacing * 2;
+  text-align: left;
 
   span {
     color: $white;
+    margin-left: $base-spacing;
   }
 }

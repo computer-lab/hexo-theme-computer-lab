@@ -21,8 +21,7 @@
     width: 100%;
     height: 100vh;
     text-align: center;
-    color: white;
-    background-color: $white;
+    color: $primary;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -54,47 +53,24 @@
 }
 
 #services {
-    background-color: $grey;
 
     .service{
         color: $copy;
         margin: 0 0 $base-spacing * 2 0;
 
         h3 {
-            color: $primary;
+            color: $copy;
 
             span {
                 margin-left: $base-spacing-small;
             }
         }
 
-        a.btn-default  {
-            color: $primary;
-            border: 1px solid $primary;
-        }
-
-        ul {
-            margin-top: $base-spacing;
-            list-style: disc;
-
-            li {
-                font-size: 16px;
-
-            }
-        }
-
-        .img {
-            border: 1px solid $primary;
-            height: 300px;
-            margin-top: $base-spacing * 2;
-            background-color: $primary;
-        }
     }
 
 }
 
 #team {
-    background-color: $white;
 
     .row.bio {
         margin: 0 0 $base-spacing * 2 0;
@@ -103,7 +79,6 @@
 }
 
 #contact {
-    background-color: $grey;
 
     .contact {
         margin: 0 0 $base-spacing * 2 0;
