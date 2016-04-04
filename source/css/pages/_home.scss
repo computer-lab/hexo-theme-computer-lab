@@ -2,15 +2,17 @@
     padding: $base-spacing * 6 0; 
 
     .title-container {
+        margin-bottom: $base-spacing * 2;
 
         h1.section-title {
             margin: $base-spacing * 2 0 $base-spacing-small * 2;
+            color: $copy;
         }
 
     }
 
     p {
-        margin: 0 0 $base-spacing;
+        margin: 0 0 $base-spacing-small;
     }
 }
 
@@ -53,10 +55,6 @@
 
 #services {
     background-color: $grey;
-
-    h1 {
-        color: $primary;
-    }
 
     .service{
         color: $copy;
@@ -106,6 +104,10 @@
 
 #contact {
     background-color: $grey;
+
+    .contact {
+        margin: 0 0 $base-spacing * 2 0;
+    }
 
     .email {
         color: $primary;

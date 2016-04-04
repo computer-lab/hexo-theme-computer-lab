@@ -26,11 +26,11 @@
     .nav {
         li {
             a {
-                -webkit-transition: background .3s ease-in-out;
-                -moz-transition: background .3s ease-in-out;
-                transition: background .3s ease-in-out;
+                -webkit-transition: color .3s ease-in-out;
+                -moz-transition: color .3s ease-in-out;
+                transition: color .3s ease-in-out;
                 &:hover {
-                    color: $primary;
+                    color: $copy;
                     outline: none;
                     background-color: transparent;
                 }
@@ -38,14 +38,14 @@
                 &:active {
                     outline: none;
                     background-color: transparent;
+                    color: $copy;
                 }
             }
             &.active {
                 outline: none;
                 a {
-                    background-color: rgba(white, 0.3);
                     &:hover {
-                        color: white;
+                        color: $primary;
                     }
                 }
             }

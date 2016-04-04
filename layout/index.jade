@@ -25,22 +25,22 @@ block site_body
                   path(d='M 2.5,7.5l2.5,-5l2.5,5', fill='transparent', stroke-width='1', shape-rendering='auto', stroke='#FA1E64', stroke-linecap='square')
               path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
         .col-md-8
-          .row.service.wow.slideInRight
+          .row.service.wow.fadeInUp
             h3 
               i.fa.fa-chevron-circle-right
               span We can build your product.
             p
               | Computer Lab specializes in developing <b>data driven applications</b> with intensive UIs. We can work with your team, or be your full-service dev shop.
-          .row.service.wow.slideInRight      
+          .row.service.wow.fadeInUp      
             h3
               i.fa.fa-chevron-circle-right
               span We can understand your data.
             p
               | Our in-house data science team can make sure that you're solving the <b>right problems</b>.
-          .row.service.wow.slideInRight    
+          .row.service.wow.fadeInUp    
             h3
               i.fa.fa-chevron-circle-right
-              span We can understand your data.
+              span We can make people care about you.
             p
               | We have a <b>proven track record</b> of making things go viral, we know how to make the internet pay attention.
   section#team.content-section
@@ -58,28 +58,28 @@ block site_body
           .bio.row.wow.fadeInUp
               h3 Patrick Steadman
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-              a.btn.btn-default(href='https://ptsteadman.com/')
+              a.btn.btn-default(href='https://ptsteadman.com/', target='blank')
                 i.fa.fa-globe.fa-fw
                 span Web
-              a.btn.btn-default(href='https://github.com/ptsteadman')
+              a.btn.btn-default(href='https://github.com/ptsteadman', target='blank')
                 i.fa.fa-github-square.fa-fw
                 span Github
           .bio.row.wow.fadeInUp
             h3 Zachary Taylor
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-            a.btn.btn-default(href='http://zachtaylor.me')
+            a.btn.btn-default(href='http://zachtaylor.me', target='blank')
               i.fa.fa-globe.fa-fw
               span Web
-            a.btn.btn-default(href='https://github.com/zachwtaylor')
+            a.btn.btn-default(href='https://github.com/zachwtaylor', target='blank')
               i.fa.fa-github-square.fa-fw
               span Github
           .bio.row.wow.fadeInUp
             h3 Max Fowler
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-            a.btn.btn-default(href='http://maxhfowler.net/')
+            a.btn.btn-default(href='http://maxhfowler.net/', target='blank')
               i.fa.fa-globe.fa-fw
               span Web
-            a.btn.btn-default(href='https://github.com/mhfowler')
+            a.btn.btn-default(href='https://github.com/mhfowler', target='blank')
               i.fa.fa-github-square.fa-fw
               span Github
   // Contact Section
@@ -96,14 +96,13 @@ block site_body
               path(d='M 0 0 L 0 250 L 250 250 L 250 0 Z', style='fill: url(#kbdit);')
         .col-md-8
           .row
-            .no-padding
-              h3 Lorem ipsum dolor sit amet.
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
-              p
-                | 140 Metropolitan Ave.
-                br
-                | 5th Floor
-                br
-                | Brooklyn, NY 11249
-              p
-                a(mailto='hi@computerlab.io') hi@computerlab.io 
+            h3 Lorem ipsum dolor sit amet.
+            p.contact Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
+            p
+              | 140 Metropolitan Ave.
+              br
+              | 5th Floor
+              br
+              | Brooklyn, NY 11249
+            p
+              a(mailto='hi@computerlab.io') hi@computerlab.io 
