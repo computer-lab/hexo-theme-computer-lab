@@ -15,9 +15,10 @@ block site_body
   // Services Section
   section#services.content-section
     .container
-      .row
-        .col-md-4.col-md-offset-1
-        .col-md-6
+      .row.flex
+        .col-md-4.flex
+          canvas#services-art(width="800" height="800").art
+        .col-md-6.col-md-offset-1
           h1.section-title.wow.fadeIn Services
           .row.service.wow.slideInUp
             p
@@ -65,8 +66,6 @@ block site_body
               |  Lorem amet, consectetur adipiscing elit. <b>Aliquam faucibus</b>, velit euismod hendrerit scelerisque, turpis urna maximus tellus.
             p.contact.wow.slideInUp
               | 140 Metropolitan Ave.
-              br
-              | 5th Floor
               br
               | Brooklyn, NY 11249
             p.contact.wow.slideInUp

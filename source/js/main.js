@@ -73,7 +73,7 @@ $(document).scroll(function() {
         var newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled );
         var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
         var newColor = new $.Color( newRed, newGreen, newBlue );
-        console.log( window_height, newColor.red(), newColor.green(), newColor.blue() );
+        // console.log( window_height, newColor.red(), newColor.green(), newColor.blue() );
         $('body').animate({ backgroundColor: newColor }, 0);
     } else if ( scroll_pos > animation_end_pos ) {
          $('body').animate({ backgroundColor: ending_color }, 0);
@@ -83,3 +83,31 @@ $(document).scroll(function() {
 });
 
 // isomer
+var iso = new Isomer(document.getElementById("services-art"));
+
+var Shape = Isomer.Shape;
+var Point = Isomer.Point;
+var Color = Isomer.Color;
+var Path  = Isomer.Path;
+var red = new Color(255, 0, 0, .8);
+var blue = new Color(0, 0, 255, .8);
+var green = new Color(0, 255, 0, .8);
+var white = new Color(255, 255, 255, .8);
+var green = new Color(0, 255, 0, .8);
+var black = new Color(0, 0, 0);
+
+iso.add(Shape.Prism(Point(0, 0, 0), 5, 3, 0), white);
+iso.add(Shape.Prism(Point(0, .2, 0.5), 5, 2.6, 1), green);
+iso.add(Shape.Prism(Point(0, .2, 2), 5, 2.6, 1), red);
+iso.add(Shape.Prism(Point(0, .2, 3.5), 5, 2.6, 1), blue);
+iso.add(Shape.Prism(Point(0, .2, 5), 5, 2.6, 1), black);
+
+
+/*iso.add(new Path([
+      Point(0,.2,.2),
+      Point(0,.9,.2),
+      Point(0,.9,.9),
+      Point(0,.2,.9)
+      ]), green);
+*/
+
