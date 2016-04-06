@@ -1,9 +1,36 @@
 .content-section {
-    padding: $base-spacing * 8 0; 
-
+    margin: $base-spacing * 8 0; 
+    @media (max-width: 991px) {
+        margin: $base-spacing * 2 0; 
+    }
     h1.section-title {
         margin: $base-spacing * 2 0 $base-spacing * 4;
         color: $copy;
+        @media (max-width: 991px) {
+            margin: $base-spacing * 4 0 $base-spacing * 4;
+            text-align: center;
+        }
+    }
+
+    .row {
+        display: flex;
+
+        .v-center {
+            display: flex;
+
+            @media (max-width: 991px) {
+                display: block;
+            }
+        }
+
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    svg.center {
+        display: block;
+        margin: auto;
     }
 
     p {
@@ -28,10 +55,14 @@
             font-size: 40px;
             color: $primary;
         }
-        .intro-text {
+        p.intro-text {
             margin-top: $base-spacing * 3;
-            font-size: 18px;
+            font-size: 32px;
             color: $copy;
+
+            @media (max-width: 767px) {
+                font-size: 22px;
+            }
         }
     }
     @media(min-width:768px) {
@@ -79,9 +110,6 @@
         margin: 0 0 $base-spacing * 2 0;
     }
 
-    .email {
-        color: $primary;
-    }
 }
 
 .flex {

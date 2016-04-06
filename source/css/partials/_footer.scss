@@ -5,8 +5,11 @@ footer.footer {
   padding: $base-spacing * 2;
   text-align: left;
 
+  @media (max-width: 767px) {
+      text-align: center;
+  }
+
   span {
     color: $white;
-    margin-left: $base-spacing;
   }
 }
