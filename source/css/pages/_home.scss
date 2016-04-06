@@ -1,13 +1,14 @@
 .content-section {
     margin: $base-spacing * 8 0; 
     @media (max-width: 991px) {
-        margin: $base-spacing * 2 0; 
+        margin: $base-spacing * 6 0; 
     }
     h1.section-title {
         margin: $base-spacing * 2 0 $base-spacing * 4;
         color: $copy;
+
         @media (max-width: 991px) {
-            margin: $base-spacing * 4 0 $base-spacing * 4;
+            margin: $base-spacing * 2 0 $base-spacing * 2;
             text-align: center;
         }
     }
