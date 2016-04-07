@@ -4,7 +4,10 @@
         margin: $base-spacing * 6 0; 
     }
     &.last {
-        padding-bottom: 0;
+        @media (max-width: 991px) {
+            padding-bottom: 0;
+
+        }
     }
 
     h1.section-title {
