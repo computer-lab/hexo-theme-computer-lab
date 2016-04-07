@@ -1,9 +1,6 @@
 // buttons 
 
 .btn {
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -13,19 +10,16 @@
 .btn-default {
     margin: 15px 15px 0 0;
     border: 1px solid $primary;
-    color: $primary;
-    background-color: $white;
-    &:hover,
-    &:focus {
+    color: $white;
+    display: inline-block;
+    background-color: transparent;
+    &:hover {
         border: 1px solid $primary;
         outline: none;
-        color: $white;
+        color: $copy;
         background-color: $primary;
     }
 
-    span {
-        margin-left: $base-spacing-small;
-    }
 }
 
 ul.banner-social-buttons {
@@ -50,7 +44,6 @@ ul.banner-social-buttons {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    // border: 2px solid $primary;
     border-radius: 100% !important;
     font-size: 40px;
     color: $primary;
