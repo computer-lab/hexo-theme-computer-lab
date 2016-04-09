@@ -2,14 +2,14 @@ footer.footer {
   background-color: $copy;
   height: auto;
   color: $white;
-  padding: $base-spacing * 2;
-  text-align: left;
+  padding: $base-spacing;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 28px;
 
-  @media (max-width: 767px) {
-      text-align: center;
+  a {
+    margin-left: $base-spacing;
   }
-
-  span {
-    color: $white;
+  a:hover, a:focus {
+    color: rgb(250,30,100);
   }
 }
