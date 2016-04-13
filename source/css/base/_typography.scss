@@ -36,6 +36,12 @@ p {
     }
 }
 
+span.primary {
+    color: $primary;
+    font-weight: 700;
+
+}
+
 a {
     letter-spacing: 1px;
     color: $primary;
@@ -46,6 +52,10 @@ a {
     &:focus {
         text-decoration: none;
         color: $white;
+    }
+
+    &.primary {
+        font-weight: 700;
     }
 }
 
