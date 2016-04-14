@@ -83,7 +83,6 @@ $(document).scroll(function() {
 });
 
 // vivus svg animations
-var servicesVivus = new Vivus('services-svg', {duration: 200});
-var contactVivus = new Vivus('contact-svg', {duration: 200});
-var teamVivus = new Vivus('team-svg', {duration: 200});
-
+var servicesVivus = new Vivus('services-svg', {duration: 120});
+var contactVivus = new Vivus('contact-svg', {duration: 120});
+var teamVivus = new Vivus('team-svg', {duration: 120});
