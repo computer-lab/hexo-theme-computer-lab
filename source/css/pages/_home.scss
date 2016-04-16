@@ -1,11 +1,12 @@
 .content-section {
     padding: $base-spacing * 8 0; 
     @media (max-width: 991px) {
-        margin: $base-spacing * 6 0; 
+        padding: $base-spacing * 7 0;
+
     }
     &.last {
         @media (max-width: 991px) {
-            padding-bottom: 0;
+            padding-bottom: $base-spacing * 7;
 
         }
     }
@@ -56,6 +57,7 @@
     background-size: cover;
     -o-background-size: cover;
     .intro-body {
+        padding-top: 50px; // menu-height
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
