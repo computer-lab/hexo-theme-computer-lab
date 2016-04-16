@@ -4,5 +4,6 @@ prepend site_title
   | #{page.title} &mdash;&nbsp;
 
 block site_body
-  include _partial/post/entry
-  include _partial/post/entry_pagination
+  .container
+    include _partial/post/entry
+    include _partial/post/entry_pagination

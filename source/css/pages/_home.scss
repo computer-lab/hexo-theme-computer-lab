@@ -47,6 +47,7 @@
 }
 
 #home {
+    margin-top: - 0.66 * $menu-height; // center in viewport, regardless of menu height
     display: table;
     width: 100%;
     height: 100vh;
@@ -57,7 +58,6 @@
     background-size: cover;
     -o-background-size: cover;
     .intro-body {
-        padding-top: 50px; // menu-height
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
@@ -119,15 +119,4 @@
         margin: 0 0 $base-spacing * 2 0;
     }
 
-}
-
-.flex {
-  display: flex;
-}
-
-.art {
-  width: 400px;
-  height: 400px;
-  display: block;
-  margin: auto;
 }

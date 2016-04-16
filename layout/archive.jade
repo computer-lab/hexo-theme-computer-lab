@@ -4,8 +4,10 @@ prepend site_title
   | Archive &mdash;&nbsp;
 
 block site_body
-  h2.page__title Archive
+  section
+    .container
+      h2.page__title Lab Notes
 
-  include _partial/post/list
+      include _partial/post/list
 
-  include _partial/post/list_pagination
+      include _partial/post/list_pagination
