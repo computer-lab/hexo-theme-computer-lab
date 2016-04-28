@@ -37,21 +37,22 @@ block site_body
               span.primary We can make people care about you. 
               | Computer Lab has the tools to get more eyes
               | on your product and help it win hearts and minds.
-  section#team.content-section
+  // Contact Section
+  section#team.content-section.last
     .container
       .row
         .col-md-4.col-xs-12.v-center
-          include _partial/svg/team-svg
+          include _partial/svg/contact-svg
         .col-md-6.col-md-offset-1.col-xs-12
           h1.section-title.wow.fadeIn Our Team
           .bio.row.service.wow.slideInUp
             p
               span.primary Computer Lab 
               | is a group of developers, designers and engineers 
-              | who met on the Internet and now work together in a modest office in Brooklyn, NY. 
+              | who met on the Internet and now work together in a small office in Brooklyn, NY. 
           .bio.row.service.wow.slideInUp
             p
-              | The Computer Lab team currently includes  
+              | Our team currently includes  
               span
                 a(target='_blank' href='https://ptsteadman.com/') Patrick Steadman
                 | , 
@@ -61,19 +62,7 @@ block site_body
                 |  and 
                 a(target='_blank' href='http://henrymac.info/') Henry MacConnel
                 | .
-  // Contact Section
-  section#contact.content-section.last
-    .container
-      .row
-        .col-md-4.col-xs-12.v-center
-          include _partial/svg/contact-svg
-        .col-md-6.col-md-offset-1.col-xs-12
-          h1.section-title.wow.fadeIn Say Hello
-          .contact.row.service.wow.slideInUp      
-            p
-              span.primary Want to know more? 
-              |  Our workspace in Williamsburg is open to all throughout the day. Come stop by or shoot us an email and we'll get back to you soon.
-          .contact.row.service.wow.slideInUp    
+          .bio.row.service.wow.slideInUp    
             p
               a.email(href='mailto:hi@computerlab.io?Subject=Inquiry') hi@computerlab.io
               br
@@ -81,4 +70,14 @@ block site_body
               | 140 Metropolitan Ave
               br
               | Brooklyn, NY 11249
+  // Featured Post
+  section#featured-post.content-section
+    .container
+      .row
+        .col-md-8.col-md-offset-2.col-xs-12
+          h1.section-title.wow.fadeIn=config.feature_post_title
+          h4=config.feature_post_author
+          p=config.feature_post_excerpt
+          a(href=config.feature_post_url) Read More
+
 
