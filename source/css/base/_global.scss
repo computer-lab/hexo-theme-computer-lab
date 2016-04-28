@@ -5,12 +5,18 @@ html {
 
 body {
     background-color: white;
+    background: repeating-linear-gradient(-45deg, rgba(255,255,255,0.13),
+    rgba(255,255,255,0.14) 15px);
+    // this is so that the footer stays at the bottom of the page if there's
+    // not enough content on the page
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
 }
 
 #content {
-  background: repeating-linear-gradient(-45deg, rgba(255,255,255,0.13),
-  rgba(255,255,255,0.14) 15px);
-  padding-top: $menu-height;
+  margin: $menu-height 0;
+  flex: 1;
 }
 
 ul {

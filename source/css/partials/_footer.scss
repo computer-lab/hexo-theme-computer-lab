@@ -1,13 +1,17 @@
-footer.footer {
+footer {
   background-color: $copy;
   height: auto;
   color: $white;
-  padding: $base-spacing;
   font-family: 'Montserrat', sans-serif;
   line-height: 28px;
 
+  .pull-left, .pull-right {
+    padding: $base-spacing;
+  }
+
   a {
     margin-left: $base-spacing;
+    color: $white;
   }
   a:hover, a:focus {
     color: rgb(250,30,100);

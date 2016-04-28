@@ -22,6 +22,18 @@ h6 {
     font-weight: 400;
     letter-spacing: 1px;
     color: $primary;
+
+}
+
+#archive, article {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $copy;
+    }
 }
 
 p {
@@ -38,17 +50,14 @@ p {
 span.primary {
     color: $primary;
     font-weight: 700;
-
 }
 
 a {
-    letter-spacing: 1px;
     color: $copy;
     &:hover,
     &:focus {
         text-decoration: none;
         color: $copy;
-        text-shadow: 0px 0px 1px $copy;
     }
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -75,6 +84,9 @@ ul {
     li {
         margin: 2px 0 2px;
         line-height: 1.2;
+        font-size: 22px;
+        line-height: 150%;
+        font-weight: 400;   
 
         @media(min-width:768px) {
             margin: 2px 0 2px;

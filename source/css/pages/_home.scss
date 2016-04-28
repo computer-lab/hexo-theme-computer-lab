@@ -34,12 +34,6 @@ body.index {
         padding: $base-spacing * 7 0;
 
     }
-    &.last {
-        @media (max-width: 991px) {
-            padding-bottom: $base-spacing * 7;
-
-        }
-    }
 
     h1.section-title {
         margin: $base-spacing * 2 0 $base-spacing * 4;
