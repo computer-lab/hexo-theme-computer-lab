@@ -57,15 +57,6 @@ $(function() {
   });
 });
 
-// detects home page to restrict background-color scroll
-$(document).ready(function(){
-  if ( $('section').eq(0).is('#home') ){
-    $('body').addClass('landing-page')
-  } else {
-    $('body').removeClass('landing-page');
-  }
-});
-
 // background-color scroll
 var window_height = $(document).height();
 var scroll_pos = 0;
@@ -84,11 +75,11 @@ $(document).scroll(function() {
       var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
       var newColor = new $.Color( newRed, newGreen, newBlue );
       // console.log( window_height, newColor.red(), newColor.green(), newColor.blue() );
-      $('.landing-page').animate({ backgroundColor: newColor }, 0);
+      $('.index').animate({ backgroundColor: newColor }, 0);
   } else if ( scroll_pos > animation_end_pos ) {
-       $('.landing-page').animate({ backgroundColor: ending_color }, 0);
+       $('.index').animate({ backgroundColor: ending_color }, 0);
   } else if ( scroll_pos < animation_begin_pos ) {
-       $('.landing-page').animate({ backgroundColor: beginning_color }, 0);
+       $('.index').animate({ backgroundColor: beginning_color }, 0);
   } else { } 
 
 });
