@@ -6,8 +6,15 @@ prepend site_title
 block site_body
   section
     .container
-      h2.page__title Lab Notes
+      .row
+        .col-xs-12
+          h2.page__title Lab Notes
+      .row
+        .col-xs-9
+          include _partial/post/list
 
-      include _partial/post/list
+          include _partial/post/list_pagination
+        .col-xs-3
+          include _partial/site/sidebar
 
-      include _partial/post/list_pagination
+

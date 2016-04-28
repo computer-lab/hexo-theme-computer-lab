@@ -5,5 +5,9 @@ prepend site_title
 
 block site_body
   .container
-    include _partial/post/entry
-    include _partial/post/entry_pagination
+    .row 
+      .col-xs-9
+        include _partial/post/entry
+        include _partial/post/entry_pagination
+      .col-xs-3
+        include _partial/site/sidebar

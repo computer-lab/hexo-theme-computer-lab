@@ -4,8 +4,9 @@ prepend site_title
   | #{page.category} &mdash;&nbsp;
 
 block site_body
-  h2.page__title= page.category
+  .container
+    h2.page__title= page.category
 
-  include _partial/post/list
+    include _partial/post/list
 
-  include _partial/post/list_pagination
+    include _partial/post/list_pagination
