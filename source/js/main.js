@@ -66,20 +66,22 @@ var beginning_color = new $.Color( 'rgb(250,30,100)' ); //we can set this here, 
 var ending_color = new $.Color( 'rgb(0,197,209)' ); ;//what color we want to use in the end
 
 $(document).scroll(function() {
-    scroll_pos = $(this).scrollTop(); 
-    if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
-        var percentScrolled = scroll_pos / ( animation_end_pos - animation_begin_pos );
-        var newRed = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled );
-        var newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled );
-        var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
-        var newColor = new $.Color( newRed, newGreen, newBlue );
-        // console.log( window_height, newColor.red(), newColor.green(), newColor.blue() );
-        $('body').animate({ backgroundColor: newColor }, 0);
-    } else if ( scroll_pos > animation_end_pos ) {
-         $('body').animate({ backgroundColor: ending_color }, 0);
-    } else if ( scroll_pos < animation_begin_pos ) {
-         $('body').animate({ backgroundColor: beginning_color }, 0);
-    } else { }
+
+  scroll_pos = $(this).scrollTop(); 
+  if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
+      var percentScrolled = scroll_pos / ( animation_end_pos - animation_begin_pos );
+      var newRed = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled );
+      var newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled );
+      var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
+      var newColor = new $.Color( newRed, newGreen, newBlue );
+      // console.log( window_height, newColor.red(), newColor.green(), newColor.blue() );
+      $('.index').animate({ backgroundColor: newColor }, 0);
+  } else if ( scroll_pos > animation_end_pos ) {
+       $('.index').animate({ backgroundColor: ending_color }, 0);
+  } else if ( scroll_pos < animation_begin_pos ) {
+       $('.index').animate({ backgroundColor: beginning_color }, 0);
+  } else { } 
+
 });
 
 // vivus svg animations

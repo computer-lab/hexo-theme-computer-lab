@@ -1,3 +1,33 @@
+body.index {
+    background-color: $pink;
+
+    // custom home nav 
+    .navbar-custom {
+
+        a {
+            color: $primary;
+        }
+
+        @media(min-width:768px) {
+
+            &.top-nav-collapse {
+                background: $white;
+
+                a {
+                    color: $copy;
+                }
+            }
+        }
+        @media(max-width:767px) {
+
+            a {
+                color: $copy;
+            }
+        }
+    }
+
+}
+
 .content-section {
     padding: $base-spacing * 8 0; 
     @media (max-width: 991px) {
