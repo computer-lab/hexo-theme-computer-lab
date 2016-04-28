@@ -44,18 +44,29 @@ span.primary {
 a {
     letter-spacing: 1px;
     color: $copy;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $copy;
+        text-shadow: 0px 0px 1px $copy;
+    }
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+
+    &.primary {
+        font-weight: 700;
+    }
+}
+
+.content-section a {
+    // on homepage with dark colored background
+    color: $white;
     &:hover,
     &:focus {
         text-decoration: none;
         color: $white;
         text-shadow: 0px 0px 1px $white;
-    }
-
-    &.primary {
-        font-weight: 700;
     }
 }
 
