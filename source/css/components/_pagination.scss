@@ -1,0 +1,11 @@
+.pagination {
+  margin:  1.5 * $base-spacing 0 $base-spacing 0;
+  width: 100%;
+  font-family: "Montserrat", "Helvetica
+  Neue",Helvetica,Arial,sans-serif;
+
+  .entry-pagination__link--next {
+    float: right;
+  }
+
+}
