@@ -1,5 +1,5 @@
 article(class=page.layout)
-  h2.post-title= page.title
+  h1.post-title= page.title
 
   .post-meta
     include meta
@@ -8,3 +8,5 @@ article(class=page.layout)
 
   .post-body
     != page.more
+
+  +postAuthor(page.author)
