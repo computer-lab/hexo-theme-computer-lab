@@ -9,15 +9,16 @@
 
 .btn-default {
   margin: 15px 15px 0 0;
-  border: 1px solid $primary;
-  color: $white;
+  padding: $base-spacing-small $base-spacing;
+  border: 2px solid $pink;
+  color: $pink;
   display: inline-block;
-  background-color: transparent;
+  background-color: $white;
   &:hover {
-    border: 1px solid $primary;
+    border: 2px solid $pink;
     outline: none;
-    color: $copy;
-    background-color: $primary;
+    color: $white;
+    background-color: $pink;
   }
 
 }

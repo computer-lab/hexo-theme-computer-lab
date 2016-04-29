@@ -57,13 +57,22 @@ $(function() {
   });
 });
 
+// // init controller
+// var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+// // build scenes
+// new ScrollMagic.Scene({triggerElement: "#feature-post"})
+//         .setTween("#feature-post > .container", {y: "80%", ease: Linear.easeNone})
+//         .addIndicators()
+//         .addTo(controller);
+
 // background-color scroll
-var window_height = $(document).height();
-var scroll_pos = 0;
-var animation_begin_pos = 0; //where you want the animation to begin
-var animation_end_pos = window_height; //where you want the animation to stop
-var beginning_color = new $.Color( 'rgb(250,30,100)' ); //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.
-var ending_color = new $.Color( 'rgb(0,197,209)' ); ;//what color we want to use in the end
+// var window_height = $(document).height();
+// var scroll_pos = 0;
+// var animation_begin_pos = 0; //where you want the animation to begin
+// var animation_end_pos = window_height; //where you want the animation to stop
+// var beginning_color = new $.Color( 'rgb(250,30,100)' ); //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.
+// var ending_color = new $.Color( 'rgb(0,197,209)' ); ;//what color we want to use in the end
 
 // $(document).scroll(function() {
 

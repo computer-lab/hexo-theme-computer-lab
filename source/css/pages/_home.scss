@@ -131,6 +131,7 @@ body.index {
 
 #services, #about {
     background-color: $primary;
+
 }
 
 #feature-post {
@@ -210,4 +211,14 @@ body.index {
 
 }
 
+// parallax scrolling
+// .parallaxParent {
+//   height: 100vh;
+//   overflow: hidden;
+// }
+// .parallaxParent > .container {
+//   height: 200%;
+//   position: relative;
+//   top: -100%;
+// }
 

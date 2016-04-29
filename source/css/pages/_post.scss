@@ -1,3 +1,15 @@
+.post-title {
+  text-align: center;
+  margin: 0 0 $base-spacing * 2 0;
+}
+
+.post-meta {
+  margin: $base-spacing 0;
+  text-align: center;
+  font-style: italic;
+}
+
+
 .post-body {
   padding-top: $base-spacing;
 
@@ -15,8 +27,3 @@
     font-size: 22px;
   }
 }
-
-.post-meta {
-  margin: $base-spacing 0;
-}
-
