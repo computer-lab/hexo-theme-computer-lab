@@ -4,3 +4,5 @@ ul.post-items
       h3.post-item__title
         a(href=url_for(post.path))= post.title
       p= post.lede
+      h5.post-item__author=post.author + ' - '
+        span=post.date.format('ll')

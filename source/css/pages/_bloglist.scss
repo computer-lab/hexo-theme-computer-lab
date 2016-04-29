@@ -9,6 +9,17 @@ ul.post-items {
   -webkit-padding-start: 0px;
 
   li.post-item {
+    margin: $base-spacing * 3 0;
     list-style: none;
+    border-bottom: 1px solid $grey; 
+
+    p {
+      margin: 0 0;
+    }
+
+    h5 {
+      margin: $base-spacing 0 $base-spacing * 3;
+      font-style: italic;
+    }
   }
 }
