@@ -24,6 +24,7 @@ ul {
   padding: 0 25px;
 }
 
+/*
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
@@ -35,6 +36,7 @@ ul {
   background: #fcfcfc;
   background: rgba(white, 0.2);
 }
+*/
 
 img::selection {
   background: transparent;
