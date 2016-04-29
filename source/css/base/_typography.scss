@@ -47,9 +47,14 @@ p {
   }
 }
 
-span.pink {
+// typography utility classes
+.pink {
     color: $pink;
     font-weight: 700;
+}
+
+.white {
+  color: white;
 }
 
 a {

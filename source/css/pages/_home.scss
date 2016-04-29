@@ -1,32 +1,6 @@
-body.index {
-  // background-color: $pink;
+// body.index {
 
-  // custom home nav 
-  .navbar-custom {
-
-    a {
-      color: $primary;
-    }
-
-    @media(min-width:768px) {
-
-      &.top-nav-collapse {
-        background: $white;
-
-        a {
-          color: $copy;
-        }
-      }
-    }
-    @media(max-width:767px) {
-
-      a {
-        color: $copy;
-      }
-    }
-  }
-
-}
+// }
 
 .content-section {
   padding: $base-spacing * 8 0; 
@@ -37,7 +11,7 @@ body.index {
 
   h1.section-title {
     margin: $base-spacing * 2 0 $base-spacing * 4;
-    color: $copy;
+    color: $pink;
 
     @media (max-width: 991px) {
       margin: $base-spacing * 2 0 $base-spacing * 2;
@@ -68,10 +42,19 @@ body.index {
   p {
     margin: 0 0 $base-spacing-small;
   }
+
+  // alt contect section with dark bg
+  &.alt {
+
+    h1.section-title {
+      color: $white;
+    }
+
+  }
 }
 
 #home {
-  margin-top: - 0.66 * $menu-height; // center in viewport, regardless of menu height
+  margin-top: - $menu-height; // center in viewport, regardless of menu height
   display: table;
   width: 100%;
   height: 100vh;
@@ -140,8 +123,26 @@ body.index {
 }
 
 #feature-post {
-  background: $pink;
+  background: $copy;
   position: relative;
+
+  h2 {
+    color: $pink;
+  }
+  p {
+    color: $white;
+  }
+
+  .date {
+    font-style: italic;
+    color: $white;
+    font-weight: 100;
+  }
+
+  a.white {
+    color: $white;
+  }
+
 }
 
 #feature-post:before {
@@ -151,7 +152,7 @@ body.index {
   top: -36px;
   width: 100%;
   height: 120px;
-  background: $pink;
+  background: $copy;
   -webkit-transform: skewY(2.5deg);
   -moz-transform: skewY(2.5deg);
   -ms-transform: skewY(2.5deg);
@@ -167,7 +168,7 @@ body.index {
   bottom: -36px;
   width: 100%;
   height: 120px;
-  background: $pink;
+  background: $copy;
   -webkit-transform: skewY(-2.5deg);
   -moz-transform: skewY(-2.5deg);
   -ms-transform: skewY(-2.5deg);
