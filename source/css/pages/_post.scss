@@ -15,12 +15,16 @@
 .post-body {
   padding-top: $base-spacing;
 
-  code {
-    font-size: 85%;
-    color: $copy;
-
-  }
+  pre {
+    margin: $base-spacing * 2 0;
   
+    code {
+      font-size: 85%;
+      color: $copy;
+
+    }
+  }
+
   img {
     max-width: 100%;
     margin: $base-spacing * 2 0;
