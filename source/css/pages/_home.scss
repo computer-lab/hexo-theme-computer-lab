@@ -1,146 +1,146 @@
 body.index {
-    background-color: $pink;
+  background-color: $pink;
 
-    // custom home nav 
-    .navbar-custom {
+  // custom home nav 
+  .navbar-custom {
+
+    a {
+      color: $primary;
+    }
+
+    @media(min-width:768px) {
+
+      &.top-nav-collapse {
+        background: $white;
 
         a {
-            color: $primary;
+          color: $copy;
         }
-
-        @media(min-width:768px) {
-
-            &.top-nav-collapse {
-                background: $white;
-
-                a {
-                    color: $copy;
-                }
-            }
-        }
-        @media(max-width:767px) {
-
-            a {
-                color: $copy;
-            }
-        }
+      }
     }
+    @media(max-width:767px) {
+
+      a {
+        color: $copy;
+      }
+    }
+  }
 
 }
 
 .content-section {
-    padding: $base-spacing * 8 0; 
+  padding: $base-spacing * 8 0; 
+  @media (max-width: 991px) {
+    padding: $base-spacing * 7 0;
+
+  }
+
+  h1.section-title {
+    margin: $base-spacing * 2 0 $base-spacing * 4;
+    color: $copy;
+
     @media (max-width: 991px) {
-        padding: $base-spacing * 7 0;
-
+      margin: $base-spacing * 2 0 $base-spacing * 2;
+      text-align: center;
     }
+  }
+  .row {
+    display: flex;
 
-    h1.section-title {
-        margin: $base-spacing * 2 0 $base-spacing * 4;
-        color: $copy;
+    .v-center {
+      display: flex;
 
-        @media (max-width: 991px) {
-            margin: $base-spacing * 2 0 $base-spacing * 2;
-            text-align: center;
-        }
-    }
-    .row {
-        display: flex;
-
-        .v-center {
-            display: flex;
-
-            @media (max-width: 991px) {
-                display: block;
-            }
-        }
-
-        @media (max-width: 991px) {
-            display: block;
-        }
-    }
-
-    svg.center {
+      @media (max-width: 991px) {
         display: block;
-        margin: auto;
+      }
     }
 
-    p {
-        margin: 0 0 $base-spacing-small;
+    @media (max-width: 991px) {
+      display: block;
     }
+  }
+
+  svg.center {
+    display: block;
+    margin: auto;
+  }
+
+  p {
+    margin: 0 0 $base-spacing-small;
+  }
 }
 
 #home {
-    margin-top: - 0.66 * $menu-height; // center in viewport, regardless of menu height
-    display: table;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    color: $primary;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        .brand-heading {
-            font-size: 40px;
-            color: $primary;
-        }
-        p.intro-text {
-            margin-top: $base-spacing * 3;
-            font-size: 32px;
-            color: $copy;
+  margin-top: - 0.66 * $menu-height; // center in viewport, regardless of menu height
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: $primary;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    .brand-heading {
+      font-size: 40px;
+      color: $primary;
+    }
+    p.intro-text {
+      margin-top: $base-spacing * 3;
+      font-size: 32px;
+      color: $copy;
 
-            @media (max-width: 767px) {
-                font-size: 22px;
-            }
-        }
+      @media (max-width: 767px) {
+        font-size: 22px;
+      }
     }
-    @media(min-width:768px) {
-        height: 100vh;
-        .intro-body {
-            .brand-heading {
-                font-size: 100px;
-            }
-            .intro-text {
-                font-size: 26px;
-            }
-        }
+  }
+  @media(min-width:768px) {
+    height: 100vh;
+    .intro-body {
+      .brand-heading {
+        font-size: 100px;
+      }
+      .intro-text {
+        font-size: 26px;
+      }
     }
+  }
 }
 
 #services {
 
-    .service{
-        color: $copy;
-        margin: 0 0 $base-spacing * 2 0;
+  .service{
+    color: $copy;
+    margin: 0 0 $base-spacing * 2 0;
 
-        h3 {
-            color: $copy;
+    h3 {
+      color: $copy;
 
-            span {
-                margin-left: $base-spacing-small;
-            }
-        }
-
+      span {
+        margin-left: $base-spacing-small;
+      }
     }
+
+  }
 
 }
 
 #team {
 
-    .row.bio {
-        margin: 0 0 $base-spacing * 2 0;
+  .row.bio {
+    margin: 0 0 $base-spacing * 2 0;
 
-    }
+  }
 }
 
 #contact {
 
-    .contact {
-        margin: 0 0 $base-spacing * 2 0;
-    }
+  .contact {
+    margin: 0 0 $base-spacing * 2 0;
+  }
 
 }
