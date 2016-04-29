@@ -4,9 +4,14 @@ prepend site_title
   | #{page.category} &mdash;&nbsp;
 
 block site_body
-  .container
-    h2.page__title= page.category
-
-    include _partial/post/list
-
-    include _partial/post/list_pagination
+  .container#archive
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        h2.page__title= page.category
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        include _partial/post/list
+        include _partial/post/list_pagination
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        include _partial/site/sidebar
