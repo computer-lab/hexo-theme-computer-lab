@@ -182,16 +182,13 @@ body.index {
         color: $copy;
         margin: 0 0 $base-spacing * 2 0;
 
-        h3 {
-            color: $copy;
+      h3 {
+        color: $copy;
 
-    h3 {
-      color: $copy;
-
-      span {
-        margin-left: $base-spacing-small;
+        span {
+          margin-left: $base-spacing-small;
+        }
       }
-    }
 
   }
 
