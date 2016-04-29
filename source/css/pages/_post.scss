@@ -1,12 +1,14 @@
 .post-title {
   text-align: center;
-  margin: 0 0 $base-spacing * 2 0;
+  margin: $base-spacing 0 $base-spacing * 2 0;
 }
 
 .post-meta {
   margin: $base-spacing 0;
+  padding-bottom: $base-spacing * 3;
   text-align: center;
   font-style: italic;
+  border-bottom: 1px solid $grey;
 }
 
 
@@ -26,4 +28,9 @@
   p, li {
     font-size: 22px;
   }
+}
+
+
+nav.pagination {
+  margin: $base-spacing * 4 0;
 }

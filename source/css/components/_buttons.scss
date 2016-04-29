@@ -14,6 +14,7 @@
   color: $pink;
   display: inline-block;
   background-color: $white;
+  text-transform: uppercase;
   &:hover {
     border: 2px solid $pink;
     outline: none;
