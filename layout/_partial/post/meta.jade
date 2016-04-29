@@ -1,12 +1,12 @@
 mixin postDate(date)
-  span.post__date
+  span.post-date
     = date.format(config.date_format)
 
 mixin postCategory(categories)
 
   if categories.length > 0
     | &ensp;in
-    span.post__categories
+    span.post-categories
       each category in categories.toArray()
         | &ensp;
-        a.post__category(href=url_for(category.path))= category.name
+        a.post-category(href=url_for(category.path))= category.name

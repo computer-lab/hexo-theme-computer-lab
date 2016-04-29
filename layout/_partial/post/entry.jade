@@ -3,8 +3,9 @@ article(class=page.layout)
 
   .post-meta
     include meta
-    +postDate(page.date)
-    +postCategory(page.categories)
+    h4
+      +postDate(page.date)
+      +postCategory(page.categories)
 
   .post-body
     != page.more
