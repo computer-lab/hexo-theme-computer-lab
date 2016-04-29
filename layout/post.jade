@@ -6,8 +6,9 @@ prepend site_title
 block site_body
   .container
     .row 
-      .col-xs-12.col-md-9
+      .col-xs-8.col-xs-offset-2
         include _partial/post/entry
         include _partial/post/entry_pagination
-      .col-xs-12.col-md-3
+    .row
+      .col-xs-8.col-xs-offset-2
         include _partial/site/sidebar

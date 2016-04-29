@@ -7,14 +7,15 @@ block site_body
   section#archive
     .container
       .row
-        .col-xs-12
+        .col-xs-8.col-xs-offset-2
           h2.page__title Lab Notes
       .row
-        .col-xs-12.col-md-9
+        .col-xs-8.col-xs-offset-2
           include _partial/post/list
 
+      .row
           include _partial/post/list_pagination
-        .col-xs-12.col-md-3
+        .col-xs-8.col-xs-offset-2
           include _partial/site/sidebar
 
 
