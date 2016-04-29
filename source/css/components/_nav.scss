@@ -26,9 +26,19 @@
       outline: none;
     }
   }
+
   a {
     color: $copy;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+    &:hover {
+      color: $pink;
+      outline: none;
+      background-color: transparent;
+    }
   }
+
   .nav {
     li {
       font-size: 1em;

@@ -1,6 +1,17 @@
-// body.index {
+body.index {
 
-// }
+  .content-section a {
+      // on homepage with dark colored background
+      color: $pink;
+      &:hover,
+      &:focus {
+          text-decoration: none;
+          color: $white;
+          text-shadow: 0px 0px 1px $white;
+      }
+  }
+
+}
 
 .content-section {
   padding: $base-spacing * 8 0; 
@@ -11,7 +22,7 @@
 
   h1.section-title {
     margin: $base-spacing * 2 0 $base-spacing * 4;
-    color: $pink;
+    color: $copy;
 
     @media (max-width: 991px) {
       margin: $base-spacing * 2 0 $base-spacing * 2;
@@ -129,9 +140,6 @@
   h2 {
     color: $pink;
   }
-  p {
-    color: $white;
-  }
 
   .date {
     font-style: italic;
@@ -139,9 +147,16 @@
     font-weight: 100;
   }
 
-  a.white {
+  p {
     color: $white;
   }
+
+  a.read-more {
+    font-size: 22px;
+    margin-top: $base-spacing;
+    display: block;
+  }
+
 
 }
 

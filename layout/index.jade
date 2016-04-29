@@ -41,13 +41,13 @@ block site_body
     .container
       .row
         .col-md-8.col-md-offset-2.col-xs-12
-          h1.section-title.wow.fadeIn Recent Notes
+          h1.section-title.wow.fadeIn Lab Notes
           h2
             a(href=config.feature_post_path)=config.feature_post_title
           h5=config.feature_post_author + ' - '
             span.date=config.feature_post_date
           p=config.feature_post_excerpt
-          a(href=config.feature_post_path) Read More
+          a.read-more(href=config.feature_post_path) Read More
   // About Section
   section#about.content-section.last
     .container
