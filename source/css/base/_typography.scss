@@ -47,13 +47,13 @@ p {
     }
 }
 
-span.primary {
-    color: $primary;
+span.pink {
+    color: $pink;
     font-weight: 700;
 }
 
 a {
-    color: $copy;
+    color: $pink;
     &:hover,
     &:focus {
         text-decoration: none;
@@ -70,7 +70,7 @@ a {
 
 .content-section a {
     // on homepage with dark colored background
-    color: $white;
+    color: $pink;
     &:hover,
     &:focus {
         text-decoration: none;
