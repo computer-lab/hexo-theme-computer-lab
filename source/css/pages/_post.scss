@@ -1,5 +1,11 @@
 .post-body {
   padding-top: $base-spacing;
+
+  code {
+    font-size: 85%;
+    color: $copy;
+
+  }
   
   img {
     max-width: 100%;
