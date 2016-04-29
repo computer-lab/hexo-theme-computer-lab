@@ -100,7 +100,6 @@ body.index {
   }
   @media(min-width:768px) {
     height: 100vh;
-<<<<<<< HEAD
     text-align: center;
     color: $primary;
     background-color: $pink;
@@ -108,8 +107,7 @@ body.index {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-=======
->>>>>>> 32571b8c9c34d6f7919418ea288f6a6b83eb5083
+
     .intro-body {
       .brand-heading {
         font-size: 100px;
@@ -178,10 +176,6 @@ body.index {
   -webkit-backface-visibility: hidden;
 }
 
-
-
-
-<<<<<<< HEAD
 #services, #about {
 
     .service, .about{
@@ -190,11 +184,6 @@ body.index {
 
         h3 {
             color: $copy;
-=======
-  .service{
-    color: $copy;
-    margin: 0 0 $base-spacing * 2 0;
->>>>>>> 32571b8c9c34d6f7919418ea288f6a6b83eb5083
 
     h3 {
       color: $copy;
@@ -208,21 +197,4 @@ body.index {
 
 }
 
-<<<<<<< HEAD
-=======
-#team {
 
-  .row.bio {
-    margin: 0 0 $base-spacing * 2 0;
-
-  }
-}
-
-#contact {
-
-  .contact {
-    margin: 0 0 $base-spacing * 2 0;
-  }
-
-}
->>>>>>> 32571b8c9c34d6f7919418ea288f6a6b83eb5083
