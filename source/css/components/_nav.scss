@@ -22,8 +22,10 @@
   }
   .navbar-brand {
     font-weight: 700;
-    &:focus {
+    color: $pink;
+    &:focus, &:hover {
       outline: none;
+      color: $copy;
     }
   }
 
@@ -32,11 +34,6 @@
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
-    &:hover {
-      color: $pink;
-      outline: none;
-      background-color: transparent;
-    }
   }
 
   .nav {
@@ -47,7 +44,7 @@
         -moz-transition: color .3s ease-in-out;
         transition: color .3s ease-in-out;
         &:hover {
-          color: $white;
+          color: $copy;
           outline: none;
           background-color: transparent;
         }

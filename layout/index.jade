@@ -10,14 +10,14 @@ block site_body
           .col-md-8.col-md-offset-2.wow.fadeIn.invisible
             h1.brand-heading We are here to help you.
             p.intro-text Computer Lab is a digital consultancy in Brooklyn, NY that helps organizations accelerate their products and brands.
-            a.btn.btn-circle.floating.page-scroll(href='#services')
+            a.btn.btn-circle.wow.floating.page-scroll(href='#services')
               i.fa.fa-angle-double-down.animated
   // Services Section
   section#services.content-section
     .container
       .row
         .col-md-4.v-center.col-xs-12
-          include _partial/svg/team-svg
+          include _partial/svg/devices-svg
         .col-md-6.col-md-offset-1.col-xs-12
           h1.section-title.wow.fadeIn Our Services
           .row.service.wow.slideInUp
@@ -42,18 +42,18 @@ block site_body
       .row
         .col-md-8.col-md-offset-2.col-xs-12
           h1.section-title.wow.fadeIn Lab Notes
-          h2
+          h2.wow.fadeIn
             a(href=config.feature_post_path)=config.feature_post_title
-          h5=config.feature_post_author + ' - '
+          h5.wow.fadeIn=config.feature_post_author + ' - '
             span.date=config.feature_post_date
-          p=config.feature_post_excerpt
-          a.read-more(href=config.feature_post_path) Read More
+          p.wow.fadeIn=config.feature_post_excerpt
+          a.wow.fadeIn.read-more(href=config.feature_post_path) Read More
   // About Section
   section#about.content-section.last
     .container
       .row
         .col-md-4.col-xs-12.v-center
-          include _partial/svg/contact-svg
+          include _partial/svg/team-svg
         .col-md-6.col-md-offset-1.col-xs-12
           h1.section-title.wow.fadeIn About Lab
           .about.row.wow.slideInUp
@@ -61,7 +61,8 @@ block site_body
               span.pink Computer Lab 
               | is a group of developers, designers and engineers 
               | who met on the Internet and now work together in a small office in Brooklyn, NY. 
-              | The team currently includes  
+          .about.row.wow.slideInUp
+            p The team currently includes  
               span
                 a(target='_blank' href='https://ptsteadman.com/') Patrick Steadman
                 | , 

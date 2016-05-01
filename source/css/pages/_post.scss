@@ -11,18 +11,16 @@
   border-bottom: 1px solid $grey;
 }
 
-
 .post-body {
   padding-top: $base-spacing;
 
   pre {
     margin: $base-spacing * 2 0;
+  }  
   
-    code {
-      font-size: 85%;
-      color: $copy;
-
-    }
+  code {
+    font-size: 70%;
+    color: $copy;
   }
 
   img {
@@ -33,7 +31,6 @@
     font-size: 22px;
   }
 }
-
 
 nav.pagination {
   margin: $base-spacing * 4 0;
