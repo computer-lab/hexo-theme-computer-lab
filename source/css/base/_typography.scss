@@ -17,19 +17,13 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-#archive, article {
-  h1,h2,h3,h4,h5,h6 {
-    color: $copy;
-  }
-}
-
 p {
   margin: 0 0 25px;
   font-size: 22px;
   line-height: 150%;
   font-weight: 400;   
   @media(min-width:768px) {
-    margin: 0 0 35px;
+    margin: 0 0 $base-spacing * 2;
     font-size: 23px;
   }
 }
@@ -83,6 +77,18 @@ ul {
   line-height: 150%;
   color: $accent;
 
+}
+
+// blog typography
+
+#archive, article {
+  h1,h2,h3,h4,h5,h6 {
+    color: $copy;
+  }
+
+  p {
+    margin: 0 0 $base-spacing;
+  }
 }
 
 // typography utility classes
