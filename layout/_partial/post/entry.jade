@@ -3,9 +3,9 @@ article(class=page.layout)
 
   .post-meta
     include meta
-    h4=page.date.format('ll') + ' ' + page.author
+    h4=page.date.format('ll')
       +postCategory(page.categories)
-
+    h5=page.author
   .post-body
     != page.more
 

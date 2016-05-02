@@ -12,7 +12,7 @@
     color: white;
 
     @media (max-width: 767px) {
-      color: $copy;
+      color: $white;
     }
 
     &:focus,
@@ -85,9 +85,14 @@
     }
   }
   @media(max-width:767px) {
+    background: $pink;
+
+    .navbar-brand {
+      color: $white;
+    }
 
     a {
-      color: $copy;
+      color: $white;
     }
   }
 }

@@ -67,11 +67,11 @@ body.index {
   height: 100vh;
   text-align: center;
   color: $primary;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-
+    height: 100vh;
+    text-align: center;
+    color: $primary;
+    background-color: $pink;
+    
   .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -93,14 +93,6 @@ body.index {
   }
 
   @media(min-width:768px) {
-    height: 100vh;
-    text-align: center;
-    color: $primary;
-    background-color: $pink;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 
     .intro-body {
       .brand-heading {
