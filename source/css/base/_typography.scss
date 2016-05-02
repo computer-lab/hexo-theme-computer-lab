@@ -46,6 +46,11 @@ p {
   }
 }
 
+code {
+  font-size: 80%;
+  color: $copy;
+}
+
 a {
   color: $pink;
   border-bottom: 2px solid transparent;
