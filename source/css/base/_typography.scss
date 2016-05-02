@@ -53,8 +53,8 @@ a {
   &:hover,
   &:focus {
       text-decoration: none;
-      color: $pink;
-      border-bottom: 2px solid $pink;
+      color: $accent;
+      // border-bottom: 2px solid $accent;
   }
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
