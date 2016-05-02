@@ -10,21 +10,21 @@
 .btn-default {
   margin: 15px 15px 0 0;
   padding: $base-spacing-small $base-spacing;
-  border: 2px solid $pink;
-  color: $pink;
+  border: 2px solid $accent;
+  color: $accent;
   display: inline-block;
   background-color: transparent;
   text-transform: uppercase;
 
   &:hover {
-    border: 2px solid $pink;
+    border: 2px solid $accent;
     outline: none;
     color: $white;
-    background-color: $pink;
+    background-color: $accent;
   }
 
   &.over-dark {
-    color: $pink;
+    color: $accent;
 
     &:hover {
       color: $copy !important;

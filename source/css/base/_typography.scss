@@ -88,7 +88,7 @@ ul {
   letter-spacing: 1px;
   font-size: 16px;
   line-height: 150%;
-  color: $pink;
+  color: $accent;
 
 }
 
@@ -96,6 +96,11 @@ ul {
 .pink {
     color: $pink;
     font-weight: 700;
+}
+
+.accent {
+  color: $accent;
+  font-weight: 700; 
 }
 
 .white {
