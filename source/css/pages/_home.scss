@@ -6,16 +6,6 @@ body.index {
       color: white;
     }
   }
-  .content-section a {
-      // on homepage with dark colored background
-      color: $pink;
-      &:hover,
-      &:focus {
-          text-decoration: none;
-          color: white;
-          text-shadow: 0px 0px 1px white;
-      }
-  }
 
 }
 
@@ -141,7 +131,19 @@ body.index {
 
 #services, #about {
   background-color: $primary;
+  
+  .service, .about{
+    color: $copy;
+    margin: 0 0 $base-spacing * 2 0;
 
+    h3 {
+      color: $copy;
+
+      span {
+        margin-left: $base-spacing-small;
+      }
+    }
+  }
 }
 
 #feature-post {
@@ -163,11 +165,8 @@ body.index {
   }
 
   a.read-more {
-    font-size: 22px;
     margin-top: $base-spacing;
-    display: block;
   }
-
 
 }
 
@@ -202,33 +201,3 @@ body.index {
   transform: skewY(-2.5deg);
   -webkit-backface-visibility: hidden;
 }
-
-#services, #about {
-
-    .service, .about{
-        color: $copy;
-        margin: 0 0 $base-spacing * 2 0;
-
-      h3 {
-        color: $copy;
-
-        span {
-          margin-left: $base-spacing-small;
-        }
-      }
-
-  }
-
-}
-
-// parallax scrolling
-// .parallaxParent {
-//   height: 100vh;
-//   overflow: hidden;
-// }
-// .parallaxParent > .container {
-//   height: 200%;
-//   position: relative;
-//   top: -100%;
-// }
-

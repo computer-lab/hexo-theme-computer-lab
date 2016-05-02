@@ -13,8 +13,9 @@
   border: 2px solid $pink;
   color: $pink;
   display: inline-block;
-  background-color: $white;
+  background-color: transparent;
   text-transform: uppercase;
+
   &:hover {
     border: 2px solid $pink;
     outline: none;
@@ -22,6 +23,13 @@
     background-color: $pink;
   }
 
+  &.over-dark {
+    color: $pink;
+
+    &:hover {
+      color: $copy !important;
+    }
+  }
 }
 
 ul.banner-social-buttons {

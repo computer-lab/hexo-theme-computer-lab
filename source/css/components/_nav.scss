@@ -23,9 +23,11 @@
   .navbar-brand {
     font-weight: 700;
     color: $pink;
+    border-bottom: none;
     &:focus, &:hover {
       outline: none;
       color: $copy;
+      border-bottom: none;
     }
   }
 

@@ -47,21 +47,23 @@ p {
 }
 
 a {
-    color: $pink;
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        color: $copy;
-    }
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+  color: $pink;
+  border-bottom: 2px solid transparent;
+
+  &:hover,
+  &:focus {
+      text-decoration: none;
+      color: $pink;
+      border-bottom: 2px solid $pink;
+  }
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &.primary {
     font-weight: 700;
   }
 }
-
 
 ul {
 
@@ -69,7 +71,6 @@ ul {
     margin: 2px 0 2px;
     line-height: 1.2;
     font-size: 22px;
-    line-height: 150%;
     font-weight: 400;   
 
     @media(min-width:768px) {
@@ -79,10 +80,16 @@ ul {
   }
 }
 
-.btn {
+.btn-default, a.btn-default {
+
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 150%;
+  color: $pink;
+
 }
 
 // typography utility classes
