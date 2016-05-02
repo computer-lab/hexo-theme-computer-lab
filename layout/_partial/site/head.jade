@@ -54,6 +54,12 @@ title
   block site_title
     = config.title
 
+// crazy egg tracking
+script(type='text/javascript').
+  setTimeout(function(){var a=document.createElement("script");
+  var b=document.getElementsByTagName("script")[0];
+  a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0048/7400.js?"+Math.floor(new Date().getTime()/3600000);
+  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
 //- RSS
 link(rel="alternate", href=theme.rss ? theme.rss : config.root + "rss2.xml", title="config.title", type="application/rss2.xml")

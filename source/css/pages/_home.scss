@@ -11,6 +11,11 @@ body.index {
 
 .content-section {
   padding: $base-spacing * 12 0; 
+
+  &.last {
+    // bring up footer for last section
+    margin-bottom: -94px;
+  }
   @media (max-width: 991px) {
     padding: $base-spacing * 8 0;
 
