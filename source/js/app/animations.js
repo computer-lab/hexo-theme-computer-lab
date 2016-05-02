@@ -10,5 +10,5 @@ wow = new WOW({
 wow.init();
 
 // vivus svg animations
-var servicesVivus = new Vivus('services-svg', {duration: 120});
+var servicesVivus = new Vivus('devices-svg', {duration: 120});
 var teamVivus = new Vivus('team-svg', {duration: 120});

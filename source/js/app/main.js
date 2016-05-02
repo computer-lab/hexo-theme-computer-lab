@@ -24,12 +24,3 @@ $(function() {
   }
   });
 });
-
-// scrollmagic parallax
-var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
-
-// build scenes
-new ScrollMagic.Scene({triggerElement: "#services"})
-        .setTween("#services > div.container", {y: "80%", ease: Linear.easeNone})
-        .addIndicators()
-        .addTo(controller);
