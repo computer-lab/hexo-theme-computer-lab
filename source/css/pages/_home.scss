@@ -26,8 +26,8 @@ body.index {
     color: $copy;
 
     @media (max-width: 991px) {
-      margin: $base-spacing * 2 0 $base-spacing * 2;
-      text-align: center;
+      margin: $base-spacing * 6 0 $base-spacing * 3;
+      text-align: left;
     }
   }
   .row {
@@ -49,10 +49,14 @@ body.index {
   svg.center {
     display: block;
     margin: auto;
+    @media (max-width: 991px) {
+      width: 66%;
+    }
   }
 
   p {
     margin: 0 0 $base-spacing-small;
+
   }
 
   // alt contect section with dark bg
