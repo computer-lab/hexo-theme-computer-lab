@@ -1,3 +1,20 @@
+@mixin angle-section($color, $deg){
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -36px;
+  width: 100%;
+  height: 120px;
+  background: $color;
+  -webkit-transform: skewY($deg);
+  -moz-transform: skewY($deg);
+  -ms-transform: skewY($deg);
+  -o-transform: skewY($deg);
+  transform: skewY($deg);
+  -webkit-backface-visibility: hidden;
+  z-index: 1;
+}
+
 body.index {
 
   .navbar-custom {
@@ -115,19 +132,38 @@ body.index {
 }
 
 #home:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -36px;
-  width: 100%;
-  height: 120px;
-  background: $pink;
-  -webkit-transform: skewY(-2.5deg);
-  -moz-transform: skewY(-2.5deg);
-  -ms-transform: skewY(-2.5deg);
-  -o-transform: skewY(-2.5deg);
-  transform: skewY(-2.5deg);
-  -webkit-backface-visibility: hidden;
+  @include angle-section($pink, -2.0deg)
+}
+
+#services:after {
+  @include angle-section(white, -2.0deg)
+}
+
+#services {
+  position: relative;
+}
+
+
+#case-study {
+  background: linear-gradient(transparent 50%, rgba(0,0,0,.4) 100%);
+  background-color: #140f31;
+  img {
+    margin-top: -100px;
+    margin-bottom: -40px;
+  }
+  
+
+  @media(max-width:992px) {
+    img {
+      max-width: 100%;
+      margin-top: 0px;
+    }
+  }
+  overflow: hidden;
+  p {
+    color: white;
+  }
+  position: relative;
 }
 
 #services, #about {
@@ -150,6 +186,7 @@ body.index {
 #feature-post {
   background: $copy;
   position: relative;
+  padding: 120px 0 140px 0;
 
   h2 {
     color: $pink;
@@ -172,33 +209,10 @@ body.index {
 }
 
 #feature-post:before {
-  content: '';
-  position: absolute;
-  left: 0;
+  @include angle-section($copy, 2.0deg);
   top: -36px;
-  width: 100%;
-  height: 120px;
-  background: $copy;
-  -webkit-transform: skewY(2.5deg);
-  -moz-transform: skewY(2.5deg);
-  -ms-transform: skewY(2.5deg);
-  -o-transform: skewY(2.5deg);
-  transform: skewY(2.5deg);
-  -webkit-backface-visibility: hidden;
 }
 
 #feature-post:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -36px;
-  width: 100%;
-  height: 120px;
-  background: $copy;
-  -webkit-transform: skewY(-2.5deg);
-  -moz-transform: skewY(-2.5deg);
-  -ms-transform: skewY(-2.5deg);
-  -o-transform: skewY(-2.5deg);
-  transform: skewY(-2.5deg);
-  -webkit-backface-visibility: hidden;
+  @include angle-section($copy, -2.0deg);
 }
