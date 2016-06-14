@@ -7,11 +7,11 @@ block site_body
   .container#archive
     .row
       .col-xs-12.col-md-8.col-md-offset-2
-        h2.page__title= page.category
+        h2.center.page__title= page.category
     .row
       .col-xs-12.col-md-8.col-md-offset-2
         include _partial/post/list
         include _partial/post/list_pagination
-    .row
+    //.row
       .col-xs-12.col-md-8.col-md-offset-2
         include _partial/site/sidebar
