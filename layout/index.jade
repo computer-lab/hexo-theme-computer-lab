@@ -9,11 +9,26 @@ block site_body
         .row
           .col-md-8.col-md-offset-2.wow.fadeIn.invisible
             h1.brand-heading We are here to help you.
-            p.intro-text Computer Lab is a digital consultancy in Brooklyn, NY that helps organizations accelerate their products and brands.
+            p.intro-text Computer Lab is a digital consultancy in Brooklyn, NY that helps organizations accelerate products, brands and beyond.
             a.btn.btn-circle.wow.floating.page-scroll(href='#services')
               i.fa.fa-angle-double-down.animated
+  // Case Study
+  section#case-study.content-section.alt
+    .container 
+      .row
+        .col-md-6.col-xs-12
+          h4.wow.fadeIn Case Study
+          h1.wow.fadeIn
+            a(href=config.feature_case_path)=config.feature_case_title
+          h3=config.feature_case_lede
+          p.wow.fadeIn=config.feature_case_excerpt
+          a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
+          a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
+        .col-md-6.v-center.col-xs-12
+          img(src="/images/pinpoints6.png").wow.fadeIn
+
   // Services Section
-  //section#services.content-section.parallaxParent
+  section#services.content-section.parallaxParent
     .container
       .row
         .col-md-4.v-center.col-xs-12
@@ -38,23 +53,12 @@ block site_body
               | The Computer Lab network will help you scale.  We have tools to
               | get more eyes on your product and people who can help you build
               | your brand. 
-  section#case-study.content-section.alt
-    .container 
-      .row
-        .col-md-6.col-xs-12
-          h1.wow.fadeIn
-            a(href=config.feature_case_path)=config.feature_case_title
-          h3=config.feature_case_lede
-          p.wow.fadeIn=config.feature_case_excerpt
-          a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
-          a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
-        .col-md-6.v-center.col-xs-12
-          img(src="/images/pinpoints4.png").wow.fadeIn
 
   section#feature-post.content-section.alt
     .container
       .row
         .col-md-8.col-md-offset-2.col-xs-12
+          h4.wow.fadeIn Blog
           h1.wow.fadeIn
             a(href=config.feature_note_path)=config.feature_note_title
           p.wow.fadeIn=config.feature_note_excerpt
@@ -79,11 +83,8 @@ block site_body
                 a(target='_blank' href='https://ptsteadman.com/') Patrick Steadman
                 | , 
                 a(target='_blank' href='http://zachtaylor.me') Zachary Taylor
-                | , 
-                a(target='_blank' href='http://maxhfowler.com/') Max Fowler
                 |  and 
-                a(target='_blank' href='http://henrymac.info/') Henry MacConnel
-                | .
+                a(target='_blank' href='http://maxhfowler.com/') Max Fowler.
           .about.wow.slideInUp
             p 
               span
