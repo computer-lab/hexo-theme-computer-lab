@@ -15,9 +15,11 @@ meta(name='state', content='New York')
 meta(name='country', content='United States')
 meta(name='language', content='EN')
 meta(property='og:site_name', content='Computer Lab')
-meta(property='og:title', content='Computer Lab // Digital Consultancy in Brooklyn, NY')
+if page.title
+  meta(property='og:title', content=page.title)
+else
+  meta(property='og:title', content='Computer Lab // Digital Consultancy in Brooklyn, NY')
 meta(property='og:image', content='http://computerlab.io/images/computer.png')
-meta(property='og:description', content='Computer Lab is a digital consultancy in Brooklyn, NY that helps organizations accelerate their products and brands.')
 meta(name='twitter:card', content='summary_large_image')
 meta(name='twitter:site', content='@computerlab_')
 meta(name='twitter:domain', content='http://computerlab.io')
