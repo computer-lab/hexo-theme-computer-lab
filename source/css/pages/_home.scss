@@ -10,7 +10,7 @@ body.index {
 }
 
 .content-section {
-  padding: $base-spacing * 12 0; 
+  padding: $base-spacing * 8 0; 
 
   &.last {
     // bring up footer for last section
@@ -22,7 +22,7 @@ body.index {
   }
 
   h1.section-title {
-    margin: $base-spacing * 2 0 $base-spacing * 4;
+    margin: $base-spacing 0 $base-spacing * 2;
     color: $copy;
 
     @media (max-width: 991px) {
@@ -118,9 +118,9 @@ body.index {
   @include angle-section($pink, -2.0deg)
 }
 
-#services:after {
-  @include angle-section($grey, -2.0deg)
-}
+// #services:after {
+//   @include angle-section($white, -2.0deg)
+// }
 
 #services {
   position: relative;
@@ -145,14 +145,15 @@ body.index {
 
 #case-study {
   background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.4) 100%);
+  background-color: $pinpoints-blue;
   overflow: hidden;
   position: relative;
 
   img {
-    margin-top: -100px;
+    margin-top: -75px;
     height: 650px;
     position: absolute;
-    margin-left: 50px;
+    right: -200px;
     
     @media(max-width:992px) {
       display: none;
@@ -169,7 +170,6 @@ body.index {
     color: $pink;
   }
 }
-
 
 #feature-post {
   background: $copy;
