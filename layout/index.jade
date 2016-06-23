@@ -13,7 +13,7 @@ block site_body
             a.btn.btn-circle.wow.floating.page-scroll(href='#services')
               i.fa.fa-angle-double-down.animated
   // Services Section
-  //section#services.content-section.parallaxParent
+  section#services.content-section.parallaxParent
     .container
       .row
         .col-md-4.v-center.col-xs-12
@@ -42,20 +42,21 @@ block site_body
     .container 
       .row
         .col-md-6.col-xs-12
-          h1.wow.fadeIn
+          h1.section-title.wow.fadeIn
             a(href=config.feature_case_path)=config.feature_case_title
           h3=config.feature_case_lede
           p.wow.fadeIn=config.feature_case_excerpt
           a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
           a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
         .col-md-6.v-center.col-xs-12
-          img(src="/images/pinpoints4.png").wow.fadeIn
+          img(src="/images/pinpoints5.png").wow.fadeIn
 
   section#feature-post.content-section.alt
     .container
       .row
         .col-md-8.col-md-offset-2.col-xs-12
-          h1.wow.fadeIn
+          h1.section-title.wow.fadeIn From The Blog
+          h2.wow.fadeIn
             a(href=config.feature_note_path)=config.feature_note_title
           p.wow.fadeIn=config.feature_note_excerpt
           h5.wow.fadeIn=config.feature_note_author + ' - '
@@ -87,7 +88,7 @@ block site_body
           .about.wow.slideInUp
             p 
               span
-              | Our office off the Bedford L is open to all, contact us to set up a time to
+              | Our office off the Bedford L is open to all, contact us and set up a time to
               | stop by. 
               br
           .about.wow.slideInUp
