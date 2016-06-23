@@ -119,7 +119,7 @@ body.index {
 }
 
 #services:after {
-  @include angle-section(white, -2.0deg)
+  @include angle-section($grey, -2.0deg)
 }
 
 #services {
@@ -145,7 +145,6 @@ body.index {
 
 #case-study {
   background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.4) 100%);
-  background-color: $pinpoints-blue;
   overflow: hidden;
   position: relative;
 
@@ -154,10 +153,12 @@ body.index {
     height: 650px;
     position: absolute;
     margin-left: 50px;
+    
     @media(max-width:992px) {
       display: none;
+      margin-bottom: -40px;
     }
-
+  
   }
 
   h1 > a, p {
@@ -197,7 +198,7 @@ body.index {
 
 #feature-post:before {
   @include angle-section($copy, 2.0deg);
-  top: -36px;
+  top: -26px;
 }
 
 #feature-post:after {

@@ -1,3 +1,12 @@
+if config.author
+  meta(name="author", content=config.author)
+
+title
+  if page.title
+    = page.title
+  else
+    = config.title
+
 meta(charset='utf-8')
 meta(http-equiv='X-UA-Compatible', content='IE=edge')
 meta(http-equiv='cleartype', content='on')
@@ -15,15 +24,16 @@ meta(name='state', content='New York')
 meta(name='country', content='United States')
 meta(name='language', content='EN')
 meta(property='og:site_name', content='Computer Lab')
-meta(property='og:title', content='Computer Lab // Digital Consultancy in Brooklyn, NY')
+if page.title
+  meta(property='og:title', content=page.title)
+else
+  meta(property='og:title', content='Computer Lab // Digital Consultancy in Brooklyn, NY')
 meta(property='og:image', content='http://computerlab.io/images/computer.png')
-meta(property='og:description', content='Computer Lab is a digital consultancy in Brooklyn, NY that helps organizations accelerate their products and brands.')
 meta(name='twitter:card', content='summary_large_image')
 meta(name='twitter:site', content='@computerlab_')
 meta(name='twitter:domain', content='http://computerlab.io')
 meta(name='twitter:image', content='http://computerlab.io/images/computer.png')
 meta(name='twitter:description', content='Computer Lab is a digital consultancy in Brooklyn, NY.')
-title Computer Lab - Digital Consultancy in Brooklyn, NY
 
 // Vendor Fonts
 link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
@@ -43,15 +53,6 @@ script.
   script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
   script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 
-if config.author
-  meta(name="author", content=config.author)
-
-block page_description
-  meta(name="description", content=config.description)
-
-title
-  block site_title
-    = config.title
 
 // crazy egg tracking
 script(type='text/javascript').

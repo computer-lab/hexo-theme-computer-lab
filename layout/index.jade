@@ -44,7 +44,7 @@ block site_body
       .row
         .col-md-6.col-xs-12
           h4.wow.fadeIn Case Study
-          h1.wow.fadeIn
+          h1.section-title.wow.fadeIn
             a(href=config.feature_case_path)=config.feature_case_title
           h3=config.feature_case_lede
           p.wow.fadeIn=config.feature_case_excerpt
@@ -57,7 +57,8 @@ block site_body
       .row
         .col-md-8.col-md-offset-2.col-xs-12
           h4.wow.fadeIn Blog
-          h1.wow.fadeIn
+          h1.section-title.wow.fadeIn From The Blog
+          h2.wow.fadeIn
             a(href=config.feature_note_path)=config.feature_note_title
           p.wow.fadeIn=config.feature_note_excerpt
           h5.wow.fadeIn=config.feature_note_author + ' - '
@@ -86,7 +87,7 @@ block site_body
           .about.wow.slideInUp
             p 
               span
-              | Our office off the Bedford L is open to all, contact us to set up a time to
+              | Our office off the Bedford L is open to all, contact us and set up a time to
               | stop by. 
               br
           .about.wow.slideInUp
