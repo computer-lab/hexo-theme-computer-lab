@@ -9,6 +9,10 @@ wow = new WOW({
 
 wow.init();
 
-// vivus svg animations
-var servicesVivus = new Vivus('devices-svg', {duration: 120});
-var teamVivus = new Vivus('team-svg', {duration: 120});
+if ($('#devices-svg').length) {
+  new Vivus('devices-svg', {duration: 120});
+}
+
+if ($('#team-svg').length) {
+  new Vivus('team-svg', {duration: 120});
+}
