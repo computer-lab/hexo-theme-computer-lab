@@ -13,6 +13,7 @@ code {
   padding: 0 5px;
 }
 pre {
+  padding: 10px 15px;
   padding-bottom: 0;
   line-height: 22px;
   -webkit-border-radius: 4px;
@@ -32,7 +33,7 @@ pre code {
   padding: 10px 15px;
   color: #4d4d4c;
   overflow: auto;
-  margin-bottom: 1em;
+  margin: 0;
 }
 .highlight figcaption {
   zoom: 1;
@@ -52,14 +53,13 @@ pre code {
   float: right;
 }
 .highlight pre {
-  margin: 0;
   padding: 0;
   border: none;
   background: none;
 }
 pre .comment,
 pre .title {
-  color: #4271ae;
+  color: #8e908c;
 }
 pre .variable,
 pre .attribute,
@@ -107,7 +107,7 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #f5871f;
+  color: #4271ae;
 }
 pre .keyword,
 pre .javascript .function {
