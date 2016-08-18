@@ -115,11 +115,11 @@ body.index {
 }
 
 #home:after {
-  @include angle-section($pink, -2.0deg)
+  @include angle-section($pink, -1.5deg)
 }
 
 // #services:after {
-//   @include angle-section($white, -2.0deg)
+//   @include angle-section($white, -1.5deg)
 // }
 
 #services {
@@ -131,7 +131,7 @@ body.index {
   
   .service, .about{
     color: $copy;
-    margin: 0 0 $base-spacing * 2 0;
+    margin: 0 0 $base-spacing * 1.5;
 
     h3 {
       color: $copy;
@@ -143,17 +143,23 @@ body.index {
   }
 }
 
+#services:after {
+  @include angle-section($white, -1.5deg);
+
+}
+
 #case-study {
   background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.4) 100%);
   background-color: $pinpoints-blue;
   overflow: hidden;
   position: relative;
+  padding: 140px 0;
 
   img {
     margin-top: -75px;
     height: 650px;
     position: absolute;
-    right: -200px;
+    right: -1.5px;
     
     @media(max-width:992px) {
       display: none;
@@ -197,10 +203,10 @@ body.index {
 }
 
 #feature-post:before {
-  @include angle-section($copy, 2.0deg);
+  @include angle-section($copy, 1.5deg);
   top: -26px;
 }
 
 #feature-post:after {
-  @include angle-section($copy, -2.0deg);
+  @include angle-section($copy, -1.5deg);
 }

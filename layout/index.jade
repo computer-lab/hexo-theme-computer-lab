@@ -9,7 +9,7 @@ block site_body
         .row
           .col-md-8.col-md-offset-2.wow.fadeIn.invisible
             h1.brand-heading We are here to help you.
-            p.intro-text Computer Lab is a digital consultancy that helps organizations accelerate products, brands and beyond.
+            p.intro-text=config.blurb
             a.btn.btn-circle.wow.floating.page-scroll(href='#services')
               i.fa.fa-angle-double-down.animated
   // Services Section
@@ -38,6 +38,20 @@ block site_body
               | The Computer Lab network will help you scale.  We have tools to
               | get more eyes on your product and build your brand. 
 
+  // Case study
+  section#case-study.content-section.alt
+    .container 
+      .row
+        .col-md-6.col-xs-12
+           h4.wow.fadeIn Case Study
+           h1.section-title.wow.fadeIn
+             a(href=config.feature_case_path)=config.feature_case_title
+           h3=config.feature_case_lede
+           p.wow.fadeIn=config.feature_case_excerpt
+           a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
+           a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
+         .col-md-6.v-center.col-xs-12
+           img(src="/images/pinpoints6.png").wow.fadeIn
   section#feature-post.content-section.alt
     .container
       .row
@@ -49,20 +63,6 @@ block site_body
           h5.wow.fadeIn=config.feature_note_author + ' - '
             span.date=config.feature_note_date
           a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_note_path) Read More
-  // Case Study
-  //- section#case-study.content-section.alt
-  //-   .container 
-  //-     .row
-  //-       .col-md-6.col-xs-12
-  //-         h4.wow.fadeIn Case Study
-  //-         h1.section-title.wow.fadeIn
-  //-           a(href=config.feature_case_path)=config.feature_case_title
-  //-         h3=config.feature_case_lede
-  //-         p.wow.fadeIn=config.feature_case_excerpt
-  //-         a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
-  //-         a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
-  //-       .col-md-6.v-center.col-xs-12
-  //-         img(src="/images/pinpoints6.png").wow.fadeIn
   // About Section
   section#about.content-section.last
     .container
