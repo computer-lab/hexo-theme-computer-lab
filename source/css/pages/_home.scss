@@ -131,7 +131,7 @@ body.index {
   
   .service, .about{
     color: $copy;
-    margin: 0 0 $base-spacing * 1.5;
+    margin: 0 0 $base-spacing * 2 0;
 
     h3 {
       color: $copy;
@@ -159,7 +159,7 @@ body.index {
     margin-top: -75px;
     height: 650px;
     position: absolute;
-    right: -1.5px;
+    right: -200px;
     
     @media(max-width:992px) {
       display: none;
