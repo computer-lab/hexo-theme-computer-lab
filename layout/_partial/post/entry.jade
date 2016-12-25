@@ -1,6 +1,7 @@
 article(class=page.layout)
-  h1.post-title= page.title
-
+  .row
+    .col-md-8.col-md-offset-2
+      h1.post-title= page.title
   .post-meta
     include meta
     h4=page.date.format('ll')

@@ -1,7 +1,7 @@
 // global typography 
 
 body {
-  font-family: adobe-garamond-pro,Times,sans-serif;
+  font-family: "Gill Sans", Arial, sans-serif;
   font-weight: 400;
   color: $copy;
   -webkit-font-smoothing: antialiased;
@@ -10,21 +10,28 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   margin: $base-spacing * 2 0 $base-spacing;
-  font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-family: "Helvetica", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: $primary;
+
+  > a {
+    // no underlines on header copy
+    border-bottom: none !important;
+    padding-bottom: none !important;
+  }
 
 }
 
 p {
   margin: 0 0 25px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 150%;
-  font-weight: 400;   
+  font-weight: 400;  
+
   @media(min-width:768px) {
     margin: 0 0 $base-spacing * 2;
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 
@@ -35,13 +42,14 @@ code {
 
 a {
   color: $pink;
-  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  border-bottom: 2px solid $pink;
 
   &:hover,
   &:focus {
       text-decoration: none;
       color: $accent;
-      // border-bottom: 2px solid $accent;
+      border-bottom: 2px solid $pink;
   }
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -68,22 +76,30 @@ ul {
 }
 
 .btn-default, a.btn-default {
-
-  text-transform: uppercase;
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-family: "Helvetica", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
   font-size: 16px;
   line-height: 150%;
-  color: $accent;
+  text-transform: none;
+  font-style: italic;
+  color: $pink;
 
 }
 
 // blog typography
 
 #archive, article {
-  h1,h2,h3,h4,h5,h6 {
+  h1, h2, h3, h4, h6 {
     color: $copy;
+  }
+
+  h5 {
+    color: $grey;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 400;
+    color: $grey;
+
   }
 
   p {
@@ -93,8 +109,8 @@ ul {
 
 // typography utility classes
 .pink {
-    color: $pink;
-    font-weight: 700;
+  color: $pink;
+  font-weight: 700;
 }
 
 .accent {
@@ -109,6 +125,7 @@ ul {
 .primary {
   color: $primary;
 }
+
 .light {
   font-weight: 400;
 }

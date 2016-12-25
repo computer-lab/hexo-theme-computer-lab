@@ -4,6 +4,7 @@
 // base
 @import "base/variables";
 @import "base/mixins";
+@import "base/fonts";
 @import "base/typography";
 @import "base/global";
 @import "base/syntax-highlighting";
@@ -14,7 +15,6 @@
 // components
 @import "components/buttons";
 @import "components/pagination";
-@import "components/tagcloud";
 
 // partials
 @import "partials/header";

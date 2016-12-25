@@ -1,8 +1,7 @@
 footer {
-  background-color: $copy;
+  background-color: $pink;
   height: auto;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  color: $white;
   line-height: 28px;
 
   .pull-left, .pull-right {
@@ -11,7 +10,7 @@ footer {
 
   a {
     margin-left: $base-spacing;
-    color: white;
+    color: $white;
   }
   a:hover, a:focus {
     color: rgb(250,30,100);

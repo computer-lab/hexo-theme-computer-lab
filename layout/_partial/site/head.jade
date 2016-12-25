@@ -14,7 +14,7 @@ meta(name='MobileOptimized', content='320')
 meta(name='HandheldFriendly', content='True')
 meta(name='apple-mobile-web-app-capable', content='yes')
 meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
-meta(name='description', content='Computer Lab is a digital consultancy in New York, NY that helps organizations accelerate their products and brands.')
+meta(name='description', content='Computer Lab is a software consultancy in New York City that helps organizations accelerate their products and brands.')
 meta(name='keywords', content='django, web development, software, branding, design, linux, branding, logos, react, python, web design, developers, new york, new york city, brooklyn')
 meta(name='google-site-verification', content='cAcSU62Yp5NwS2tAG5wbbYETGM7j-kmqPjgiNlqLOs8')
 meta(name='copyright', content='2016 Computer Lab')
@@ -27,39 +27,23 @@ meta(property='og:site_name', content='Computer Lab')
 if page.title
   meta(property='og:title', content=page.title)
 else
-  meta(property='og:title', content='Computer Lab // Digital Consultancy in New York, NY')
+  meta(property='og:title', content='Computer Lab // Software Consultancy in New York City.')
 meta(property='og:image', content='http://computerlab.io/images/computer.png')
 meta(name='twitter:card', content='summary_large_image')
 meta(name='twitter:site', content='@computerlab_')
 meta(name='twitter:domain', content='http://computerlab.io')
 meta(name='twitter:image', content='http://computerlab.io/images/computer.png')
-meta(name='twitter:description', content='Computer Lab is a digital consultancy in New York, NY.')
+meta(name='twitter:description', content='Computer Lab is a software consultancy in New York City.')
 
 // Vendor Fonts
-link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
-rel='stylesheet', type='text/css')
+link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet', type='text/css')
 link(href="/bower_components/animate.css/animate.min.css" rel='stylesheet' type='text/css')
-link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700',
-rel='stylesheet', type='text/css')
-// typekit fonts
-script(src='https://use.typekit.net/xdu8xas.js')
-script.
-  try{Typekit.load({ async: false });} catch(e){}
-
 
 // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 // WARNING: Respond.js doesn't work if you view the page via file://
 //if lt IE 9
   script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
   script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-
-
-// crazy egg tracking
-script(type='text/javascript').
-  setTimeout(function(){var a=document.createElement("script");
-  var b=document.getElementsByTagName("script")[0];
-  a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0048/7400.js?"+Math.floor(new Date().getTime()/3600000);
-  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
 //- RSS
 link(rel="alternate", href=theme.rss ? theme.rss : config.root + "rss2.xml", title="config.title", type="application/rss2.xml")

@@ -3,16 +3,16 @@
 .navbar-custom {
   margin-bottom: 0;
   text-transform: uppercase;
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: $primary;
+  color: $copy;
 
   .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: white;
+    color: $copy;
 
     @media (max-width: 767px) {
-      color: $white;
+      color: $copy;
     }
 
     &:focus,
@@ -20,25 +20,34 @@
       outline: none;
     }
   }
+
   .navbar-brand {
     font-weight: 700;
-    color: $pink;
+    color: $copy;
     border-bottom: none;
+    text-transform: none;
+
     &:focus, &:hover {
       outline: none;
       color: $copy;
       border-bottom: none;
     }
+
+    svg.logo {
+      width: 306.5px;
+    }
   }
 
   a {
     color: $copy;
+    border-bottom: none !important;
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
   }
 
   .nav {
+
     li {
       font-size: 1em;
       a {
@@ -57,6 +66,7 @@
           color: $copy;
         }
       }
+
       &.active {
         outline: none;
         a {
@@ -67,32 +77,36 @@
       }
     }
   }
+
   @media(min-width:768px) {
     padding: 20px 0;
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
+    color: $copy;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
+
     &.top-nav-collapse {
       padding: 0;
-      background: $pink;
+      background: $white;
 
       a {
-        color: $white;
+        color: $copy;
       }
     }
   }
+
   @media(max-width:767px) {
-    background: $pink;
+    background: $white;
 
     .navbar-brand {
-      color: $white;
+      color: $copy;
     }
 
     a {
-      color: $white;
+      color: $copy;
     }
   }
 }
