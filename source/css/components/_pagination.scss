@@ -2,6 +2,9 @@
   margin:  1.5 * $base-spacing 0 $base-spacing 0;
   width: 100%;
 
+  a.next {
+  	margin-left: 5px;
+  }
   .entry-pagination__link--next {
     float: right;
   }

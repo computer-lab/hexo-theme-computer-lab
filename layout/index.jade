@@ -8,10 +8,12 @@ block site_body
       .container
         .row.blurb
           .col-md-6.col-md-offset-3
-            h1 
+            h1
               span.pink Computer Lab 
               | is a software consultancy in New York City that helps organizations build
               | digital products. 
+            //a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_note_path) Join the Slack
+            //a.btn.btn-default.over-dark.wow.fadeIn.read-more(href='') Learn More
   // About Section
   section#about.content-section.last
     .container
@@ -21,12 +23,21 @@ block site_body
           .about.wow.slideInUp
             p
               | We are a group of developers, designers and engineers 
-              | who met on the internet and work together in New York City.
+              | who met on the internet and work together in New York City. 
+              | Computer Lab is a full-service dev shop that specializes in developing data-driven applications with intensive UIs.
           .about.wow.slideInUp
             p
-              | We specialize in developing data-driven applications
-              | with intensive UIs. We're a full-service dev shop that can work with your team
-              | to make sure you're solving the right problems.
+              | Clients we've worked with recently include 
+              span
+                a(target='_blank' href='https://iheart.com/') iHeartRadio
+                | , 
+                a(target='_blank' href='http://singlesprout.com/') SingleSprout
+                | , 
+                a(target='_blank' href='http://singlesprout.com/') Alder Property Group
+                | , 
+                a(target='_blank' href='http://verdes.nyc') Verdes
+                |  and 
+                a(target='_blank' href='http://onscreentoday.com/') Screen.
           .about.wow.slideInUp
             p Our team is led by  
               span
@@ -46,16 +57,15 @@ block site_body
             p
               a.btn.btn-default.email(href='mailto:hi@computerlab.io?Subject=Inquiry') Email
   // Case study
-  section#case-study.content-section.alt
+  //section#case-study.content-section.alt
     .container 
       .row
         .col-md-5.col-md-offset-1.v-center.col-xs-12
           img(src="").wow.fadeIn
         .col-md-5.col-xs-12
-           h4.wow.fadeIn Case Study
-           h1.section-title.wow.fadeIn
-             a(href=config.feature_case_path)=config.feature_case_title
+           h1.section-title.wow.fadeIn Case Study
            h3=config.feature_case_lede
+           a(href=config.feature_case_path)=config.feature_case_title
            p.wow.fadeIn=config.feature_case_excerpt
            a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
            a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
@@ -63,10 +73,12 @@ block site_body
     .container
       .row
         .col-md-6.col-md-offset-3.col-xs-12
+          h2.section-title.wow.fadeIn Blog
           h1.section-title.wow.fadeIn 
             a(href=config.feature_note_path)=config.feature_note_title
-          h5.wow.fadeIn=config.feature_note_author + ' - '
+          h5.info.wow.fadeIn=config.feature_note_author + ' - '
             span.date=config.feature_note_date
           p.wow.fadeIn=config.feature_note_excerpt
           a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_note_path) Read More
+          a.btn.btn-default.over-dark.wow.fadeIn.read-more(href='/blog/') Blog
 

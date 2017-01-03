@@ -6,6 +6,7 @@
     // bring up footer for last section
     margin-bottom: -94px;
   }
+
   @media (max-width: 991px) {
     padding: $base-spacing * 8 0;
   }
@@ -19,6 +20,7 @@
       text-align: left;
     }
   }
+
   .row {
     display: flex;
 
@@ -54,21 +56,18 @@
   margin-top: - $menu-height; // center in viewport, regardless of menu height
   width: 100%;
   height: 100vh;
-  height: 100vh;
-  background-color: $white;
 
   .blurb {
     height: 360px;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
   }
 
   h1 {
     color: $copy;
+    margin: 0;
     font-size: 56px;
 
     span.pink {
@@ -93,9 +92,6 @@
 }
 
 #case-study {
-  background-color: $white;
-  color: $copy;
-  overflow: hidden;
   position: relative;
   padding: 140px 0;
 
@@ -122,13 +118,12 @@
 }
 
 #feature-post {
-  background: $white;
   position: relative;
-  padding: 120px 0 140px 0;
+  padding: $base-spacing * 12 0;
 
-  .date {
-    font-style: italic;
+  h5.info {
     color: $grey;
+    margin-top: 0;
     font-weight: 100;
   }
 

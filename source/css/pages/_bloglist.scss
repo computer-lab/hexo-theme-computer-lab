@@ -5,9 +5,7 @@
   margin-top: 3 * $base-spacing;
 
   .page__title {
-    margin: $base-spacing * 3 0 0;
-    padding-bottom: $base-spacing * 6;
-    border-bottom: 1px solid $grey;
+    margin: $base-spacing * 2 0;
   }
 }
 
@@ -20,16 +18,16 @@ ul.post-items {
   -webkit-padding-start: 0px;
 
   li.post-item {
-    margin: $base-spacing * 3 0;
+    margin: $base-spacing * 5 0;
     list-style: none;
-    border-bottom: 1px solid $grey; 
 
     p {
       margin: 0 0;
     }
 
     h5 {
-      margin: $base-spacing 0 $base-spacing * 3;
+      margin: -5px 0 $base-spacing;
+      letter-spacing: 1px;
     }
   }
 }
