@@ -7,10 +7,19 @@ html(lang="en")
   body#page-top(class=page.layout data-spy='scroll', data-target='.navbar-fixed-top')
     block site_header
       include _partial/site/header
+      include _partial/svg/logo-svg
 
     main#content
       block site_body
 
     include _partial/site/footer
-
     include _partial/scripts
+
+    //- .container
+    //-   .row
+    //-     #sidebar.col-md-2
+    //-       block site_sidebar
+    //-         include _partial/site/sidebar
+
+    //-     main#content.col-md-10
+    //-       block site_body

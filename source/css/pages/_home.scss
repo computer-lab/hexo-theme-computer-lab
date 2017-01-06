@@ -1,3 +1,22 @@
+a.logo {
+  border-bottom: none !important;
+  position: fixed;
+  z-index: 1;
+  top: $base-spacing;
+  left: $base-spacing * 4;
+
+  > svg {
+    width: 75px;
+  }
+
+  h3 {
+    color: $pink;
+    padding-left: $base-spacing-small;
+    display: inline-block;
+    float: right;
+  }
+}
+
 .content-section {
   padding: $base-spacing * 4 0; 
   min-height: 100vh;
@@ -7,7 +26,7 @@
     margin-bottom: -94px;
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: $tablet) {
     padding: $base-spacing * 8 0;
   }
 
@@ -15,8 +34,8 @@
     margin: $base-spacing 0 $base-spacing * 2;
     color: $copy;
 
-    @media (max-width: 991px) {
-      margin: $base-spacing * 6 0 $base-spacing * 3;
+    @media (max-width: $tablet) {
+      margin: $base-spacing * 2 0 $base-spacing;
       text-align: left;
     }
   }
@@ -27,22 +46,13 @@
     .v-center {
       display: flex;
 
-      @media (max-width: 991px) {
+      @media (max-width: $tablet) {
         display: block;
       }
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: $tablet) {
       display: block;
-    }
-  }
-
-  svg.center {
-    display: block;
-    margin: auto;
-
-    @media (max-width: 991px) {
-      width: 66%;
     }
   }
 
@@ -54,11 +64,12 @@
 
 #home {
   margin-top: - $menu-height; // center in viewport, regardless of menu height
+  background-color: $light-grey;
   width: 100%;
   height: 100vh;
 
   .blurb {
-    height: 360px;
+    height: 310px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -68,7 +79,12 @@
   h1 {
     color: $copy;
     margin: 0;
-    font-size: 56px;
+    margin-left: -$base-spacing * 2;
+    font-size: 52px;
+
+    @media (max-width: $tablet) {
+      font-size: 44px;
+    }
 
     span.pink {
       color: $pink;
@@ -77,44 +93,54 @@
 }
 
 #about {
-  
+  background-color: $light-grey;
+
+  h2 {
+    color: $copy;
+  }
+
   .about{
     margin: 0 0 $base-spacing * 2 0;
 
-    h3 {
+    p {
       color: $copy;
-
-      span {
-        margin-left: $base-spacing-small;
-      }
     }
   }
 }
 
-#case-study {
-  position: relative;
-  padding: 140px 0;
+#work {
 
-  img {
-    margin-top: -75px;
-    height: 650px;
-    position: absolute;
-    right: -200px;
-    
-    @media(max-width:992px) {
-      display: none;
-      margin-bottom: -40px;
-    }
-  
+  img.project {
+    margin: $base-spacing * 3 0;
+    height: 205px;
+    width: 100%;
+
+    // &.left {
+    //   padding-right: $base-spacing * 2;
+    // }
+
+    // &.right {
+    //   padding-left: $base-spacing * 2;
+    // }
+
+    // &.pushdown {
+    //   margin-top: 285px;
+    // }
+
+    // &.pullup {
+    //   margin-top: -285px;
+    // }
   }
 
-  h1 > a, p {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  h2, p {
     color: $copy;
+    text-align: left;
   }
 
-  h5, h3 {
-    color: $pink;
-  }
 }
 
 #feature-post {
@@ -124,7 +150,9 @@
   h5.info {
     color: $grey;
     margin-top: 0;
-    font-weight: 100;
+    font-family: 'Gill Sans', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 
   p {

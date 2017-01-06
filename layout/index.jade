@@ -7,37 +7,55 @@ block site_body
     .intro-body
       .container
         .row.blurb
-          .col-md-6.col-md-offset-3
+          .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
             h1
               span.pink Computer Lab 
               | is a software consultancy in New York City that helps organizations build
               | digital products. 
-            //a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_note_path) Join the Slack
-            //a.btn.btn-default.over-dark.wow.fadeIn.read-more(href='') Learn More
+            //a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Join the Slack
+            //a.btn.btn-default.wow.fadeIn.read-more(href='') Learn More
+  // Work
+  section#work.content-section
+    .container
+      .row
+        .col-md-4.col-md-offset-2.wow.slideInUp
+          img(src="/images/iheart-project.svg" alt="").project.wow.slideInUp
+        .col-md-4.wow.slideInUp
+          h2 iHeartRadio
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
+          a.btn.btn-default.wow.fadeIn.read-more(href='https://www.iheart.com') View
+      .row
+        .col-md-4.col-md-offset-2.wow.slideInUp
+          img(src="/images/iheart-project.svg" alt="").project.wow.slideInUp
+        .col-md-4.wow.slideInUp
+          h2 Nectar
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
+          a.btn.btn-default.wow.fadeIn.read-more(href='https://joinnectar.com') View
+      .row
+        .col-md-4.col-md-offset-2.wow.slideInUp
+          img(src="/images/verdes-project.svg" alt="").project.wow.slideInUp
+        .col-md-4.wow.slideInUp
+          h2 Verdes Pinpoints
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
+          a.btn.btn-default.wow.fadeIn.read-more(href='http://pinpoints.io') View
+      .row
+        .col-md-4.col-md-offset-2.wow.slideInUp
+          img(src="/images/screen-project.svg" alt="").project.wow.slideInUp
+        .col-md-4.wow.slideInUp
+          h2 Screen
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
+          a.btn.btn-default.wow.fadeIn.read-more(href='http://www.onscreentoday.com') View
   // About Section
   section#about.content-section.last
     .container
       .row
-        .col-md-6.col-md-offset-3.col-xs-12
+        .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
           h2.section-title.wow.fadeIn About
           .about.wow.slideInUp
             p
               | We are a group of developers, designers and engineers 
               | who met on the internet and work together in New York City. 
               | Computer Lab is a full-service dev shop that specializes in developing data-driven applications with intensive UIs.
-          .about.wow.slideInUp
-            p
-              | Clients we've worked with recently include 
-              span
-                a(target='_blank' href='https://iheart.com/') iHeartRadio
-                | , 
-                a(target='_blank' href='http://singlesprout.com/') SingleSprout
-                | , 
-                a(target='_blank' href='http://singlesprout.com/') Alder Property Group
-                | , 
-                a(target='_blank' href='http://verdes.nyc') Verdes
-                |  and 
-                a(target='_blank' href='http://onscreentoday.com/') Screen.
           .about.wow.slideInUp
             p Our team is led by  
               span
@@ -56,7 +74,6 @@ block site_body
           .about.row.wow.slideInUp    
             p
               a.btn.btn-default.email(href='mailto:hi@computerlab.io?Subject=Inquiry') Email
-  // Case study
   //section#case-study.content-section.alt
     .container 
       .row
@@ -67,18 +84,18 @@ block site_body
            h3=config.feature_case_lede
            a(href=config.feature_case_path)=config.feature_case_title
            p.wow.fadeIn=config.feature_case_excerpt
-           a.btn.btn-default.over-dark.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
-           a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_case_path) Read More
+           a.btn.btn-default.wow.fadeIn.read-more(target='_blank' href=config.feature_case_project_path) View
+           a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_case_path) Read More
   section#feature-post.content-section.alt
     .container
       .row
-        .col-md-6.col-md-offset-3.col-xs-12
+        .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
           h2.section-title.wow.fadeIn Blog
           h1.section-title.wow.fadeIn 
             a(href=config.feature_note_path)=config.feature_note_title
           h5.info.wow.fadeIn=config.feature_note_author + ' - '
             span.date=config.feature_note_date
           p.wow.fadeIn=config.feature_note_excerpt
-          a.btn.btn-default.over-dark.wow.fadeIn.read-more(href=config.feature_note_path) Read More
-          a.btn.btn-default.over-dark.wow.fadeIn.read-more(href='/blog/') Blog
+          a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Read More
+          a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') Blog
 

@@ -6,9 +6,8 @@ html {
 body {
   width: 100%;
   min-height: 100%;
-  background-color: white;
-  background: repeating-linear-gradient(-45deg, rgba(255,255,255,0.13),
-  rgba(255,255,255,0.14) 15px);
+  background-image: url('http://linkli.st/assets/background-blue-1c6507d407b241f4304b4a6df3209902.gif');
+  
   // sticky footer
   display: flex;
   flex-flow: column;

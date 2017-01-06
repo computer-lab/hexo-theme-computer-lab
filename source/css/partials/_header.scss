@@ -1,5 +1,9 @@
 // header/nav 
 
+.navbar-nav {
+  float: left !important;
+}
+
 .navbar-custom {
   margin-bottom: 0;
   background: transparent;
@@ -31,11 +35,6 @@
       color: $copy;
       border-bottom: none;
     }
-
-    svg.logo {
-      width: 105px;
-      margin-top: -15px;
-    }
   }
 
   a {
@@ -47,6 +46,7 @@
   }
 
   .nav {
+    min-height: $base-spacing * 2;
 
     li {
 
@@ -54,11 +54,14 @@
         -webkit-transition: color .3s ease-in-out;
         -moz-transition: color .3s ease-in-out;
         transition: color .3s ease-in-out;
+        border-bottom: 2px solid transparent;
+        font-size: 16px;
 
         &:hover {
-          color: $copy;
+          color: $pink;
           outline: none;
           background-color: transparent;
+          border-bottom: 2px solid $pink;
         }
 
         &:focus,
@@ -82,8 +85,8 @@
   }
 
   @media(min-width:768px) {
-
-    padding: 20px 0;
+    min-height: $base-spacing * 2;
+    padding: $base-spacing 0;
     border-bottom: none;
     background: transparent;
     letter-spacing: 1px;
@@ -103,7 +106,7 @@
   }
 
   @media(max-width:767px) {
-    background: $white;
+    background: transparent;
 
     .navbar-brand {
       color: $copy;

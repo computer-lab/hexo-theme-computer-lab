@@ -2,20 +2,27 @@ footer {
   background-color: $pink;
   height: auto;
   color: $white;
-  padding: $base-spacing 0;
+  padding: $base-spacing;
   line-height: 28px;
 
+  .push-left {
+    float: left;
+  }
+
+  .push-right {
+    float: right;
+  }
+
   .pull-left, .pull-right {
-    padding: $base-spacing 0;
     display: inline-block;
-    width: 150px;
+    width: 300px;
   }
 
   a {
     margin-left: $base-spacing;
     color: $white;
   }
-  
+
   a:hover, a:focus {
     color: rgb(250,30,100);
   }
