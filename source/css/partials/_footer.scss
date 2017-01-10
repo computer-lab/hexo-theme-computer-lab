@@ -15,15 +15,16 @@ footer {
 
   .pull-left, .pull-right {
     display: inline-block;
-    width: 300px;
+    width: 150px;
   }
 
   a {
     margin-left: $base-spacing;
+    border-bottom: none;
     color: $white;
   }
 
   a:hover, a:focus {
-    color: rgb(250,30,100);
+    color: $copy;
   }
 }

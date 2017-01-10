@@ -6,7 +6,7 @@
 
 .navbar-custom {
   margin-bottom: 0;
-  background: transparent;
+  background: $white;
   color: $copy;
 
   .navbar-toggle {
@@ -25,8 +25,9 @@
   }
 
   .navbar-brand {
+    color: $pink;
+    font-family: "Quadraat";
     font-weight: 700;
-    color: $copy;
     border-bottom: none;
     text-transform: none;
 
@@ -77,7 +78,7 @@
 
         a {
           &:hover {
-            color: $primary;
+            color: $white;
           }
         }
       }
@@ -88,16 +89,18 @@
     min-height: $base-spacing * 2;
     padding: $base-spacing 0;
     border-bottom: none;
-    background: transparent;
+    background: $white;
     letter-spacing: 1px;
     color: $copy;
+    border-bottom: 1px solid #E7E7E7;
+
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
 
     &.top-nav-collapse {
       padding: 0;
-      background: transparent;
+      background: $white;
 
       a {
         color: $copy;

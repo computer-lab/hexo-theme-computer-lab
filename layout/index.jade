@@ -6,13 +6,14 @@ block site_body
   section#home
     .intro-body
       .container
-        .row.blurb
-          .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-            h1
-              span.pink Computer Lab 
-              | is a software consultancy in NYC that builds digital products.
-            //a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Join the Slack
-            //a.btn.btn-default.wow.fadeIn.read-more(href='') Learn More
+        //- .row.blurb
+        //-   .col-md-6.col-md-offset-3
+        //-     h1 We are here to help you.
+        //-     h2
+        //-       span.pink Computer Lab 
+        //-       | is a software consultancy in New York City that builds digital products.
+        //-     a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Join Slack
+        //-     a.btn.btn-default.wow.fadeIn.read-more(href='#about') Learn More
 
   // About 
   section#about.content-section
@@ -22,9 +23,9 @@ block site_body
           h2.section-title.wow.fadeIn About
           .about.wow.slideInUp
             p
-              | We are a group of developers, designers and engineers 
-              | who met on the internet and work together in New York City. 
-              | Computer Lab is a full-service dev shop that specializes in developing data-driven applications with intensive UIs.
+              | Computer Lab is a full-service dev shop that specializes in developing data-driven 
+              | applications with intensive UIs. Founded in 2015 by a group of developers and designers who met on the internet, we began as a small team working out of a communal office space in New York City.
+  
           .about.wow.slideInUp
             p Our team is led by  
               span
@@ -47,34 +48,84 @@ block site_body
   // Work
   section#work.content-section
     .container
-      .row.entry
-        .col-md-3.col-md-offset-2
-          img(src="/images/iheart-project.svg" alt="").project.wow.zoomIn
-        .col-md-5.wow.fadeIn
-          h2 iHeartRadio
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
-          a.btn.btn-default.wow.fadeIn.read-more(href='https://www.iheart.com') View
-      .row.entry
-        .col-md-3.col-md-offset-2
-          img(src="/images/nectar-project.svg" alt="").project.wow.zoomIn
-        .col-md-5.wow.fadeIn
-          h2 Nectar
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
-          a.btn.btn-default.wow.fadeIn.read-more(href='https://joinnectar.com') View
-      .row.entry
-        .col-md-3.col-md-offset-2
-          img(src="/images/verdes-project.svg" alt="").project.wow.zoomIn
-        .col-md-5.wow.fadeIn
-          h2 Verdes Pinpoints
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
-          a.btn.btn-default.wow.fadeIn.read-more(href='http://pinpoints.io') View
-      .row.entry
-        .col-md-3.col-md-offset-2
-          img(src="/images/screen-project.svg" alt="").project.wow.zoomIn
-        .col-md-5.wow.fadeIn
-          h2 Screen
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
-          a.btn.btn-default.wow.fadeIn.read-more(href='http://www.onscreentoday.com') View
+      .row
+        .col-md-6.col-md-offset-3
+          h2.section-title.wow.fadeIn Selected Work
+          p Computer Lab is a full-service dev shop that specializes in developing data-driven applications with intensive UIs.
+          .shot
+            h2 iHeartRadio
+            p 
+              span
+                | We built the MVP of Nectar, a recruiting platform for developers and designers founded by 
+                a(href='http://singlesprout.com' target='_blank') SingleSprout. 
+                | We leveraged Django, ReactJS, and Ansbile to transform an existing piece of in-house software into a elegant online marketplace. We transitioned the project to Nectar's newly hired full-time developer on-time and under budget.
+            img(src='/images/iheart-shot.png' alt='')
+      .row
+        .col-md-6.col-md-offset-3
+          .shot
+            h2 Nectar
+            p 
+              span
+                | We built the MVP of Nectar, a recruiting platform for developers and designers founded by 
+                a(href='http://singlesprout.com' target='_blank') SingleSprout. 
+                | We leveraged Django, ReactJS, and Ansbile to transform an existing piece of in-house software into a elegant online marketplace. We transitioned the project to Nectar's newly hired full-time developer on-time and under budget.
+            img(src='/images/nectar-shot.png' alt='')
+      .row
+        .col-md-6.col-md-offset-3
+          .shot
+            h2 Pinpoints
+            p 
+              span
+                | We built the MVP of Nectar, a recruiting platform for developers and designers founded by 
+                a(href='http://singlesprout.com' target='_blank') SingleSprout. 
+                | We leveraged Django, ReactJS, and Ansbile to transform an existing piece of in-house software into a elegant online marketplace. We transitioned the project to Nectar's newly hired full-time developer on-time and under budget.
+            img(src='/images/nectar-shot.png' alt='')
+      .row
+        .col-md-6.col-md-offset-3
+          .shot
+            h2 Screen
+            p 
+              span
+                | We built the MVP of Nectar, a recruiting platform for developers and designers founded by 
+                a(href='http://singlesprout.com' target='_blank') SingleSprout. 
+                | We leveraged Django, ReactJS, and Ansbile to transform an existing piece of in-house software into a elegant online marketplace. We transitioned the project to Nectar's newly hired full-time developer on-time and under budget.
+            img(src='/images/nectar-shot.png' alt='')
+        //- .row.entry.first
+      //-   .col-md-2.col-md-offset-3
+      //-     img(src="/images/iheart-project.svg" alt="").project.wow.zoomIn
+      //-   .col-md-4.wow.fadeIn
+      //-     h2 iHeartRadio
+      //-     p 
+      //-       span
+      //-       | Computer Lab helped build on-demand streaming functionality 
+      //-       | into the iHeartRadio web platform, enabling iHeart to 
+      //-       a(target='_blank' href='http://www.forbes.com/sites/hughmcintyre/2016/12/01/iheartradio-launches-new-on-demand-streaming-apps-to-compete-with-spotify/#134dceb91a90') launch 
+      //-       | their paid subscription service before Pandora. We were embedded on a small team that worked to rapidly scale an existing React application to millions of users.
+      //-     a.btn.btn-default.wow.fadeIn.read-more(target='_blank' href='https://www.iheart.com') View
+      //- .row.entry
+      //-   .col-md-2.col-md-offset-3
+      //-     img(src="/images/nectar-project.svg" alt="").project.wow.zoomIn
+      //-   .col-md-4.wow.fadeIn
+      //-     h2 Nectar
+
+      //- .row.entry
+      //-   .col-md-2.col-md-offset-3
+      //-     img(src="/images/verdes-project.svg" alt="").project.wow.zoomIn
+      //-   .col-md-4.wow.fadeIn
+      //-     h2 Verdes Pinpoints
+      //-     p 
+      //-       span
+      //-       | We built an interactive 3D landing page for a new marketing data visualization tool created by 
+      //-       a(target='_blank' href='http://verdes.nyc') Verdes
+      //-       |. The PinPoints build convinced us that React’s declarative components are a great fit for developing 3D user interfaces in the browser.
+      //-     a.btn.btn-default.wow.fadeIn.read-more(target='_blank' href='http://pinpoints.io') View
+      //- .row.entry
+      //-   .col-md-2.col-md-offset-3
+      //-     img(src="/images/screen-project.svg" alt="").project.wow.zoomIn
+      //-   .col-md-4.wow.fadeIn
+      //-     h2 Screen
+      //-     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec neque id urna tincidunt faucibus. Nullam convallis volutpat pulvinar. 
+      //-     a.btn.btn-default.wow.fadeIn.read-more(target='_blank' href='http://www.onscreentoday.com') View
 
   // Featured Post
   section#feature-post.content-section

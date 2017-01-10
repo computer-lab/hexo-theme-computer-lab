@@ -6,8 +6,8 @@ html {
 body {
   width: 100%;
   min-height: 100%;
-  background-image: url('http://linkli.st/assets/background-blue-1c6507d407b241f4304b4a6df3209902.gif');
-  
+  background-color: $white; 
+
   // sticky footer
   display: flex;
   flex-flow: column;
@@ -15,7 +15,7 @@ body {
 }
 
 #content {
-  background-color: white;
+  background-color: $white;
   margin: $menu-height 0 0;
   flex: 1;
 }
@@ -23,20 +23,6 @@ body {
 ul {
   padding: 0 25px;
 }
-
-/*
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(white, 0.2);
-}
-
-::selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(white, 0.2);
-}
-*/
 
 img::selection {
   background: transparent;

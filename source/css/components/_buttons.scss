@@ -1,9 +1,9 @@
 // buttons 
 
 .btn {
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
   border-radius: 0;
 }
 
@@ -16,6 +16,14 @@
   background-color: transparent;
   text-transform: uppercase;
   font-style: italic;
+
+  > span.btn-inner {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    left: 0;
+    position: relative;
+  }
 
   &:hover,&:active,&:focus {
     border: 2px solid $blue;
@@ -59,9 +67,9 @@ ul.banner-social-buttons {
   font-size: 40px;
   color: $blue;
   background: transparent;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  transition: background .3s ease;
   &:hover,
   &:focus {
     outline: none;
