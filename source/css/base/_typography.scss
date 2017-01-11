@@ -1,5 +1,4 @@
-// global typography 
-
+// global 
 body {
   font-family: 'Gill Sans', Arial, sans-serif;
   font-weight: 400;
@@ -36,15 +35,15 @@ code {
 }
 
 a {
-  color: $pink;
-  padding-bottom: 3px;
-  border-bottom: 2px solid $pink;
+  color: $brand;
+  padding-bottom: 2px;
+  border-bottom: 2px solid $brand;
 
   &:hover,
   &:focus {
       text-decoration: none;
-      color: $accent;
-      border-bottom: 2px solid $pink;
+      color: $brand;
+      border-bottom: 2px solid $brand;
   }
 
   -webkit-transition: all .2s ease-in-out;
@@ -79,14 +78,17 @@ ul {
   line-height: 150%;
   text-transform: none;
   font-style: italic;
-  color: $blue;
+  color: $accent;
 }
 
-// blog typography
-
+// blog
 #archive, article {
   h1, h2, h3, h4, h6 {
     color: $copy;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $base-spacing * 3;
   }
 
   h5 {
@@ -99,23 +101,8 @@ ul {
   p {
     margin: 0 0 $base-spacing;
   }
-}
-
-// typography utility classes
-.pink {
-  color: $pink;
-  font-weight: 700;
-}
-
-.accent {
-  color: $accent;
-  font-weight: 700; 
-}
-
-.white {
-  color: white;
-}
-
-.light {
-  font-weight: 400;
+  
+  .post-meta > h5 {
+    margin-top: 0;
+  }
 }

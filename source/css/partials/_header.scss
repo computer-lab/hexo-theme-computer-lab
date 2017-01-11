@@ -25,7 +25,7 @@
   }
 
   .navbar-brand {
-    color: $pink;
+    color: $copy;
     font-family: "Quadraat";
     font-weight: 700;
     border-bottom: none;
@@ -59,10 +59,10 @@
         font-size: 16px;
 
         &:hover {
-          color: $pink;
+          color: $brand;
           outline: none;
           background-color: transparent;
-          border-bottom: 2px solid $pink;
+          border-bottom: 2px solid $brand;
         }
 
         &:focus,
@@ -88,11 +88,9 @@
   @media(min-width:768px) {
     min-height: $base-spacing * 2;
     padding: $base-spacing 0;
-    border-bottom: none;
-    background: $white;
+    background-color: $light-grey;
     letter-spacing: 1px;
-    color: $copy;
-    border-bottom: 1px solid #E7E7E7;
+    color: $brand;
 
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -100,7 +98,8 @@
 
     &.top-nav-collapse {
       padding: 0;
-      background: $white;
+      background-color: $white;
+      border-bottom: 1px solid #E7E7E7;
 
       a {
         color: $copy;

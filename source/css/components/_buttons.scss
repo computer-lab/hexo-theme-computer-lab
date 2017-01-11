@@ -10,8 +10,8 @@
 .btn-default {
   margin: 15px 15px 0 0;
   padding: $base-spacing-small $base-spacing;
-  border: 2px solid $blue;
-  color: $blue;
+  border: 2px solid $accent;
+  color: $accent;
   display: inline-block;
   background-color: transparent;
   text-transform: uppercase;
@@ -26,14 +26,14 @@
   }
 
   &:hover,&:active,&:focus {
-    border: 2px solid $blue;
+    border: 2px solid $accent;
     outline: none;
     color: $white;
-    background-color: $blue;
+    background-color: $accent;
   }
 
   &.over-dark {
-    color: $blue;
+    color: $accent;
 
     &:hover,&:active,&:focus {
       color: $copy !important;
@@ -65,7 +65,7 @@ ul.banner-social-buttons {
   padding: 7px 16px;
   border-radius: 100% !important;
   font-size: 40px;
-  color: $blue;
+  color: $accent;
   background: transparent;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
@@ -73,7 +73,7 @@ ul.banner-social-buttons {
   &:hover,
   &:focus {
     outline: none;
-    color: $blue;
+    color: $accent;
     background: rgba(white, 0.1);
   }
   i.animated {

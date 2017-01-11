@@ -10,7 +10,7 @@ a.logo {
   }
 
   h3 {
-    color: $pink;
+    color: $brand;
     padding-left: $base-spacing-small;
     display: inline-block;
     float: right;
@@ -27,7 +27,7 @@ a.logo {
   }
 
   @media (max-width: $tablet) {
-    padding: $base-spacing * 8 0;
+    padding: $base-spacing * 2 0;
   }
 
   h2.section-title {
@@ -68,12 +68,13 @@ a.logo {
   height: 100vh;
 
   .blurb {
-    margin-top: $menu-height;
+    margin-top: $menu-height + $base-spacing * 6;
   }
 
   h1 {
     color: $copy;
-    font-size: 52px;
+    font-size: 60px;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -81,15 +82,17 @@ a.logo {
     font-size: 36px;
 
     span.pink {
-      color: $pink;
+      color: $brand;
     }
   }
 }
 
 #about {
 
-  h2 {
-    color: $copy;
+  svg.logo {
+    width: 90px;
+    display: none;
+    margin: $base-spacing * 2 auto;
   }
 
   .about{
@@ -104,16 +107,21 @@ a.logo {
 #work {
   background-color: $light-grey;
 
+  h2.section-title {
+    margin-bottom: $base-spacing;
+  }
+
   .shot {
+    display: block;
     padding: $base-spacing;      
     background-color: $white;
     height: 405px;
     width: 100%;
-    margin: $base-spacing * 2 0;
+    margin: $base-spacing 0;
 
     h2 {
       margin: 0;
-      padding: $base-spacing;
+      padding: 0 $base-spacing;
       position: absolute;
       color: $copy;
       display: none;
@@ -122,18 +130,25 @@ a.logo {
     p {
       display: none;
       position: absolute;
+      color: $grey;
+      width: 85%;
       margin-top: $base-spacing * 3;
       padding: $base-spacing;
     }
 
-    > img {
-      object-fit: cover;
-      opacity: 1;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      transition: all .3s ease;
+    > a{
+      border-bottom: none;
+
+      img {
+        object-fit: cover;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        transition: all .3s ease;
+      }
+
     }
 
       &:hover {
@@ -142,13 +157,17 @@ a.logo {
           display: block;
         }
 
-        > img {
-        opacity: 0.05;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        transition: all .3s ease;
-        cursor: pointer;
-      }
+        > a {
+
+          img {
+            opacity: 0;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            transition: all .3s ease;
+            cursor: pointer;
+          }          
+        }
+
 
     }
 
