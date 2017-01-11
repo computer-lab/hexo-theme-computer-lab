@@ -9,6 +9,10 @@
   background: $white;
   color: $copy;
 
+  .navbar-right, .navbar-left {
+    margin-top: 20px;
+  }
+
   .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -24,12 +28,22 @@
     }
   }
 
-  .navbar-brand {
-    color: $copy;
+  a.navbar-brand {
+    color: $white;
     font-family: "Quadraat";
+    font-size: 21px;
     font-weight: 700;
     border-bottom: none;
     text-transform: none;
+
+    > svg {
+      width: 90px;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;      
+    }
+
 
     &:focus, &:hover {
       outline: none;
@@ -39,7 +53,7 @@
   }
 
   a {
-    color: $copy;
+    color: $white;
     border-bottom: none !important;
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
@@ -59,10 +73,10 @@
         font-size: 16px;
 
         &:hover {
-          color: $brand;
+          color: $white;
           outline: none;
           background-color: transparent;
-          border-bottom: 2px solid $brand;
+          border-bottom: 2px solid $white;
         }
 
         &:focus,
@@ -88,9 +102,10 @@
   @media(min-width:768px) {
     min-height: $base-spacing * 2;
     padding: $base-spacing 0;
-    background-color: $light-grey;
+    background-color: transparent;
     letter-spacing: 1px;
-    color: $brand;
+    color: $white;
+    font-size: 24px;
 
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -98,11 +113,10 @@
 
     &.top-nav-collapse {
       padding: 0;
-      background-color: $white;
-      border-bottom: 1px solid #E7E7E7;
+      background-color: transparent;
 
       a {
-        color: $copy;
+        color: $white;
       }
     }
   }

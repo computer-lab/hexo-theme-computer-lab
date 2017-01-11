@@ -24,3 +24,21 @@ $(function() {
   }
   });
 });
+
+var canvasId = 'gradient',
+    canvas = document.getElementById(canvasId),
+    ctx = canvas.getContext('2d'),
+    width = window.innerWidth,
+    height = window.innerHeight,
+    grd;
+
+// Create gradient
+grd = ctx.createLinearGradient(46.000, 0.000, 254.000, width);
+
+// Add colors
+grd.addColorStop(0.000, 'rgba(101, 45, 237, 1.000)');
+grd.addColorStop(1.000, 'rgba(255, 255, 255, 1.000)');
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, width, height);

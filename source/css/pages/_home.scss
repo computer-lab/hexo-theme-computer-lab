@@ -67,23 +67,58 @@ a.logo {
   background-color: $light-grey;
   height: 100vh;
 
-  .blurb {
-    margin-top: $menu-height + $base-spacing * 6;
+  #gradient {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .hero {
+    height: 250px;
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  a.btn {
+    border-color: white;
+    color: white;
+
+    &:hover,&:active,&:focus {
+      border: 2px solid $white;
+      outline: none;
+      color: $brand;
+      background-color: $white;
+    }
   }
 
   h1 {
-    color: $copy;
+    color: $white;
     font-size: 60px;
+    letter-spacing: 3px;
     margin-bottom: 0;
+    text-align: center;
   }
 
   h2 {
-    color: $copy;
+    text-align: center;
+    color: $white;
     font-size: 36px;
 
     span.pink {
-      color: $brand;
+      color: $white;
     }
+  }
+
+  .links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 295px;
   }
 }
 
@@ -98,8 +133,10 @@ a.logo {
   .about{
     margin: 0 0 $base-spacing * 2 0;
 
-    p {
-      color: $copy;
+    h2 {
+      color: $brand;
+      font-size: 36px;
+      text-align: left;
     }
   }
 }
@@ -115,13 +152,12 @@ a.logo {
     display: block;
     padding: $base-spacing;      
     background-color: $white;
-    height: 405px;
+    height: 360px;
     width: 100%;
     margin: $base-spacing 0;
 
     h2 {
       margin: 0;
-      padding: 0 $base-spacing;
       position: absolute;
       color: $copy;
       display: none;
@@ -132,8 +168,8 @@ a.logo {
       position: absolute;
       color: $grey;
       width: 85%;
-      margin-top: $base-spacing * 3;
-      padding: $base-spacing;
+      margin-top: $base-spacing * 2;
+      padding: $base-spacing 0;
     }
 
     > a{
