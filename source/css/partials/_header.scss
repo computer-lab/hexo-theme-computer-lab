@@ -44,6 +44,10 @@
       right: 0;      
     }
 
+    h4 {
+      display: none;
+    }
+
 
     &:focus, &:hover {
       outline: none;
@@ -107,16 +111,28 @@
     color: $white;
     font-size: 24px;
 
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out,padding .5s ease-in-out;
+    transition: all .5s ease-in-out,padding .5s ease-in-out;
 
     &.top-nav-collapse {
-      padding: 0;
-      background-color: transparent;
+      padding: $base-spacing-small 0;
+      background-color: $white;
+
+      svg.logo {
+        height: 30px;
+      }
+
+      h4 {
+        display: block;
+      }
+
+      .navbar-right, .navbar-left {
+        margin-top: 0;
+      }
 
       a {
-        color: $white;
+        color: $brand;
       }
     }
   }

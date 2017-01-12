@@ -1,22 +1,3 @@
-a.logo {
-  border-bottom: none !important;
-  position: fixed;
-  z-index: 1;
-  top: $base-spacing;
-  left: $base-spacing * 4;
-
-  > svg {
-    width: 75px;
-  }
-
-  h3 {
-    color: $brand;
-    padding-left: $base-spacing-small;
-    display: inline-block;
-    float: right;
-  }
-}
-
 .content-section {
   padding: $base-spacing * 6 0; 
   height: auto;
@@ -30,7 +11,7 @@ a.logo {
     padding: $base-spacing * 2 0;
   }
 
-  h2.section-title {
+  h1.section-title {
     margin: $base-spacing 0 $base-spacing * 2;
     color: $copy;
 
@@ -96,17 +77,8 @@ a.logo {
   }
 
   h1 {
-    color: $white;
-    font-size: 60px;
-    letter-spacing: 3px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-
-  h2 {
     text-align: center;
     color: $white;
-    font-size: 36px;
 
     span.pink {
       color: $white;
@@ -133,9 +105,8 @@ a.logo {
   .about{
     margin: 0 0 $base-spacing * 2 0;
 
-    h2 {
-      color: $brand;
-      font-size: 36px;
+    p {
+      color: $copy;
       text-align: left;
     }
   }
