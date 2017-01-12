@@ -33,7 +33,7 @@ var canvasId = 'gradient',
     grd;
 
 // Create gradient
-grd = ctx.createLinearGradient(46.000, 0.000, 254.000, width);
+grd = ctx.createLinearGradient(46.000, 0.000, 500.000, width);
 
 // Add colors
 grd.addColorStop(0.000, 'rgba(101, 45, 237, 1.000)');

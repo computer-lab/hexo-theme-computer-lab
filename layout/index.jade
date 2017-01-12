@@ -12,9 +12,8 @@ block site_body
             h1 Computer Lab is a software consultancy in New York City that builds digital products.
         .row
           .links
-            a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Join Slack
+            a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Join Our Slack
             a.btn.btn-default.wow.fadeIn.read-more(href='#about') Learn More
-
 
   // About 
   section#about.content-section
@@ -125,7 +124,8 @@ block site_body
     .container
       .row
         .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
-          h1.section-title.wow.fadeIn 
+          h2.section-title Latest Post
+          h1.section-title.wow.fadeIn
             a(href=config.feature_note_path)=config.feature_note_title
           h5.info.wow.fadeIn=config.feature_note_author + ' - '
             span.date=config.feature_note_date

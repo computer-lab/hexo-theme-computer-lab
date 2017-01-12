@@ -1,30 +1,29 @@
 footer {
   background-color: $brand;
-  height: auto;
+  height: 100%;
+  padding: $base-spacing*2 0 $base-spacing*3;
   color: $white;
-  padding: $base-spacing;
-  line-height: 28px;
 
-  .push-left {
-    float: left;
+  .row {
+    padding-bottom: $base-spacing * 2;
   }
 
-  .push-right {
-    float: right;
+  h4 {
+    letter-spacing: 1px;
   }
 
-  .pull-left, .pull-right {
-    display: inline-block;
-    width: 150px;
+  i.fa:before {
+    margin-right: $base-spacing-small;
   }
 
   a {
-    margin-left: $base-spacing;
     border-bottom: none;
     color: $white;
+    display: block;
   }
 
   a:hover, a:focus {
     color: $copy;
+    border-bottom: none;
   }
 }

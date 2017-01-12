@@ -41,7 +41,11 @@
       margin: auto;
       position: absolute;
       left: 0;
-      right: 0;      
+      right: 0;   
+
+      > g {
+        fill: $white;  
+      } 
     }
 
     h4 {
@@ -118,9 +122,14 @@
     &.top-nav-collapse {
       padding: $base-spacing-small 0;
       background-color: $white;
+      border-bottom: 1px solid #E7E7E7;
 
       svg.logo {
         height: 30px;
+
+        > g {
+          fill: $brand;  
+        } 
       }
 
       h4 {
