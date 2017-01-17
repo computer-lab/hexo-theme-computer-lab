@@ -43,14 +43,19 @@
   }
 }
 
+#content {
+  // background-color: $light-grey;
+  // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIBIwEqmOYVQh3pAiKng2bty4GQARVQLRHLc7ggAAAABJRU5ErkJggg==) repeat;
+}
+
 #home {
   margin-top: - $menu-height; // center in viewport, regardless of menu height
-  background-color: $light-grey;
   height: 100vh;
 
   #gradient {
     position: absolute;
     z-index: 1;
+    width: 100%;
   }
 
   .hero {
@@ -68,11 +73,21 @@
     border-color: white;
     color: white;
 
+    svg {
+      display: inline-block;
+      float: right;
+      height: 29px;
+    }
+
     &:hover,&:active,&:focus {
       border: 2px solid $white;
       outline: none;
       color: $brand;
       background-color: $white;
+
+      svg  > style{
+        fill: $brand;
+      }
     }
   }
 
@@ -90,11 +105,15 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 345px;
+    width: 380px;
   }
 }
 
 #about {
+
+  h2.section-title {
+    color: $copy;
+  }
 
   svg.logo {
     width: 90px;
@@ -113,103 +132,45 @@
 }
 
 #work {
-  background-color: $light-grey;
-
-  h2.section-title {
-    margin-bottom: $base-spacing;
-  }
 
   .shot {
-    display: block;
-    padding: $base-spacing;      
-    background-color: $white;
-    height: 360px;
+    border: 2px solid $brand;
+    border-radius: 3px;
     width: 100%;
-    margin: $base-spacing 0;
+    overflow: hidden;
+    margin: $base-spacing * 8 0;
 
-    h2 {
-      margin: 0;
+    &.last {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      margin: auto;
       position: absolute;
-      color: $copy;
-      display: none;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      color: $white;
     }
 
-    p {
-      display: none;
-      position: absolute;
-      color: $grey;
-      width: 85%;
-      margin-top: $base-spacing * 2;
-      padding: $base-spacing 0;
+    img {
+      object-fit: cover;
+      height: 600px;
+      width: 100%;
     }
 
-    > a{
-      border-bottom: none;
-
-      img {
-        object-fit: cover;
-        opacity: 1;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        transition: all .3s ease;
-      }
-
-    }
-
-      &:hover {
-
-        h2, p {
-          display: block;
-        }
-
-        > a {
-
-          img {
-            opacity: 0;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            transition: all .3s ease;
-            cursor: pointer;
-          }          
-        }
-
-
-    }
-
-  }
-
-  .entry {
-    margin: $base-spacing * 4 0;
-
-    &.first {
-      margin-top: 0;
-    }
-  }
-
-  img.project {
-    object-fit: scale-down;
-    padding: 15px 0;
-    height: $base-spacing * 20;
-    width: $base-spacing * 10;
-    float: left;
-  }
-
-  h4 {
-    margin-bottom: 0;
-  }
-
-  h2, p {
-    color: $copy;
-    text-align: left;
   }
 
 }
 
 #feature-post {
-  position: relative;
+  padding-bottom: $base-spacing * 14;
 
+  h2 {
+    color: $copy;
+  }
+  
   h5.info {
     color: $grey;
     margin-top: 0;

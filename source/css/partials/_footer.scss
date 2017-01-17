@@ -3,13 +3,24 @@ footer {
   height: 100%;
   padding: $base-spacing*2 0 $base-spacing*3;
   color: $white;
+  font-size: 17px;
 
   .row {
     padding-bottom: $base-spacing * 2;
   }
 
   h4 {
+    padding-bottom: $base-spacing;
     letter-spacing: 1px;
+
+    @media (max-width: $mobile) {
+      padding-bottom: $base-spacing-small;
+    }
+
+  }
+
+  address {
+    margin-bottom: $base-spacing * 2;
   }
 
   i.fa:before {

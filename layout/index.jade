@@ -9,18 +9,36 @@ block site_body
       .row.hero
         .row.copy
           .col-md-6.col-md-offset-3
-            h1 Computer Lab is a software consultancy in New York City that builds digital products.
+            h1 Computer Lab is a software consultancy in New York City that builds digital products for Healthcare, Media, Arts and beyond.
         .row
           .links
-            a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Join Our Slack
-            a.btn.btn-default.wow.fadeIn.read-more(href='#about') Learn More
-
-  // About 
+            a.btn.slack.btn-default.alt.wow.fadeIn.read-more(href=config.feature_note_path) 
+              span Join Our Slack
+              svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 270 270', style='enable-background:new 0 0 270 270;', xml:space='preserve')
+                style(type='text/css').
+                  .st0{fill:#FFFFFF;}
+                g#Layer_1_1_
+                g#Layer_3
+                g#Layer_4
+                g#Layer_2
+                  g
+                    rect.st0(x='128.5', y='127.3', transform='matrix(0.9482 -0.3176 0.3176 0.9482 -36.0197 50.6366)', width='17.6', height='17')
+                    g
+                      rect.st0(x='128.5', y='127.3', transform='matrix(0.9482 -0.3176 0.3176 0.9482 -36.0197 50.6366)', width='17.6', height='17')
+                      path.st0(d='M194.6,118.5c-12.9-43-31.5-53-74.5-40.1s-53,31.5-40.1,74.5s31.5,53,74.5,40.1S207.5,161.5,194.6,118.5z\
+                      M172.9,146.4l-8.1,2.7l2.8,8.4c1.1,3.4-0.7,7.1-4.1,8.2c-0.7,0.2-1.5,0.4-2.2,0.3c-2.6-0.1-5.1-1.8-6-4.4l-2.8-8.4l-16.7,5.6\
+                      l2.8,8.4c1.1,3.4-0.7,7.1-4.1,8.2c-0.7,0.2-1.5,0.4-2.2,0.3c-2.6-0.1-5.1-1.8-6-4.4l-2.8-8.4l-8.1,2.7c-0.7,0.2-1.5,0.4-2.2,0.3\
+                      c-2.6-0.1-5.1-1.8-6-4.4c-1.1-3.4,0.7-7.1,4.1-8.2l8.1-2.7l-5.4-16.1l-8.1,2.7c-0.7,0.2-1.5,0.4-2.2,0.3c-2.6-0.1-5.1-1.8-6-4.4\
+                      c-1.1-3.4,0.7-7.1,4.1-8.2l8.1-2.7l-2.8-8.4c-1.1-3.4,0.7-7.1,4.1-8.2s7.1,0.7,8.2,4.1l2.8,8.4l16.7-5.6l-2.8-8.4\
+                      c-1.1-3.4,0.7-7.1,4.1-8.2c3.4-1.1,7.1,0.7,8.2,4.1l2.8,8.4l8.1-2.7c3.4-1.1,7.1,0.7,8.2,4.1c1.1,3.4-0.7,7.1-4.1,8.2l-8.1,2.7\
+                      l5.4,16.1l8.1-2.7c3.4-1.1,7.1,0.7,8.2,4.1C178.1,141.6,176.3,145.3,172.9,146.4z')
+            a.btn.btn-default.alt.wow.fadeIn.read-more(href='#about') Learn More
   section#about.content-section
-    .container     
+    .container
       .row
-        .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
-          .h1.section-title About
+        .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
+          .inner
+            h2.section-title.wow.fadeIn About
           .about.wow.slideInUp
             p
               | Computer Lab is a full-service dev shop that specializes in developing data-driven 
@@ -43,7 +61,6 @@ block site_body
           .about.row.wow.slideInUp    
             p
               a.btn.btn-default.email(href='mailto:hi@computerlab.io?Subject=Inquiry') Email
-
   // Services 
   //- section#services.content-section
   //-   .container     
@@ -72,64 +89,64 @@ block site_body
   // Work
   section#work.content-section
     .container
+      //- .row
+      //-   .col-md-10.col-md-offset-1
+      //-     .shot.wow.zoomIn
+      //-       h2 iHeartRadio
+      //-       p 
+      //-         span
+      //-         | Computer Lab helped build on-demand streaming functionality 
+      //-         | into the iHeartRadio web platform, enabling iHeart to 
+      //-         a(target='_blank' href='http://www.forbes.com/sites/hughmcintyre/2016/12/01/iheartradio-launches-new-on-demand-streaming-apps-to-compete-with-spotify/#134dceb91a90') launch 
+      //-         | their paid subscription service before Pandora. We worked alongside a 
+      //-         a(target='_blank' href='https://tech.iheart.com/') small team 
+      //-         | that worked to scale the existing React application to millions of users.
       .row
-        .col-md-5.col-md-offset-1
-          h2.section-title.wow.fadeIn Selected Work
+        .col-md-10.col-md-offset-1
+          .shot.wow.zoomIn
+            h1 iHeartRadio
+            img(src='./images/future.png' alt='')
       .row
-        .col-md-5.col-md-offset-1
+        .col-md-10.col-md-offset-1
           .shot.wow.zoomIn
-            h2 iHeartRadio
-            p 
-              span
-              | Computer Lab helped build on-demand streaming functionality 
-              | into the iHeartRadio web platform, enabling iHeart to 
-              a(target='_blank' href='http://www.forbes.com/sites/hughmcintyre/2016/12/01/iheartradio-launches-new-on-demand-streaming-apps-to-compete-with-spotify/#134dceb91a90') launch 
-              | their paid subscription service before Pandora. We worked alongside a 
-              a(target='_blank' href='https://tech.iheart.com/') small team 
-              | that worked to scale the existing React application to millions of users.
-            a(target='_blank' href='https://iheart.com')
-              img(src='/images/iheart-shot.png' alt='')
-        .col-md-5
-          .shot.wow.zoomIn
-            h2 Nectar
-            p 
-              span
-                | We built the MVP of Nectar, a recruiting platform for developers and designers founded by 
-                a(href='http://singlesprout.com' target='_blank') SingleSprout. 
-                | We leveraged Django, ReactJS, and Ansbile to transform an existing piece of in-house software into a elegant online marketplace. We transitioned the project to Nectar's newly hired full-time developer on-time and under budget.
-            a(target='_blank' href='https://joinnectar.com')
-              img(src='/images/nectar-shot.png' alt='')
+            img(src='./images/nectar-wave.png' alt='')
       .row
-        .col-md-5.col-md-offset-1
+        .col-md-10.col-md-offset-1
           .shot.wow.zoomIn
-            h2 Pinpoints
-            p 
-              span
-              | We built an interactive 3D landing page for a new marketing data visualization tool created by 
-              a(target='_blank' href='http://verdes.nyc') Verdes
-              |. The PinPoints build convinced us that React’s declarative components are a great fit for developing 3D user interfaces in the browser.
-            a(target='_blank' href='http://pinpoints.io')
-              img(src='/images/pinpoints-shot.png' alt='')
-        .col-md-5
-          .shot.wow.zoomIn
-            h2 Screen
-            p 
-              span
-                | We helped Screen, a bilingual arts publication based in China and the US, optimize their website to boost usability and user engagement. We fixed a number of issues with their CMS, Keystone, to increase the speed and performance of the website. 
-            a(target='_blank' href='https://onscreentoday.com')
-              img(src='/images/screen-shot.png' alt='')
+            img(src='./images/future.png' alt='')
+      .row
+        .col-md-10.col-md-offset-1
+          .shot.wow.zoomIn.last
+            img(src='./images/future.png' alt='')
+      //- .row
+      //-   .col-md-10.col-md-offset-1
+      //-     .shot.wow.zoomIn
+      //-       h2 Pinpoints
+      //-       p 
+      //-         span
+      //-         | We built an interactive 3D landing page for a new marketing data visualization tool created by 
+      //-         a(target='_blank' href='http://verdes.nyc') Verdes
+      //-         |. The PinPoints build convinced us that React’s declarative components are a great fit for developing 3D user interfaces in the browser.
+      //- .row
+      //-   .col-md-10.col-md-offset-1
+      //-     .shot.wow.zoomIn
+      //-       h2 Screen
+      //-       p 
+      //-         span
+      //-           | We helped Screen, a bilingual arts publication based in China and the US, optimize their website to boost usability and user engagement. We fixed a number of issues with their CMS, Keystone, to increase the speed and performance of the website. 
 
   // Featured Post
   section#feature-post.content-section
     .container
       .row
         .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
-          h2.section-title Latest Post
-          h1.section-title.wow.fadeIn
-            a(href=config.feature_note_path)=config.feature_note_title
-          h5.info.wow.fadeIn=config.feature_note_author + ' - '
-            span.date=config.feature_note_date
-          p.wow.fadeIn=config.feature_note_excerpt
+          .inner
+            h2.section-title.wow.fadeIn Latest Post
+            h1.section-title.wow.fadeIn
+              a(href=config.feature_note_path)=config.feature_note_title
+            h5.info.wow.fadeIn=config.feature_note_author + ' - '
+              span.date=config.feature_note_date
+            p.wow.fadeIn=config.feature_note_excerpt
           a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Read More
           a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') Blog
 

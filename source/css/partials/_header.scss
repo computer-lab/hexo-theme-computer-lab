@@ -1,12 +1,13 @@
 // header/nav 
 
+
 .navbar-nav {
   float: left !important;
 }
 
 .navbar-custom {
   margin-bottom: 0;
-  background: $white;
+  background: transparent;
   color: $copy;
 
   .navbar-right, .navbar-left {
@@ -37,14 +38,15 @@
     text-transform: none;
 
     > svg {
-      width: 90px;
+      -webkit-transition: all .3s ease-in-out;
+      width: $base-spacing*6;
       margin: auto;
       position: absolute;
       left: 0;
       right: 0;   
 
       > g {
-        fill: $white;  
+        fill: $brand;  
       } 
     }
 
@@ -61,7 +63,7 @@
   }
 
   a {
-    color: $white;
+    color: $brand;
     border-bottom: none !important;
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
@@ -84,7 +86,7 @@
           color: $white;
           outline: none;
           background-color: transparent;
-          border-bottom: 2px solid $white;
+          border-bottom: 2px solid $brand;
         }
 
         &:focus,
@@ -115,17 +117,20 @@
     color: $white;
     font-size: 24px;
 
-    -webkit-transition: all .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out,padding .5s ease-in-out;
-    transition: all .5s ease-in-out,padding .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out, padding .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out, padding .3s ease-in-out;
+    transition: all .3s ease-in-out, padding .3s ease-in-out;
 
     &.top-nav-collapse {
-      padding: $base-spacing-small 0;
-      background-color: $white;
-      border-bottom: 1px solid #E7E7E7;
+      padding: $base-spacing 0;
+      background-color: transparent;
 
+      
       svg.logo {
-        height: 30px;
+        -webkit-transition: all .3s ease-in-out;
+        height: 100%;
+        width: 60px;
+        margin-top: -28px;
 
         > g {
           fill: $brand;  
@@ -157,4 +162,47 @@
       color: $copy;
     }
   }
+}
+
+
+body.index {
+
+  .navbar-custom {
+
+    a.navbar-brand {
+
+      > svg {  
+
+        > g {
+          fill: $white;  
+        } 
+      }
+  }
+
+  a {
+    color: $white;
+  }
+
+    &.top-nav-collapse {
+
+      a.navbar-brand {
+
+        > svg {  
+
+          > g {
+            fill: $brand;  
+          } 
+        }
+
+      }
+
+      a {
+        color: $brand;
+      }
+    }
+
+
+
+  }
+
 }
