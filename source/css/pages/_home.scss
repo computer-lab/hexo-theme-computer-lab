@@ -43,11 +43,6 @@
   }
 }
 
-#content {
-  // background-color: $light-grey;
-  // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIBIwEqmOYVQh3pAiKng2bty4GQARVQLRHLc7ggAAAABJRU5ErkJggg==) repeat;
-}
-
 #home {
   margin-top: - $menu-height; // center in viewport, regardless of menu height
   height: 100vh;
@@ -92,7 +87,6 @@
   }
 
   h1 {
-    text-align: center;
     color: $white;
 
     span.pink {
@@ -100,13 +94,6 @@
     }
   }
 
-  .links {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 380px;
-  }
 }
 
 #about {
@@ -133,35 +120,88 @@
 
 #work {
 
-  .shot {
-    border: 2px solid $brand;
-    border-radius: 3px;
-    width: 100%;
+  #featured {
+    position: relative;
     overflow: hidden;
-    margin: $base-spacing * 8 0;
-
-    &.last {
-      margin-bottom: 0;
-    }
-
-    h1 {
-      margin: auto;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      color: $white;
-    }
-
-    img {
-      object-fit: cover;
-      height: 600px;
-      width: 100%;
-    }
-
+    margin: $base-spacing 0;
   }
 
+  #featured ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 450px;
+    list-style: none;
+  }
+
+  #featured ul li {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 450px;
+
+      &.left {
+        float: left;
+      }
+
+      &.right {
+        float: right;
+
+        h2, p {
+          color: $copy;
+        }
+
+        a {
+          color: $brand;
+        }
+      }
+
+      .copy {
+        height: 250px;
+        position: relative;
+        bottom: 0;
+        margin: auto;
+        top: 25%;
+      }
+
+      .btn {
+        color: $white;
+        border: 1px solid $white;
+      }
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border: none;
+        position: absolute;
+      }
+
+      h2, p {
+        color: $white;
+      }
+  }
+
+}
+
+
+#team {
+  background-color: $border-grey;
+
+  .bio {
+    img {
+      width: 100%;
+      margin: 0px auto;
+      display: block;
+
+    }
+
+    h4 {
+      text-align: center;
+    }
+  }
 }
 
 #feature-post {
@@ -186,4 +226,25 @@
   a.read-more {
     margin-top: $base-spacing;
   }
+}
+
+
+#projects {
+  background: $white;
+  margin-top: -$base-spacing * 8;  
+
+  h2 {
+    color: $copy;
+  }
+
+  .bio {
+    padding: $base-spacing * 2 $base-spacing;
+
+    svg {
+      width: $base-spacing * 6;
+      margin-bottom: $base-spacing;
+    }
+
+  }
+
 }

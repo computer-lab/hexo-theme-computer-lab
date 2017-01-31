@@ -10,20 +10,19 @@
 .btn-default {
   margin: 15px 15px 0 0;
   padding: $base-spacing-small $base-spacing;
-  border: 2px solid $brand;
-  border-radius: 3px;
+  border: 1px solid $brand;
   color: $brand;
   display: inline-block;
   background-color: transparent;
   text-transform: uppercase;
-  font-style: italic;
 
   &.alt {
     background-color: transparent;
+
   }
 
   &:hover,&:active,&:focus {
-    border: 2px solid $brand;
+    border: 1px solid transparent;
     outline: none;
     color: $white;
     background-color: $brand;

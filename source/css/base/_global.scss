@@ -6,19 +6,28 @@ html {
 body {
   width: 100%;
   min-height: 100%;
-  background-color: $white; 
+  background-color: $light-grey; 
   overflow-x: hidden;
   
   // sticky footer
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+
+  #content {
+    background-color: $light-grey;
+    margin: $menu-collapse-height 0 0;
+    flex: 1;
+  }  
 }
 
-#content {
-  background-color: $white;
-  margin: $menu-height 0 0;
-  flex: 1;
+body.index {
+
+  #content {
+    background-color: $light-grey;
+    margin: $menu-collapse-height 0 0;
+    flex: 1;
+  }
 }
 
 ul {

@@ -23,14 +23,15 @@ $(function() {
     }
   }
   });
-});
+});  
 
-// Fade Out Text
+
+//Fade Out Text
 // $(window).on('scroll', function () {
 //     $('p, h1, h2, h3, h4, h5, span, img').each(function (index, item) {
 //       var st = $(window).scrollTop();
-//       st = $(window).scrollTop() - $(this).offset().top + 130;
-//       $(this).css({ 'opacity': (1 - st / 50) });
+//       st = $(window).scrollTop() - $(this).offset().top + 30;
+//       $(this).css({ 'opacity': (1 - st / 100) });
 //     });
 // });
 
@@ -46,7 +47,7 @@ grd = ctx.createLinearGradient(50.000, 0.000, 0.000, width);
 
 // Add colors
 grd.addColorStop(0.000, 'rgba(101, 45, 237, 1.000)');
-grd.addColorStop(0.500, 'rgba(255, 255, 255, 1.000)');
+grd.addColorStop(0.500, 'rgba(250, 250, 250, 1.000)');
 
 // Fill with gradient
 ctx.fillStyle = grd;

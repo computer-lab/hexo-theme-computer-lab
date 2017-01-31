@@ -1,18 +1,22 @@
 h1.post-title {
   text-align: center;
   color: $brand !important;
-  margin: $base-spacing 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .post-meta {
-  margin: 0;
-  padding-bottom: $base-spacing;
+  margin-top: $base-spacing * 2;;
   text-align: center;
 
   h5 {
+    font-family: 'Gill Sans', Arial, sans-serif;    
     letter-spacing: 1px;
-    font-style: italic;
+
+    span.date {
+      color: $grey;
+    }
   }
+
 }
 
 .post-body {
@@ -31,6 +35,7 @@ h1.post-title {
 
   strong {
     font-weight: 600;
+    letter-spacing: 1px;
   }
 
   p, li {

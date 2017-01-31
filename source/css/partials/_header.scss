@@ -7,12 +7,7 @@
 
 .navbar-custom {
   margin-bottom: 0;
-  background: transparent;
   color: $copy;
-
-  .navbar-right, .navbar-left {
-    margin-top: 20px;
-  }
 
   .navbar-toggle {
     padding: 4px 6px;
@@ -34,26 +29,27 @@
     font-family: "Quadraat";
     font-size: 21px;
     font-weight: 700;
+    margin-top: -$base-spacing * 2;
     border-bottom: none;
     text-transform: none;
 
     > svg {
       -webkit-transition: all .3s ease-in-out;
-      width: $base-spacing*6;
-      margin: auto;
-      position: absolute;
-      left: 0;
-      right: 0;   
+      width: $base-spacing * 4;
+
+      &.filled {
+        display: none;
+      }
 
       > g {
         fill: $brand;  
-      } 
+      }
+
     }
 
     h4 {
       display: none;
     }
-
 
     &:focus, &:hover {
       outline: none;
@@ -63,11 +59,10 @@
   }
 
   a {
-    color: $brand;
-    border-bottom: none !important;
-    -webkit-transition: color .3s ease-in-out;
-    -moz-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    color: $copy;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 
   .nav {
@@ -76,24 +71,27 @@
     li {
 
       a {
-        -webkit-transition: color .3s ease-in-out;
-        -moz-transition: color .3s ease-in-out;
-        transition: color .3s ease-in-out;
-        border-bottom: 2px solid transparent;
-        font-size: 16px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        border-bottom: 1px solid transparent;
+        font-size: 17px;
+        color: $grey;
 
         &:hover {
-          color: $white;
+          color: $brand;
           outline: none;
           background-color: transparent;
-          border-bottom: 2px solid $brand;
-        }
+          -webkit-transition: all .3s ease-in-out;
+          -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          }
 
         &:focus,
         &:active {
           outline: none;
           background-color: transparent;
-          color: $copy;
+          color: $brand;
         }
       }
 
@@ -111,7 +109,7 @@
 
   @media(min-width:768px) {
     min-height: $base-spacing * 2;
-    padding: $base-spacing 0;
+    padding: $base-spacing*2 0;
     background-color: transparent;
     letter-spacing: 1px;
     color: $white;
@@ -122,40 +120,30 @@
     transition: all .3s ease-in-out, padding .3s ease-in-out;
 
     &.top-nav-collapse {
-      padding: $base-spacing 0;
       background-color: transparent;
-
-      
-      svg.logo {
-        -webkit-transition: all .3s ease-in-out;
-        height: 100%;
-        width: 60px;
-        margin-top: -28px;
-
-        > g {
-          fill: $brand;  
-        } 
-      }
 
       h4 {
         display: block;
       }
 
-      .navbar-right, .navbar-left {
-        margin-top: 0;
-      }
+      // .navbar-right, .navbar-left {
+      //   margin-top: 0;
+      // }
 
       a {
-        color: $brand;
+        color: $copy;
       }
     }
   }
 
   @media(max-width:767px) {
-    background: transparent;
 
-    .navbar-brand {
-      color: $copy;
+    .navbar-custom .navbar-toggle > i{
+      color: $brand;
+    }
+
+    .navbar-right, .navbar-left {
+      background-color: $white;
     }
 
     a {
@@ -164,30 +152,55 @@
   }
 }
 
-
+/* Landing Page Only */
 body.index {
 
   .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    padding: $base-spacing * 2 0;
 
     a.navbar-brand {
+      margin-top: -$base-spacing * 2;
+      border-bottom: none;
 
       > svg {  
+        display: none;
+        margin: $base-spacing-small auto auto;
+        width: 60px;
+
+        &.filled {
+          display: block;
+        }
 
         > g {
           fill: $white;  
         } 
       }
-  }
+    }
 
-  a {
-    color: $white;
-  }
+    a {
+      color: $white; 
+
+      &:hover {
+        color: $white;
+        padding-bottom: $base-spacing-small;
+      }
+    }
 
     &.top-nav-collapse {
+      background-color: transparent;
+      padding: $base-spacing * 2 0; 
+      border-bottom: 1px solid transparent;
 
       a.navbar-brand {
 
         > svg {  
+          display: block;
+
+          &.filled {
+            display: none;
+          }
 
           > g {
             fill: $brand;  
@@ -197,12 +210,8 @@ body.index {
       }
 
       a {
-        color: $brand;
+        color: $grey;
       }
     }
-
-
-
   }
-
 }

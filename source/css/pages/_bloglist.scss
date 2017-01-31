@@ -1,12 +1,35 @@
 // blog post list
 
-
-#archive {
-  margin-top: 3 * $base-spacing;
+#archive, article {
+  margin-top: $base-spacing * 2;
 
   .page__title {
-    margin: $base-spacing * 2 0;
+    margin: 0;
   }
+
+  h1, h2, h3, h4, h6 {
+    color: $copy;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $base-spacing * 3;
+  }
+
+  h5 {
+    margin-top: $base-spacing;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 400;
+    color: $grey;
+  }
+
+  p {
+    margin: 0 0 $base-spacing;
+  }
+  
+  .post-meta > h5 {
+    margin-top: -$base-spacing-small;
+  }
+
 }
 
 ul.post-items {

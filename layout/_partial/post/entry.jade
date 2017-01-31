@@ -2,12 +2,14 @@ article(class=page.layout)
   .row
     .col-md-8.col-md-offset-2
       h1.post-title= page.title
-  .post-meta
-    include meta
-    h4=page.date.format('ll')
-      +postCategory(page.categories)
-    h5=page.author
+  .row
+    .post-meta
+      include meta
+      h5
+        span=page.author
+        span.date= ' - ' + page.date.format('ll')
+          +postCategory(page.categories)
   .post-body
     != page.more
-
+ 
   +postAuthor(page.author)
