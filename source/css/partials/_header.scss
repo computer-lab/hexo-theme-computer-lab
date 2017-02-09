@@ -9,6 +9,10 @@
   margin-bottom: 0;
   color: $copy;
 
+  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: $brand;
+  }
+
   .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -33,9 +37,17 @@
     border-bottom: none;
     text-transform: none;
 
+    @media (max-width: 767px) {
+      margin-top: -33px;
+    }
+
     > svg {
       -webkit-transition: all .3s ease-in-out;
       width: $base-spacing * 4;
+
+      @media (max-width: 767px) {
+        width: $base-spacing * 3;
+      }
 
       &.filled {
         display: none;
@@ -44,7 +56,13 @@
       > g {
         fill: $brand;  
       }
+      
+      > g {
 
+        .cls-1 {
+          fill: transparent;  
+        }
+      } 
     }
 
     h4 {
@@ -85,7 +103,7 @@
           -webkit-transition: all .3s ease-in-out;
           -moz-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
-          }
+        }
 
         &:focus,
         &:active {
@@ -138,12 +156,39 @@
 
   @media(max-width:767px) {
 
+    .navbar-header {
+      padding: $base-spacing 0;
+      background-color: $light-grey;
+      border-bottom: 1px solid $border-grey;
+    }
+
+    .navbar-custom {
+      border-bottom: 1px solid $border-grey;
+      width: 100%;
+    }
+
+    .navbar-custom .navbar-toggle {
+      color: $brand;
+    }
+
     .navbar-custom .navbar-toggle > i{
       color: $brand;
     }
 
+    .navbar-right {
+      width: 100%;
+      border-bottom: 1px solid $border-grey;
+      position: absolute;
+      margin-top: 0;
+    } 
+
+    .navbar-left {
+      margin-top: -30px;
+      display: none;
+    }
+
     .navbar-right, .navbar-left {
-      background-color: $white;
+      background-color: $light-grey;
     }
 
     a {
@@ -160,6 +205,20 @@ body.index {
     border-bottom: 1px solid transparent;
     padding: $base-spacing * 2 0;
 
+    @media (max-width: 767px) {
+      margin-top: -$base-spacing * 2;
+      background-color: transparent;
+
+      .navbar-header {
+        background-color: transparent;
+        border-bottom: 1px solid transparent;
+      }
+    }
+    
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+      color: $white;
+    }
+    
     a.navbar-brand {
       margin-top: -$base-spacing * 2;
       border-bottom: none;
@@ -168,6 +227,11 @@ body.index {
         display: none;
         margin: $base-spacing-small auto auto;
         width: 60px;
+
+        @media (max-width: 767px) {
+          margin-top: -4px;
+          width: $base-spacing * 3;
+        }
 
         &.filled {
           display: block;
@@ -192,6 +256,17 @@ body.index {
       background-color: transparent;
       padding: $base-spacing * 2 0; 
       border-bottom: 1px solid transparent;
+
+      .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        color: $brand;
+      }
+      
+      @media (max-width: 767px) {
+        background-color: $light-grey;
+        padding: $base-spacing * 2 0 0; 
+        border-bottom: 1px solid $border-grey;
+
+      }
 
       a.navbar-brand {
 

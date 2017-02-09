@@ -16,9 +16,16 @@ body {
 
   #content {
     background-color: $light-grey;
-    margin: $menu-collapse-height 0 0;
+    margin: $base-spacing * 2 0;
     flex: 1;
   }  
+
+  @media (max-width: $tablet) {
+    .row {
+      padding: 0 $base-spacing-small * 4;
+    }
+  }
+
 }
 
 body.index {
@@ -40,14 +47,4 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
-}
-
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
-
-.center {
-    text-align: center;
 }

@@ -25,30 +25,11 @@ $(function() {
   });
 });  
 
-
 //Fade Out Text
-// $(window).on('scroll', function () {
-//     $('p, h1, h2, h3, h4, h5, span, img').each(function (index, item) {
-//       var st = $(window).scrollTop();
-//       st = $(window).scrollTop() - $(this).offset().top + 30;
-//       $(this).css({ 'opacity': (1 - st / 100) });
-//     });
-// });
-
-var canvasId = 'gradient',
-    canvas = document.getElementById(canvasId),
-    ctx = canvas.getContext('2d'),
-    width = window.innerWidth,
-    height = window.innerHeight,
-    grd;
-
-// Create gradient
-grd = ctx.createLinearGradient(50.000, 0.000, 0.000, width);
-
-// Add colors
-grd.addColorStop(0.000, 'rgba(101, 45, 237, 1.000)');
-grd.addColorStop(0.500, 'rgba(250, 250, 250, 1.000)');
-
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(0, 0, width, height);
+$(window).on('scroll', function () {
+    $('article > p, article > h1, article > h2, article > h3, article > h4, article > h5, article > span').each(function (index, item) {
+      var st = $(window).scrollTop();
+      st = $(window).scrollTop() - $(this).offset().top + 60;
+      $(this).css({ 'opacity': (1.2 - st / 100) });
+    });
+});

@@ -31,10 +31,11 @@ footer {
     border-bottom: none;
     color: $white;
     display: block;
+    border-bottom: 1px solid transparent;
   }
 
   a:hover, a:focus {
-    color: $copy;
-    border-bottom: none;
+    color: $white;
+    border-bottom: 1px solid $white;
   }
 }

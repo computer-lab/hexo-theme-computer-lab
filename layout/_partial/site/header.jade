@@ -2,9 +2,6 @@
 nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
   .container
     .navbar-header
-      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
-        i.fa.fa-bars
-    .collapse.navbar-collapse.navbar-left.navbar-main-collapse
       a.navbar-brand(href='/') 
         svg.logo(id='logo-svg' version='1.0', xmlns='http://www.w3.org/2000/svg', width='85px', height='85px' viewbox='0 0 54.5 54.5')
           defs
@@ -23,7 +20,7 @@ nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
               path.cls-2(d='M20.63,24.94a26.41,26.41,0,0,1-4-2c-.71-.41-1.36-.83-1.94-1.24v1.41a18.11,18.11,0,0,0,2.94,2,24.74,24.74,0,0,0,3,1.4Zm-3.44.89A18.31,18.31,0,0,1,14,23.61a.31.31,0,0,1-.11-.21V20.33c0-.06,0-.09.07-.09s0,0,.05,0a21.65,21.65,0,0,0,3,2,23.69,23.69,0,0,0,4.32,2,.22.22,0,0,1,.12.21v3q0,.09-.06.09h-.06A30.71,30.71,0,0,1,17.19,25.83Z', transform='translate(-0.25 -0.25)')
               path.cls-2(d='M40,37.49V12.1c-5.34,3.08-15.23,8.8-15.88,9.24-.31.21-.42.34-.42.95V46.9l.13-.08ZM13.16,42c.08.56.95,1.55,3.74,3.16s4.67,2.16,5.6,2.16l.26,0v-25a1.75,1.75,0,0,1,.81-1.7c.8-.54,13.46-7.85,15.81-9.2L30.16,6.06,14,15.4l-.58.34a.66.66,0,0,0-.25.45V42ZM.25,27.5A27.25,27.25,0,1,1,27.5,54.75,27.28,27.28,0,0,1,.25,27.5ZM27.5,1.32a26.18,26.18,0,1,0,25,34l-7.32-4.23a4.37,4.37,0,0,0-3.83,0l-.44.26V38l-.46.26L24.26,47.61l-.59.34a2.3,2.3,0,0,1-1.17.27c-1.4,0-3.43-.77-6.06-2.29-3.52-2-4.08-3.1-4.18-3.81V16.05a1.56,1.56,0,0,1,.69-1.1l.59-.34L29.71,5.28,30.16,5l.45.27,9.81,5.66.46.26V30.34a5.14,5.14,0,0,1,4.72,0l7.14,4.11A26.19,26.19,0,0,0,27.5,1.32Z', transform='translate(-0.25 -0.25)')
         svg.logo.filled(id='logo-svg' version='1.0', xmlns='http://www.w3.org/2000/svg', width='85px', height='85px', viewbox='0 0 613 304.5')
-             g(transform='translate(0.000000,450) scale(0.100000,-0.100000)', fill='#FFF')
+             g(transform='translate(0.000000,450) scale(0.100000,-0.100000)', fill='none')
                path(d='M2785 6029 c-642 -61 -1250 -332 -1732 -771 -231 -210 -443 -478\
                -597 -756 -322 -578 -440 -1266 -330 -1932 97 -594 393 -1168 824 -1600 566\
                -568 1313 -880 2109 -880 804 0 1539 305 2107 874 403 404 661 865 794 1416\
@@ -54,15 +51,16 @@ nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
                64 -93 105 -90 45 -99 47 -108 24z')
                path(d='M1852 2198 c-18 -18 -15 -64 8 -108 43 -85 130 -97 130 -17 0 85 -94\
                169 -138 125z')
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+        i.fa.fa-bars
+    .collapse.navbar-collapse.navbar-left.navbar-main-collapse
     .collapse.navbar-collapse.navbar-right.navbar-main-collapse
       ul.nav.navbar-nav
-        //- li
-        //-   a.page-scroll(href='/#team') Team
-        //- li
-        //-   a.page-scroll(href='/#services') Services
         li
           a.page-scroll(href='/#about') About
         li
           a.page-scroll(href='/#work') Work
+        li
+          a.page-scroll(href='/#services') Services
         li
           a.page-scroll(href='/blog') Blog

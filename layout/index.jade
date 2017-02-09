@@ -4,29 +4,25 @@ block site_body
 
   // Home
   section#home
-    canvas(width="1280" height="900")#gradient
+    canvas()#gradient
     .container.hero
       .row.copy
         .col-md-6.col-md-offset-3
           h1 Computer Lab is a software consultancy in New York City that builds digital products.
       .row
         .col-md-6.col-md-offset-3
-          a.btn.slack.btn-default.alt.wow.fadeIn.read-more(href=config.feature_note_path) 
-            span Join Our Slack
-          a.btn.btn-default.alt.wow.fadeIn.read-more(href='#about') Learn More
+          //- a.btn.slack.btn-default.alt.wow.fadeIn.read-more(href=config.feature_note_path) 
+          //-   span Join Our Slack
+          a.btn.btn-default.alt(href='#about') Learn More
   section#about.content-section
     .container
       .row
         .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
-          .inner
-            h2.section-title.wow.fadeIn About
+          .about.wow.slideInUp
+            p We are a full-service dev shop with an emphasis on React, Python and the development of data-driven JavaScript apps. We engineer software solutions that shape and accelerate our clients' unique goals in media, arts, tech, healthcare and beyond.
           .about.wow.slideInUp
             p
-              | We are a full-service dev shop that has worked alongside clients in Media, the Arts, Healthcare and beyond to
-              | create software to shape and accelerate each organization's unique goals.  
-          .about.wow.slideInUp
-            p
-              | Computer Lab was founded and is led by 
+              | Computer Lab is led by 
               span
                 a(target='_blank' href='http://maxhfowler.com/') Max Fowler
                 | , 
@@ -38,13 +34,12 @@ block site_body
               span
                 | Our office in 
                 a(target='_blank' href='https://www.google.com/maps/place/Computer+Lab/@40.720358,-74.0059364,19.49z/data=!4m13!1m7!3m6!1s0x89c2598ac53690e1:0x684ebca8b026f25c!2s260+W+Broadway,+New+York,+NY+10013!3b1!8m2!3d40.7206119!4d-74.0056692!3m4!1s0x0:0x29ce7dd0dcc4a944!8m2!3d40.7206119!4d-74.005669') Tribeca 
-                | is open to all, contact us and set up a time to
-                | stop by to see how we can solve your organization's digital needs. 
-          .about.row.wow.slideInUp    
+                | is open to all, get in touch to discuss a project or set up a time to 
+                | stop by.
+          .about.wow.slideInUp    
             p
               a.btn.btn-default.email(href='mailto:hi@computerlab.io?Subject=Inquiry') Email
-  // Work
-  section#work.content-section
+  //section#work.content-section
     #featured
       ul
         li.left
@@ -62,135 +57,98 @@ block site_body
                     | their paid subscription service before Pandora. We worked onsite alongside 
                     a.over-brand(target='_blank' href='https://tech.iheart.com/') iHeart's web team 
                     | to scale the existing React application to millions of users.
-                  a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') View
+                  a.btn.btn-default.wow.fadeIn.read-more(target='_blank' href='https://iheart.com') View
   // Project Logos
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .divider-logo
+          hr
+          //- include _partial/svg/keyboard-svg
   section#projects.content-section
     .container
+      //- .row
+      //-   .col-md-6.col-md-offset-3
+      //-     h2.section-title Selected Clients
+      //-     p.blurb We've delivered MVPs for burgeoning startups and augmented teams on-site at global companies. We engineer software solutions that shape and accelerate our clients' unique goals in media, arts, tech, healthcare and beyond.
       .row
-        .bio.col-md-5.col-md-offset-1
-          svg#nectar-logo(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 59.95 55.03')
-            defs
-              style.
-                .cls-1{fill:#494949;}
-            path.cls-1(d='M1380,186.79h2.4v1.43a3.65,3.65,0,0,1,3.35-1.69,3.48,3.48,0,0,1,3.08,1.39,5.15,5.15,0,0,1,.66,3V197h-2.4v-5.3c0-1.76-.51-3.1-2.22-3.1s-2.46,1.34-2.46,3.1V197H1380V186.79Z', transform='translate(-1380.02 -142.28)')
-            path.cls-1(d='M1393.31,192.64c0.11,1.47.75,2.66,2.75,2.66a2,2,0,0,0,2.18-1.34h2.42c-0.29,1.76-2,3.35-4.6,3.35-3.46,0-5.13-2.38-5.13-5.39s1.83-5.39,5.06-5.39a4.62,4.62,0,0,1,4.75,4.62,8.41,8.41,0,0,1-.11,1.5h-7.33Zm0-1.78h5.11a2.37,2.37,0,0,0-2.49-2.53A2.4,2.4,0,0,0,1393.31,190.86Z', transform='translate(-1380.02 -142.28)')
-            path.cls-1(d='M1409.75,190.53c-0.13-1.12-.79-1.87-2.42-1.87-1.85,0-2.75,1.52-2.75,3.26s0.84,3.26,2.91,3.26a2.06,2.06,0,0,0,2.29-1.65h2.4c-0.33,2.13-1.89,3.79-4.86,3.79-3.35,0-5.13-2.6-5.13-5.39s1.78-5.39,5.11-5.39,4.71,2,4.86,4h-2.4Z', transform='translate(-1380.02 -142.28)')
-            path.cls-1(d='M1419.89,197a11.6,11.6,0,0,1-1.78.13c-1.17,0-3.32-.15-3.32-3.61v-4.78H1413v-2h1.74v-3.1h2.4v3.1h2.35v2h-2.35V193c0,1.78.55,2,1.5,2a9.13,9.13,0,0,0,1.21-.09V197Z', transform='translate(-1380.02 -142.28)')
-            path.cls-1(d='M1431.56,186.79V197h-2.4v-1.39a3.85,3.85,0,0,1-3.17,1.65,5.39,5.39,0,0,1,0-10.78,3.85,3.85,0,0,1,3.17,1.65v-1.39h2.4Zm-2.4,5.13a3,3,0,1,0-3,3.26A3.07,3.07,0,0,0,1429.16,191.91Z', transform='translate(-1380.02 -142.28)')
-            path.cls-1(d='M1440,189a3.47,3.47,0,0,0-.95-0.11c-2,0-3.17,1.17-3.17,3.72V197h-2.4V186.79h2.4v1.65a3.7,3.7,0,0,1,3.17-1.78,2.44,2.44,0,0,1,.95.15V189Z', transform='translate(-1380.02 -142.28)')
-            rect.cls-1(x='24.89', y='11.7', width='8.03', height='2.29', rx='0.48', ry='0.48')
-            rect.cls-1(x='24.69', y='16.56', width='7.96', height='2.27', rx='0.48', ry='0.48')
-            rect.cls-1(x='24.69', y='21.51', width='7.96', height='2.27', rx='0.48', ry='0.48')
-            path.cls-1(d='M1401.25,177.54a2.6,2.6,0,0,1-1.29-.32l-13.06-7.54a2.72,2.72,0,0,1-1.29-2.23V152.37a2.72,2.72,0,0,1,1.29-2.23L1400,142.6a2.72,2.72,0,0,1,2.57,0l13.06,7.54a2.72,2.72,0,0,1,1.29,2.23v15.08a2.72,2.72,0,0,1-1.29,2.23l-13.06,7.54A2.6,2.6,0,0,1,1401.25,177.54Zm-0.1-2.41a0.46,0.46,0,0,0,.21,0l13-7.53a0.46,0.46,0,0,0,.1-0.18V152.38a0.46,0.46,0,0,0-.1-0.18l-13-7.53a0.47,0.47,0,0,0-.21,0l-13,7.53a0.46,0.46,0,0,0-.1.18v15.05a0.47,0.47,0,0,0,.1.18Z', transform='translate(-1380.02 -142.28)')
-            path.cls-1(d='M1415.69,177.54a2.6,2.6,0,0,1-1.29-.32l-13.06-7.54a2.72,2.72,0,0,1-1.29-2.23V152.37a2.72,2.72,0,0,1,1.29-2.23l13.06-7.54a2.72,2.72,0,0,1,2.57,0l13.06,7.54a2.72,2.72,0,0,1,1.29,2.23v15.08a2.72,2.72,0,0,1-1.29,2.23L1417,177.22A2.6,2.6,0,0,1,1415.69,177.54Zm-0.1-2.41a0.47,0.47,0,0,0,.21,0l13-7.53a0.46,0.46,0,0,0,.1-0.18V152.38a0.46,0.46,0,0,0-.1-0.18l-13-7.53a0.46,0.46,0,0,0-.21,0l-13,7.53a0.46,0.46,0,0,0-.1.18v15.05a0.46,0.46,0,0,0,.1.18Z', transform='translate(-1380.02 -142.28)')
-          p We built the MVP of Nectar, a recruiting platform for tech workers. We used Django, ReactJS, and Ansbile to transform the exisiting application into a elegant online marketplace that we turned over to Nectar's dev team well under budget.
-          a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') View
-        .bio.col-md-5
-          img(src='./images/screen-logo.png' alt='').wow.fadeIn
-          p We helped the arts publication Screen to refactor their CMS, Keystone and database for better performance and usability. Our work led to overall growth in user retention, site traffic and ease-of-use for Screen's content management team.
-          a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') View
+        .col-md-3.col-md-offset-2.bio.wow.fadeInLeft.iheart
+          include _partial/svg/iheart-logo
+          h4 On-site Consulting, ReactJS
+          p
+            span
+            | Computer Lab built on-demand streaming functionality 
+            | into the 
+            a(target='_blank' href='https://iheart.com') iHeartRadio 
+            | web platform, enabling iHeart to 
+            a(target='_blank' href='http://www.forbes.com/sites/hughmcintyre/2016/12/01/iheartradio-launches-new-on-demand-streaming-apps-to-compete-with-spotify/#134dceb91a90') launch 
+            | their paid subscription service before Pandora. We worked alongside 
+            a(target='_blank' href='https://tech.iheart.com/') iHeart's web team 
+            | to scale the existing React application to millions of users.
+          //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
+        .col-md-3.col-md-offset-2.bio.wow.fadeInRight.nectar
+          include _partial/svg/nectar-logo
+          h4 ReactJS Webapp
+          p 
+            a(target='_blank' href='https://joinnectar.com/') Nectar 
+            | is a recruiting platform for tech workers, created for our client 
+            a(target='_blank' href="http://www.singlesprout.com/") SingleSprout 
+            | . The project leveraged Django, ReactJS, and Ansbile to transform the exisiting application into an elegant online marketplace that we turned over to Nectar's dev team ahead of schedule and under budget.
+          //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
       .row
-        .bio.col-md-5.col-md-offset-1
-          svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='167.109px', height='35px', viewbox='0 0 167.109 83.971', enable-background='new 0 0 167.109 83.971', xml:space='preserve')
-            g
-              path(fill='#494949', d='M114.375,63.279c-0.226,1.058-0.393,2.094-0.675,3.097c-0.297,1.056-0.702,2.081-1.061,3.119\
-              c-0.064,0.19-0.123,0.383-0.194,0.569c-0.072,0.188-0.114,0.414-0.245,0.547c-0.543,0.555-1.063,1.156-1.695,1.59\
-              c-0.438,0.3-1.038,0.445-1.58,0.492c-0.723,0.062-1.491,0.082-2.185-0.094c-1.157-0.296-2.142-0.978-2.959-1.851\
-              c-3.189-3.403-4.545-7.533-4.685-12.108c-0.049-1.589-0.077-3.188,0.282-4.76c0.36-1.572,1.337-2.75,2.445-3.838\
-              c0.198-0.194,0.49-0.316,0.759-0.409c1.898-0.654,3.69-0.275,5.496,0.462c1.899,0.776,3.091,2.252,4.204,3.848\
-              c0.065,0.095,0.126,0.195,0.192,0.291c0.015,0.02,0.048,0.026,0.13,0.068c0.042-0.834,0.106-1.642,0.119-2.45\
-              c0.074-4.348-0.037-8.69-0.335-13.029c-0.296-4.32-0.479-8.648-0.818-12.963c-0.163-2.065-0.559-4.113-0.879-6.164\
-              c-0.27-1.72-0.495-3.455-0.9-5.144c-0.609-2.539-1.352-5.046-2.052-7.563c-0.366-1.314-0.823-2.605-1.123-3.932\
-              c-0.179-0.793-0.203-1.64-0.168-2.457c0.026-0.646,0.479-0.791,0.948-0.337c0.295,0.286,0.508,0.664,0.726,1.02\
-              c1.743,2.849,2.669,5.996,3.458,9.212c0.979,3.988,2.154,7.929,3.091,11.926c0.506,2.156,0.697,4.387,1.019,6.586\
-              c0.034,0.24,0.013,0.495-0.02,0.739c-0.086,0.656,0.007,1.272,0.34,1.85c0.394,0.681,0.45,1.437,0.439,2.196\
-              c-0.04,2.587-0.04,5.175-0.154,7.759c-0.175,3.991-0.415,7.979-0.664,11.965c-0.083,1.333-0.291,2.658-0.403,3.99\
-              c-0.027,0.317,0.049,0.664,0.159,0.968c0.265,0.721,0.571,1.426,0.871,2.133c0.431,1.014,0.937,2,1.29,3.039\
-              c0.622,1.824,1.251,3.654,1.506,5.578c0.092,0.688,0.071,1.391,0.103,2.086c0.001,0.016,0.004,0.032-0.003,0.045\
-              c-0.164,0.301-0.262,0.705-0.516,0.875c-0.258,0.174-0.792-0.207-0.963-0.648c-0.276-0.717-0.588-1.436-0.735-2.182\
-              c-0.436-2.184-1.385-4.146-2.465-6.061C114.464,63.32,114.431,63.312,114.375,63.279 M103.119,57.046\
-              c0.052,3.309,1.059,6.332,2.79,9.124c0.341,0.549,0.761,1.069,1.229,1.515c0.829,0.784,1.752,0.719,2.44-0.19\
-              c0.404-0.534,0.716-1.159,0.967-1.784c0.926-2.307,1.179-4.752,1.406-7.198c0.028-0.29,0.028-0.627-0.088-0.884\
-              c-0.795-1.759-1.992-3.201-3.584-4.294c-0.451-0.31-0.956-0.554-1.462-0.768c-1.418-0.598-2.681-0.05-3.237,1.393\
-              C103.198,54.951,103.115,55.992,103.119,57.046')
-              path(fill='#494949', d='M70.667,54.714c-0.539,0.998-1.088,2.031-1.655,3.056c-0.287,0.519-0.607,1.017-0.91,1.524\
-              c-0.237,0.396-0.452,0.806-0.71,1.186c-0.431,0.637-0.857,1.28-1.343,1.874c-0.711,0.868-1.471,1.696-2.212,2.539\
-              c-0.691,0.785-1.378,1.573-2.078,2.349c-1.717,1.904-3.506,3.74-5.65,5.168c-1.762,1.174-3.652,2.099-5.78,2.424\
-              c-2.016,0.308-3.821-0.205-5.475-1.375c-1.971-1.396-3.307-3.287-4.291-5.449c-0.498-1.096-0.93-2.223-1.392-3.334\
-              c-0.048-0.117-0.096-0.233-0.16-0.389c-0.691,0.455-1.334,0.932-2.025,1.323c-1.501,0.853-2.985,1.755-4.554,2.462\
-              c-1.541,0.693-3.236,0.637-4.895,0.497c-0.57-0.047-1.139-0.213-1.687-0.393c-0.476-0.156-0.812-0.502-0.895-1.034\
-              c-0.049-0.316,0.075-0.496,0.403-0.438c0.442,0.078,0.884,0.172,1.316,0.295c1.875,0.526,3.642,0.276,5.348-0.648\
-              c2.189-1.188,4.128-2.707,5.962-4.372c0.114-0.103,0.174-0.356,0.141-0.517c-0.522-2.504-1.107-5.004-1.181-7.567\
-              c-0.037-1.295,0.101-2.617,0.344-3.892c0.293-1.536,1.579-2.301,3.221-2.114c2.594,0.294,5.188,2.685,5.669,5.232\
-              c0.136,0.717,0.025,1.417-0.187,2.106c-0.543,1.767-1.551,3.272-2.651,4.726c-0.474,0.625-0.993,1.215-1.471,1.838\
-              c-0.1,0.129-0.189,0.352-0.148,0.492c0.693,2.395,1.528,4.73,3.029,6.762c1.173,1.589,2.626,2.779,4.622,3.193\
-              c1.227,0.256,2.362,0.035,3.455-0.531c1.409-0.73,2.556-1.812,3.784-2.787c4.947-3.93,8.592-8.826,10.944-14.686\
-              c0.448-1.118,0.782-2.286,1.293-3.373c0.391-0.829,0.901-1.632,1.497-2.327c0.829-0.969,2.34-0.685,2.75,0.517\
-              c0.779,2.283,2.463,3.538,4.603,4.358c0.866,0.332,1.749,0.652,2.556,1.099c1.829,1.014,2.547,2.649,2.254,4.829\
-              c-0.276,2.059-0.559,4.117-0.78,6.183c-0.08,0.744-0.029,1.509,0.033,2.258c0.053,0.632,0.208,0.784,0.849,0.833\
-              c1.519,0.118,3.042,0.194,4.563,0.275c1.537,0.082,3.075,0.156,4.613,0.221c0.652,0.028,1.305,0.03,1.957,0.035\
-              c1.045,0.008,2.092-0.035,3.134,0.023c1.021,0.058,1.423,0.677,1.198,1.68c-0.083,0.369-0.372,0.469-0.687,0.492\
-              c-0.942,0.066-1.886,0.145-2.828,0.166c-2.078,0.05-4.144,0.201-6.207,0.478c-1.097,0.147-2.231,0.028-3.349,0.006\
-              c-1.074-0.022-2.153-0.03-3.222-0.126c-1.32-0.119-2.306-0.818-2.977-1.955c-1.009-1.713-1.365-3.595-1.213-5.537\
-              c0.132-1.688,0.442-3.365,0.709-5.041c0.134-0.848-0.194-1.608-1.017-1.875c-0.88-0.287-1.793-0.476-2.696-0.687\
-              c-1.198-0.28-2.363-0.624-3.3-1.479C71.088,55.1,70.885,54.914,70.667,54.714 M40.438,59.281c0.943-0.732,2.785-3.15,3.147-4.092\
-              c0.076-0.197,0.128-0.425,0.115-0.634c-0.067-1.105-1.126-2.32-2.206-2.562c-1.005-0.226-1.762,0.286-1.812,1.315\
-              c-0.037,0.763-0.004,1.541,0.101,2.298C39.95,56.807,40.205,57.998,40.438,59.281')
-              path(fill='#494949', d='M163.249,64.016c-0.049-3.384-0.731-6.659-1.743-9.874c-1.187-3.763-2.839-7.333-4.521-10.891\
-              c-0.726-1.536-1.463-3.066-1.846-4.736c-0.37-1.611-0.852-3.201-0.875-4.873c-0.021-1.634-0.339-3.263,0.011-4.903\
-              c0.319-1.492,0.734-2.906,1.761-4.111c0.718-0.843,1.276-1.82,1.92-2.728c0.2-0.284,0.411-0.575,0.671-0.799\
-              c0.735-0.634,1.493-1.245,2.257-1.844c0.498-0.39,1.101-0.523,1.718-0.548c0.797-0.032,1.594-0.039,2.393-0.034\
-              c0.839,0.006,1.157,0.565,0.728,1.283c-0.433,0.724-1.119,1.071-1.932,1.201c-1.798,0.29-3.418,0.945-4.639,2.361\
-              c-1.153,1.34-1.886,2.891-2.159,4.64c-0.271,1.731-0.442,3.486-0.056,5.203c0.286,1.267,0.796,2.485,1.242,3.712\
-              c0.944,2.598,2.159,5.067,3.461,7.507c1.935,3.626,3.223,7.511,4.367,11.452c0.97,3.344,1.264,6.73,1.021,10.177\
-              c-0.163,2.321-0.679,4.565-1.734,6.659c-1.506,2.984-3.884,4.882-7.1,5.806c-1.473,0.424-2.92,0.961-4.339,1.544\
-              c-1.384,0.568-2.146,1.637-2.144,3.188c0,0.188-0.097,0.375-0.15,0.563c-0.202-0.092-0.444-0.14-0.598-0.284\
-              c-0.683-0.642-0.637-1.464-0.458-2.277c0.58-2.64,2.146-4.332,4.8-5.02c0.979-0.253,1.965-0.564,2.868-1.01\
-              c1.854-0.916,3.088-2.42,3.743-4.391c0.638-1.918,1.253-3.84,1.33-5.885C163.26,64.744,163.249,64.379,163.249,64.016')
-              path(fill='#494949', d='M11.515,72.178c0.146-0.306,0.301-0.563,0.398-0.841c0.763-2.193,1.505-4.394,2.277-6.582\
-              c0.3-0.848,0.685-1.664,0.992-2.508c0.673-1.854,1.329-3.713,1.976-5.573c0.849-2.445,1.74-4.869,3.211-7.029\
-              c0.927-1.362,1.886-2.691,3.34-3.562c0.704-0.422,1.423-0.787,2.249-0.896c0.856-0.113,1.64,0.268,2.061,1.009\
-              c0.257,0.455,0.213,0.807-0.224,1.097c-0.384,0.255-0.803,0.472-1.232,0.641c-0.806,0.32-1.49,0.801-2.004,1.489\
-              c-0.615,0.823-1.46,1.467-1.883,2.438c-0.344,0.792-0.698,1.579-1.049,2.368c-0.035,0.08-0.054,0.177-0.111,0.235\
-              c-0.602,0.615-0.514,1.438-0.71,2.186c-0.224,0.858-0.683,1.652-0.981,2.494c-0.313,0.881-0.561,1.785-0.828,2.682\
-              c-0.153,0.514-0.275,1.034-0.433,1.545c-0.418,1.358-0.848,2.713-1.273,4.069c-0.009,0.027-0.013,0.058-0.026,0.083\
-              c-0.797,1.528-0.696,3.314-1.41,4.869c-0.605,1.318-1.143,2.668-1.777,3.971c-0.183,0.375-0.559,0.695-0.916,0.936\
-              c-0.404,0.271-0.876,0.459-1.341,0.615c-0.242,0.08-0.577,0.104-0.795,0c-0.801-0.39-1.46-0.898-1.851-1.785\
-              c-1.437-3.258-2.7-6.571-3.624-10.014c-1.58-5.889-3.196-11.767-4.799-17.648c-0.228-0.834-0.542-1.653-0.68-2.502\
-              C-0.032,45.323-0.036,44.61,0.148,44c0.091-0.301,0.688-0.516,1.096-0.635c0.369-0.107,0.701,0.144,0.889,0.49\
-              C2.244,44.057,2.33,44.278,2.39,44.5c0.174,0.642,0.316,1.292,0.496,1.931c0.077,0.274,0.229,0.527,0.328,0.795\
-              c0.089,0.243,0.157,0.494,0.226,0.744c0.027,0.096,0.015,0.204,0.046,0.299c0.426,1.305,0.84,2.615,1.289,3.912\
-              c1.865,5.387,3.752,10.766,5.605,16.156C10.803,69.572,11.122,70.839,11.515,72.178')
-              path(fill='#494949', d='M133.854,64.039c-1.311,0.769-2.594,1.533-3.891,2.279c-1.771,1.02-3.712,1.486-5.726,1.672\
-              c-0.772,0.07-1.495-0.154-2.146-0.587c-0.314-0.21-0.438-0.504-0.355-0.866c0.078-0.342,0.335-0.496,0.664-0.537\
-              c0.245-0.032,0.495-0.09,0.736-0.066c1.345,0.128,2.54-0.301,3.714-0.896c2.034-1.031,3.924-2.264,5.629-3.781\
-              c0.259-0.231,0.335-0.424,0.239-0.777c-0.475-1.738-0.916-3.494-0.89-5.309c0.03-2,0.243-3.967,1.321-5.745\
-              c0.488-0.803,0.881-1.665,1.288-2.515c0.532-1.11,1.717-1.605,2.847-1.116c0.825,0.358,1.556,0.867,2.023,1.663\
-              c0.602,1.026,1.246,2.035,1.756,3.107c1.276,2.687,1.126,5.287-0.66,7.729c-0.922,1.262-1.901,2.471-3.25,3.308\
-              c-0.345,0.214-0.368,0.424-0.211,0.778c1.03,2.32,2.731,3.896,5.067,4.897c3.296,1.412,6.605,1.367,9.973,0.367\
-              c0.513-0.153,1.034-0.288,1.56-0.39c0.161-0.031,0.426,0.024,0.503,0.137c0.074,0.107,0.03,0.395-0.069,0.507\
-              c-0.392,0.438-0.76,0.953-1.255,1.235c-2.232,1.271-4.584,2.191-7.221,2.117c-0.552-0.015-1.105,0.002-1.657-0.019\
-              c-0.761-0.026-1.506-0.133-2.191-0.495c-1.176-0.621-2.457-0.988-3.604-1.713c-1.685-1.064-2.916-2.461-3.81-4.203\
-              C134.103,64.551,133.973,64.279,133.854,64.039 M135.849,58.203c0.122-0.02,0.16-0.014,0.173-0.029\
-              c1.091-1.29,2.11-2.629,2.711-4.231c0.535-1.426,0.125-2.781-1.1-3.699c-0.937-0.702-1.371-0.584-1.57,0.556\
-              c-0.197,1.124-0.317,2.272-0.343,3.411C135.69,55.537,135.8,56.865,135.849,58.203')
-          p We built an interactive 3D landing page for a marketing data visualization tool created by Verdes. The PinPoints build convinced us that React’s declarative components are a great fit for developing 3D user interfaces in the browser.
-          a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') View
-        .bio.col-md-5 
-          img(src='./images/screen-logo.png' alt='').wow.fadeIn
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit in ex malesuada sollicitudin. Integer finibus massa at ex fringilla, a placerat urna interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit ex machina.
-          a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') View
+        .col-md-3.col-md-offset-2.bio.wow.fadeInLeft.verdes
+          include _partial/svg/verdes-logo
+          h4 Landing Page, ReactJS
+          p 
+            span We created an interactive 3D landing page for a marketing data visualization tool launched by 
+            a(target='_blank' href='http://verdes.nyc') Verdes
+            | , a creative agency in NYC. The 
+            a(target='_blank' href="http://pinpoints.io") PinPoints 
+            | build convinced us that React’s declarative components are a great fit for developing 3D user interfaces in the browser.
+          //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
+        .col-md-3.col-md-offset-2.bio.wow.fadeInRight.screen
+          include _partial/svg/screen-logo
+          h4 KeystoneJS, AWS, MongoDB
+          p 
+            a(target='_blank' href='http://onscreentoday.com') Screen 
+            | is a curatorial collective based in New York, Beijing and Berlin. We worked closely with staff to improve the web performance and user experience of their bilingual media platform. We reduced site loading speed, simplified content management and delivered an engaging experience to a global audience.
+          //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
+  //- section#services.content-section
+  //-   .container
+  //-     .row
+  //-       .col-md-4.col-md-offset-2.wow.fadeIn
+  //-         h2 Services
+  //-     .row
+  //-       .service.col-md-4.col-md-offset-2.wow.fadeIn
+  //-         h4 Software Development
+  //-         ul
+  //-           li Webapp creation with React, Python and Django
+  //-           li Responsive Websites
+  //-           li Wordpress, Drupal, Hexo, Keystone and other CMS
+  //-           li React Native for mobile cross-platform Android and iOS support
+  //-       .service.col-md-4.col-md-offset-1.wow.fadeIn
+  //-           h4 Data Engineering
+  //-           ul
+  //-             li AWS Data Pipeline
+  //-             li Airflow
+  //-             li EMRs and HIPAA Compliance
+  //-             li Specializing in Postgres, MongoDB and Firebase
+  //-             li Apache Kafka
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .divider-logo
+          hr
+          //- include _partial/svg/keyboard-svg
   // Featured Post
   section#feature-post.content-section
     .container
       .row
         .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
-          .inner
-            h2.section-title.wow.fadeIn Latest Post
-            h1.section-title.wow.fadeIn
-              a(href=config.feature_note_path)=config.feature_note_title
-            h5.info.wow.fadeIn=config.feature_note_author + ' - '
-              span.date=config.feature_note_date
-            p.wow.fadeIn=config.feature_note_excerpt
+          h1.section-title.wow.fadeIn
+            a(href=config.feature_note_path)=config.feature_note_title
+          h5.info.wow.fadeIn=config.feature_note_author + ' - '
+            span.date=config.feature_note_date
+          p.wow.fadeIn=config.feature_note_excerpt
           a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Read More
           a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') Blog
