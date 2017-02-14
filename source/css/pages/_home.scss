@@ -98,6 +98,20 @@
 }
 
 #about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+  height: 100%;
+
+  .copy {
+    postion: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 
   @media (max-width: $tablet) {
     padding: $base-spacing * 4 0 $base-spacing * 6 0;
@@ -114,7 +128,7 @@
   }
 
   .about{
-    margin: 0 0 $base-spacing * 2 0;
+    margin: 0 0 $base-spacing 0;
 
     p {
       color: $copy;
@@ -123,89 +137,15 @@
   }
 }
 
-#work {
-
-  #featured {
-    position: relative;
-    overflow: hidden;
-    margin: $base-spacing 0;
-
-    @media (max-width: $tablet) {
-      display: none;
-
-      .iheart {
-        display: none;
-      }
-    }
-  }
-
-  #featured ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 525px;
-    list-style: none;
-  }
-
-  #featured ul li {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-    min-width: 1280px;
-    height: 525px;
-
-      &.left {
-        float: left;
-      }
-
-      &.right {
-        float: right;
-
-        h2, p {
-          color: $copy;
-        }
-
-        a {
-          color: $brand;
-        }
-      }
-
-      .copy {
-        height: 300px;
-        position: relative;
-        top: 33%;
-      }
-
-      .btn {
-        color: $white;
-        border: 1px solid $white;
-
-        &:hover, &:focus {
-          color: $brand;
-          background-color: $white;
-        }
-      }
-
-      img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        border: none;
-        position: absolute;
-      }
-
-      h2, p {
-        color: $white;
-      }
-  }
-}
-
 #projects {
-  margin-bottom: $base-spacing * 2;
+  min-height: 100vh;
 
   .bio {
-    margin-top: $base-spacing * 2;
+    margin-top: $base-spacing * 8;
+
+    &.first {
+      margin-top: $base-spacing;
+    }
 
     @media (max-width: $tablet) {
       margin-bottom: $base-spacing * 12;
@@ -229,14 +169,14 @@
   }
 
   svg {
-    width: $base-spacing * 12;
+    width: $base-spacing * 10;
     position: relative;
     display: block;
-    height: $base-spacing * 9;
+    height: $base-spacing * 8;
     margin: $base-spacing * 2 auto 0;
 
     &#nectar-logo {
-      width: $base-spacing * 9;
+      width: $base-spacing * 8;
     }
 
     .cls-1 {
@@ -283,31 +223,50 @@
 
 }
 
-.divider-logo {
+section.divider {
   margin: $base-spacing * 4 auto;
-  
-  hr {
-    border-top: 1px solid $brand !important;
-  }
 
-  #keyboard-svg {
-    width: $base-spacing * 8;
-    margin: 0 auto;
-    display: block;
+  hr {
+    border-bottom: 1px solid $brand;
     position: absolute;
     top: 0;
+    bottom: 0;
+    margin: auto;
+    width: $base-spacing * 20;
     left: 0;
     right: 0;
+    z-index: 9;
   }
 
-  h2 {
-    color: $brand;
+  .icon {
+    width: $base-spacing * 6;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: $base-spacing;
+    z-index: 10;
+    background: $light-grey;
   }
 }
 
 #feature-post {
-  padding-bottom: $base-spacing * 14;
-  margin-top: $base-spacing * 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+  height: 100%;
+
+  .copy {
+    postion: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 
   @media (max-width: $tablet) {
     padding-bottom: $base-spacing * 8;

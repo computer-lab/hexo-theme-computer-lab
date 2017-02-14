@@ -17,8 +17,9 @@ block site_body
   section#about.content-section
     .container
       .row
-        .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
+        .copy.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
           .about.wow.slideInUp
+            h2.section-title About
             p We are a full-service dev shop with an emphasis on React, Python and the development of data-driven JavaScript apps. We engineer software solutions that shape and accelerate our clients' unique goals in media, arts, tech, healthcare and beyond.
           .about.wow.slideInUp
             p
@@ -39,42 +40,18 @@ block site_body
           .about.wow.slideInUp    
             p
               a.btn.btn-default.email(href='mailto:hi@computerlab.io?Subject=Inquiry') Email
-  //section#work.content-section
-    #featured
-      ul
-        li.left
-          img(src='./images/future-screen.png' alt='').wow.fadeIn
-          .container
-            .row
-              .col-md-5.col-md-offset-1.wow.fadeIn
-                .copy
-                  h2 Featured: iHeartRadio
-                  p
-                    span
-                    | Computer Lab built on-demand streaming functionality 
-                    | into the iHeartRadio web platform, enabling iHeart to 
-                    a.over-brand(target='_blank' href='http://www.forbes.com/sites/hughmcintyre/2016/12/01/iheartradio-launches-new-on-demand-streaming-apps-to-compete-with-spotify/#134dceb91a90') launch 
-                    | their paid subscription service before Pandora. We worked onsite alongside 
-                    a.over-brand(target='_blank' href='https://tech.iheart.com/') iHeart's web team 
-                    | to scale the existing React application to millions of users.
-                  a.btn.btn-default.wow.fadeIn.read-more(target='_blank' href='https://iheart.com') View
-  // Project Logos
-  .container
+  section.container.divider
     .row
       .col-md-4.col-md-offset-4
-        .divider-logo
-          hr
-          //- include _partial/svg/keyboard-svg
+        hr
+        .icon
+          include _partial/svg/mouse-svg
   section#projects.content-section
     .container
-      //- .row
-      //-   .col-md-6.col-md-offset-3
-      //-     h2.section-title Selected Clients
-      //-     p.blurb We've delivered MVPs for burgeoning startups and augmented teams on-site at global companies. We engineer software solutions that shape and accelerate our clients' unique goals in media, arts, tech, healthcare and beyond.
       .row
-        .col-md-3.col-md-offset-2.bio.wow.fadeInLeft.iheart
+        .col-md-6.col-md-offset-3.bio.wow.fadeIn.iheart.first
           include _partial/svg/iheart-logo
-          h4 On-site Consulting, ReactJS
+          h4 On-site Consulting
           p
             span
             | Computer Lab built on-demand streaming functionality 
@@ -86,9 +63,10 @@ block site_body
             a(target='_blank' href='https://tech.iheart.com/') iHeart's web team 
             | to scale the existing React application to millions of users.
           //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
-        .col-md-3.col-md-offset-2.bio.wow.fadeInRight.nectar
+      .row
+        .col-md-6.col-md-offset-3.bio.wow.fadeIn.nectar
           include _partial/svg/nectar-logo
-          h4 ReactJS Webapp
+          h4 Webapp MVP
           p 
             a(target='_blank' href='https://joinnectar.com/') Nectar 
             | is a recruiting platform for tech workers, created for our client 
@@ -96,9 +74,9 @@ block site_body
             | . The project leveraged Django, ReactJS, and Ansbile to transform the exisiting application into an elegant online marketplace that we turned over to Nectar's dev team ahead of schedule and under budget.
           //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
       .row
-        .col-md-3.col-md-offset-2.bio.wow.fadeInLeft.verdes
+        .col-md-6.col-md-offset-3.bio.wow.fadeIn.verdes
           include _partial/svg/verdes-logo
-          h4 Landing Page, ReactJS
+          h4 Static Landing Page
           p 
             span We created an interactive 3D landing page for a marketing data visualization tool launched by 
             a(target='_blank' href='http://verdes.nyc') Verdes
@@ -106,9 +84,10 @@ block site_body
             a(target='_blank' href="http://pinpoints.io") PinPoints 
             | build convinced us that React’s declarative components are a great fit for developing 3D user interfaces in the browser.
           //- a.btn.btn-default.wow.fadeIn.read-more(href='http://onscreentoday.com') View
-        .col-md-3.col-md-offset-2.bio.wow.fadeInRight.screen
+      .row
+        .col-md-6.col-md-offset-3.bio.wow.fadeIn.screen
           include _partial/svg/screen-logo
-          h4 KeystoneJS, AWS, MongoDB
+          h4 CMS Consulting
           p 
             a(target='_blank' href='http://onscreentoday.com') Screen 
             | is a curatorial collective based in New York, Beijing and Berlin. We worked closely with staff to improve the performance and user experience of their bilingual media platform. We reduced site loading speed, simplified content management and delivered an engaging experience to a global audience.
@@ -134,21 +113,22 @@ block site_body
   //-             li EMRs and HIPAA Compliance
   //-             li Specializing in Postgres, MongoDB and Firebase
   //-             li Apache Kafka
-  .container
+  section.container.divider
     .row
       .col-md-4.col-md-offset-4
-        .divider-logo
-          hr
-          //- include _partial/svg/keyboard-svg
+        hr
+        .icon
+          include _partial/svg/keyboard-svg
   // Featured Post
   section#feature-post.content-section
     .container
       .row
-        .featured.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
+        .copy.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
           h1.section-title.wow.fadeIn
             a(href=config.feature_note_path)=config.feature_note_title
           h5.info.wow.fadeIn=config.feature_note_author + ' - '
             span.date=config.feature_note_date
-          p.wow.fadeIn=config.feature_note_excerpt
-          a.btn.btn-default.wow.fadeIn.read-more(href=config.feature_note_path) Read More
+          p.wow.fadeIn=config.feature_note_excerpt + ' '
+            span
+            a.readmore(href=config.feature_note_path) Read More
           a.btn.btn-default.wow.fadeIn.read-more(href='/blog/') Blog
