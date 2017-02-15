@@ -217,7 +217,9 @@
     ul li {
       margin-top: $base-spacing-small * 2;
       list-style: none;
-      font-size: 19px;
+      float: left;
+      font-size: 18px;
+      margin-right: $base-spacing * 1.3;
     }
   }
 
