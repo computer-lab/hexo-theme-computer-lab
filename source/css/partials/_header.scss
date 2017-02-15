@@ -207,12 +207,11 @@ body.index {
 
     @media (max-width: 767px) {
       margin-top: -$base-spacing * 2;
-      background-color: transparent;
-
-      .navbar-header {
-        background-color: transparent;
+      .navbar-header, .navbar-right, .navbar-left {
+        background-color: $brand;
         border-bottom: 1px solid transparent;
       }
+
     }
     
     .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
@@ -265,6 +264,10 @@ body.index {
         background-color: $light-grey;
         padding: $base-spacing * 2 0 0; 
         border-bottom: 1px solid $border-grey;
+        .navbar-header, .navbar-right, .navbar-left {
+          background-color: $light-grey;
+          border-bottom: 1px solid $border-grey;
+        }
       }
 
       a.navbar-brand {
