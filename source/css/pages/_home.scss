@@ -89,6 +89,7 @@
   h1 {
     color: $white;
     font-size: 42px;
+    
     @media (max-width: $tablet) {
       font-size: 26px;
     }
@@ -157,6 +158,7 @@
     h4 {
       color: $copy;
       text-align: center;
+      margin-top: $base-spacing;
       padding-bottom: $base-spacing;
     }
   }
@@ -185,6 +187,10 @@
     .cls-1 {
       fill: $brand;
     }
+  }
+
+  .screen > svg {
+    height: $base-spacing * 6; 
   }
 
   a.btn {
@@ -234,7 +240,7 @@ section.divider {
   margin: $base-spacing * 4 auto;
 
   hr {
-    border-bottom: 1px solid $secondary;
+    border-bottom: 1px solid $brand;
     position: absolute;
     top: 0;
     bottom: 0;
