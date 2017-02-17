@@ -89,15 +89,13 @@
   h1 {
     color: $white;
     font-size: 42px;
-    
+
     @media (max-width: $tablet) {
       font-size: 26px;
     }
-
-    span.pink {
-      color: $white;
-    }
   }
+
+
 
 }
 
