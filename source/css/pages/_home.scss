@@ -105,7 +105,7 @@ section.divider {
     }
 
     &:hover,&:active,&:focus {
-      border: 1px solid $white;
+      border: 2px solid $white;
       outline: none;
       color: $brand;
       background-color: $white;
@@ -212,10 +212,6 @@ section.divider {
     .cls-1 {
       fill: $brand;
     }
-  }
-
-  .screen > svg {
-    height: $base-spacing * 6; 
   }
 
   a.btn {
