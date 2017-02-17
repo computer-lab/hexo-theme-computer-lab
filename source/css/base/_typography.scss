@@ -27,7 +27,7 @@ p {
   line-height: 160%;
   font-weight: 400;  
   font-style: normal;
-  font-size: 19px;
+  font-size: 21px;
   line-height: 1.58;
   letter-spacing: -.003em;
   --x-height-multiplier: 0.35;
@@ -42,13 +42,13 @@ code {
 a {
   color: $brand;
   padding-bottom: 2px;
-  border-bottom: 1px solid $brand;
+  border-bottom: 2px solid $brand;
 
   &:hover,
   &:focus {
     text-decoration: none;
     color: $secondary;
-    border-bottom: 1px solid $secondary;
+    border-bottom: 2px solid $secondary;
   }
 
   -webkit-transition: all .2s ease-in-out;
@@ -83,7 +83,7 @@ ul {
 .btn-default, a.btn-default {
   font-family: 'Quadraat', Georgia, serif;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 21px;
   line-height: 150%;
   letter-spacing: 1px;
   text-transform: none;
