@@ -1,5 +1,5 @@
 .content-section {
-  padding: $base-spacing * 6 0; 
+  padding: $base-spacing * 4 0; 
   height: auto;
 
   &.last {
@@ -142,7 +142,7 @@ section.divider {
   }
 
   h2.section-title {
-    color: $copy;
+    color: $brand;
   }
 
   svg.logo {
@@ -249,7 +249,6 @@ section.divider {
   .service {
 
     ul {
-      margin-top: $base-spacing * 2;
       padding: 0;
       text-align: center;
     }
