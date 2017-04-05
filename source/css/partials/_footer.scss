@@ -1,12 +1,13 @@
 footer {
-  background-color: $brand;
+  background-color: $dark;
   height: auto;
-  padding: $base-spacing * 2 0 $base-spacing * 3;
+  padding: $base-spacing 0 $base-spacing * 3;
   color: $white;
   font-size: 17px;
 
+
   .row {
-    padding-bottom: $base-spacing * 2;
+    padding: $base-spacing * 2 0;
   }
 
   h4 {
@@ -39,11 +40,11 @@ footer {
   a {
     border-bottom: none;
     color: $white;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 
   a:hover, a:focus {
     color: $white;
-    border-bottom: 1px solid $white;
+    border-bottom: 2px solid $white;
   }
 }
