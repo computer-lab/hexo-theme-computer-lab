@@ -9,10 +9,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: $base-spacing * 2 0 $base-spacing;
-  font-family: 'Quadraat', Georgia, serif;
+  font-family: 'Quadraat Sans', Georgia, serif;
   font-weight: 700;
   letter-spacing: 2px;
   color: $white;
+
+  h4 {
+    letter-spacing: 1px;
+  }
 
   > a {
     // no underlines on header copy
@@ -27,8 +31,7 @@ p {
   line-height: 160%;
   font-weight: 400;  
   font-style: normal;
-  font-size: 19px;
-  line-height: 1.58;
+  font-size: 21px;
   letter-spacing: -.003em;
   --x-height-multiplier: 0.35;
   --baseline-multiplier: 0.179;
@@ -41,19 +44,22 @@ code {
 
 a {
   color: $brand;
-  padding-bottom: 2px;
-  border-bottom: 1px solid $brand;
+  padding-bottom: 1px;
+  border-bottom: 2px solid $brand;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 
   &:hover,
   &:focus {
     text-decoration: none;
     color: $secondary;
-    border-bottom: 1px solid $secondary;
+    border-bottom: 2px solid $secondary;
   }
 
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 
   &.primary {
     font-weight: 700;
@@ -81,11 +87,11 @@ ul {
 }
 
 .btn-default, a.btn-default {
-  font-family: 'Quadraat', Georgia, serif;
+  font-family: 'Quadraat Sans', Georgia, serif;
   font-weight: 400;
   font-size: 19px;
   line-height: 150%;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-transform: none;
   color: $brand;
 }

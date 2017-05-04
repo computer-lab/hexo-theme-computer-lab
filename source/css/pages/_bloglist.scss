@@ -1,7 +1,7 @@
 // blog post list
 
 #archive, article {
-  margin-top: $base-spacing * 2;
+  margin-top: $base-spacing * 4;
 
   .page__title {
     margin: 0;
@@ -20,6 +20,8 @@
     font-family: 'Gill Sans', sans-serif;
     font-weight: 400;
     color: $grey;
+    font-size: 17px;
+    letter-spacing: 1px;
   }
 
   p {
@@ -28,6 +30,7 @@
   
   .post-meta > h5 {
     margin-top: -$base-spacing-small;
+    font-size: 17px;
   }
 
 }
@@ -49,6 +52,7 @@ ul.post-items {
     }
 
     h5 {
+      font-size: 17px;
       margin: -5px 0 $base-spacing;
       letter-spacing: 1px;
     }

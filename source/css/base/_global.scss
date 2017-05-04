@@ -6,7 +6,7 @@ html {
 body {
   width: 100%;
   min-height: 100%;
-  background-color: $light-grey; 
+  background-color: $white; 
   overflow-x: hidden;
   
   // sticky footer
@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
 
   #content {
-    background-color: $light-grey;
+    background-color: $white;
     margin: $base-spacing * 2 0;
     flex: 1;
   }  
@@ -31,7 +31,7 @@ body {
 body.index {
 
   #content {
-    background-color: $light-grey;
+    background-color: $white;
     margin: $menu-collapse-height 0 0;
     flex: 1;
   }

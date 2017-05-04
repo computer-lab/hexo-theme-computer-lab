@@ -1,5 +1,5 @@
 .content-section {
-  padding: $base-spacing * 6 0; 
+  padding: $base-spacing * 4 0; 
   height: auto;
 
   &.last {
@@ -12,7 +12,7 @@
   }
 
   h1.section-title {
-    margin: $base-spacing 0 $base-spacing * 2;
+    margin: 0 0 $base-spacing * 2;
     color: $copy;
 
     @media (max-width: $tablet) {
@@ -39,19 +39,49 @@
 
   p {
     margin: 0 0 $base-spacing-small;
+    font-size: 21px;
+    line-height: 2em; 
+  }
+}
 
+section.divider {
+  margin: $base-spacing * 4 auto;
+
+  hr {
+    border-bottom: 1px solid $brand;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: $base-spacing * 20;
+    left: 0;
+    right: 0;
+    z-index: 9;
+  }
+
+  .icon {
+    width: $base-spacing * 6;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: $base-spacing;
+    z-index: 10;
+    background: $light-grey;
   }
 }
 
 #home {
   margin-top: - $menu-height; // center in viewport, regardless of menu height
   height: 115vh;
-  background: -moz-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250,250,250,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, rgba(101,45,237,1)), color-stop(100%, rgba(250,250,250,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250,250,250,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250,250,250,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250,250,250,1) 100%); /* ie10+ */
-  background: linear-gradient(180deg, rgba(101,45,237,1) 12%, rgba(250,250,250,1) 100%); /* w3c */
+  background: -moz-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250, 250, 250,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, rgba(101,45,237,1)), color-stop(100%, rgba(250, 250, 250,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250, 250, 250,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250, 250, 250,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(101,45,237,1) 12%, rgba(250, 250, 250,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(101,45,237,1) 12%, rgba(250, 250, 250,1) 100%); /* w3c */
 
   .hero {
     height: 250px;
@@ -75,7 +105,7 @@
     }
 
     &:hover,&:active,&:focus {
-      border: 1px solid $white;
+      border: 2px solid $white;
       outline: none;
       color: $brand;
       background-color: $white;
@@ -89,12 +119,9 @@
   h1 {
     color: $white;
     font-size: 42px;
+
     @media (max-width: $tablet) {
       font-size: 26px;
-    }
-
-    span.pink {
-      color: $white;
     }
   }
 
@@ -108,20 +135,14 @@
   resize: vertical;
   overflow: auto;
   height: 100%;
-
-  .copy {
-    postion: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
+  background-color: $alt-white;
 
   @media (max-width: $tablet) {
     padding: $base-spacing * 4 0 $base-spacing * 6 0;
   }
 
   h2.section-title {
-    color: $copy;
+    color: $brand;
   }
 
   svg.logo {
@@ -142,9 +163,14 @@
 
 #projects {
   min-height: 100vh;
+  background-color: $white;
 
   .bio {
-    margin-top: $base-spacing * 8;
+    margin-top: $base-spacing * 4;
+
+    .inner {
+      background: $border-grey;
+    }
 
     &.first {
       margin-top: $base-spacing;
@@ -157,6 +183,7 @@
     h4 {
       color: $copy;
       text-align: center;
+      margin-top: $base-spacing;
       padding-bottom: $base-spacing;
     }
   }
@@ -196,6 +223,14 @@
 }
 
 #services {
+  background-color: $alt-white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+  height: 100%;
 
   @media (max-width: $tablet) {
     padding: $base-spacing * 4 0 $base-spacing * 8 0;
@@ -206,60 +241,30 @@
     letter-spacing: 1.1px;
   }
 
-  h2 {
-    margin-top: 0;
+  h1 {
+    margin-top: $base-spacing * 2;
     color: $copy;
   }
 
   .service {
 
     ul {
-      margin-top: $base-spacing * 2;
       padding: 0;
+      text-align: center;
     }
 
     ul li {
-      margin-top: $base-spacing-small * 2;
       list-style: none;
-      float: left;
-      font-size: 18px;
-      margin-right: $base-spacing * 1.3;
-      letter-spacing: -0.3px;
+      font-size: 1.5em;
+      font-weight: 300;
+      line-height: 2em; 
     }
   }
 
 }
 
-section.divider {
-  margin: $base-spacing * 4 auto;
-
-  hr {
-    border-bottom: 1px solid $secondary;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: $base-spacing * 20;
-    left: 0;
-    right: 0;
-    z-index: 9;
-  }
-
-  .icon {
-    width: $base-spacing * 6;
-    top: 0;
-    bottom: 0;
-    position: relative;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding: $base-spacing;
-    z-index: 10;
-    background: $light-grey;
-  }
-}
-
 #feature-post {
+  background-color: $white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -268,18 +273,11 @@ section.divider {
   overflow: auto;
   height: 100%;
 
-  .copy {
-    postion: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-
   @media (max-width: $tablet) {
     padding-bottom: $base-spacing * 8;
   }
 
-  h2 {
+  h1, h2 {
     color: $copy;
   }
   

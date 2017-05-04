@@ -10,8 +10,7 @@
 .btn-default {
   margin: 15px 15px 0 0;
   padding: $base-spacing-small $base-spacing;
-  border: 1px solid $brand;
-  color: $brand;
+  border: 2px solid $brand;
   display: inline-block;
   background-color: transparent;
 
@@ -21,7 +20,7 @@
   }
 
   &:hover,&:active,&:focus {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     outline: none;
     color: $white;
     background-color: $brand;
