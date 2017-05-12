@@ -30,11 +30,17 @@ if page.title
   meta(property='og:title', content=page.title)
 else
   meta(property='og:title', content='Computer Lab - A Software Consultancy in New York City')
-meta(property='og:image', content='http://computerlab.io/images/computer.png')
+if page.image
+  meta(property='og:image', content=page.image)
+else
+  meta(property='og:image', content='https://computerlab.io/images/computer.png')
 meta(name='twitter:card', content='summary_large_image')
 meta(name='twitter:site', content='@computerlab_')
 meta(name='twitter:domain', content='http://computerlab.io')
-meta(name='twitter:image', content='http://computerlab.io/images/computer.png')
+if page.image
+  meta(name='twitter:image', content=page.image)
+else
+  meta(name='twitter:image', content='https://computerlab.io/images/computer.png')
 if page.lede
   meta(name='twitter:description', content=page.lede)
 else
